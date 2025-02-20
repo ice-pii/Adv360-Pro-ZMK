@@ -27,11 +27,11 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5   &tog 1                                                   &mo 3      &kp N6  &kp N7  &kp N8    &kp N9    &kp N0    &kp MINUS
-&kp TAB    &kp Q      &kp J     &kp U     &kp COMMA  &kp DOT  &none                                                    &none      &kp F   &kp G   &kp K     &kp Z     &kp P     &kp BSLH
-&kp ESC    &kp A      &kp S     &kp E     &kp O      &kp F20  &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp D   &kp T   &kp N     &kp I     &kp H     &kp SQT
-&kp LSHFT  &kp X      &kp V     &kp C     &kp L      &kp F19                       &kp HOME      &kp PG_UP                        &kp W   &kp M   &kp R     &kp Y     &kp B     &kp RSHFT
-&mo 2      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT           &kp BSPC  &kp DEL    &kp F23       &kp F24    &kp ENTER  &kp SPACE          &kp UP  &kp DOWN  &kp LBKT  &kp RBKT  &mo 2
+&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5           &tog 1                                                   &mo 3      &kp N6  &kp N7  &kp N8    &kp N9    &kp N0    &kp MINUS
+&kp TAB    &kp Q      &kp J     &kp U     &kp COMMA  &kp DOT          &none                                                    &none      &kp F   &kp G   &kp K     &kp Z     &kp P     &kp BSLH
+&kp ESC    &kp A      &kp S     &kp E     &kp O      &kp LS(INT_RO)   &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp D   &kp T   &kp N     &kp I     &kp H     &kp SQT
+&kp LSHFT  &kp X      &kp V     &kp C     &kp L      &kp LS(INT_YEN)                       &kp HOME      &kp PG_UP                        &kp W   &kp M   &kp R     &kp Y     &kp B     &kp RSHFT
+&mo 2      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT                   &kp BSPC  &kp DEL    &kp F23       &kp F24    &kp ENTER  &kp SPACE          &kp UP  &kp DOWN  &kp LBKT  &kp RBKT  &mo 2
             >;
         };
 
@@ -49,11 +49,11 @@
         fn {
             display-name = "Fn";
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &tog 1                                      &mo 3   &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&trans  &trans  &trans  &trans  &trans  &trans  &none                                       &none   &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &none   &trans  &trans      &trans  &trans  &none   &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans   &trans   &trans
+&none    &none         &none         &none         &none         &none         &tog 1                                      &mo 3   &none         &none         &none         &none         &none         &none
+&kp F11  &kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &none                                       &none   &kp F6        &kp F7        &kp F8        &kp F9        &kp F10       &kp F12
+&trans   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &none   &trans  &trans      &trans  &trans  &none   &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans
+&trans   &trans        &trans        &trans        &trans        &trans                        &trans      &trans                  &trans        &trans        &trans        &trans        &trans        &trans
+&trans   &trans        &trans        &trans        &trans                      &trans  &trans  &trans      &trans  &trans  &trans                &trans        &trans        &trans        &trans        &trans
             >;
         };
 
