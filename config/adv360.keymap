@@ -196,20 +196,28 @@
 
         extra2 {
             display-name = "Purple";
-            status = "reserved";
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+            >;
         };
 
         extra3 {
             display-name = "Cyan";
-            status = "reserved";
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+            >;
         };
 
         extra4 {
             display-name = "Yellow";
-            status = "reserved";
-        };
-
-        layer_8 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
