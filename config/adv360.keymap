@@ -133,13 +133,6 @@
             bindings = <&kp L &kp T &kp U>;
             label = "M_LTU";
         };
-
-        m_mail: m_mail {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp S &kp A &kp G &kp A &kp R &kp A &kp T &kp LBKT &kp T &kp S &kp S &kp DOT &kp A &kp C &kp C &kp R &kp E &kp T &kp E &kp C &kp H &kp DOT &kp C &kp O &kp M>;
-            label = "M_MAIL";
-        };
     };
 
     keymap {
