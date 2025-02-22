@@ -184,11 +184,11 @@
 
         Symbols {
             bindings = <
-&trans    &trans           &trans          &trans            &trans          &trans       &trans                                         &trans  &trans     &trans             &trans           &trans                &trans             &trans
-&none     &kp QUESTION     &kp LEFT_BRACE  &kp PLUS          &kp EQUAL       &none        &none                                          &none   &none      &kp LT             &kp RIGHT_BRACE  &kp PIPE              &kp GT             &none
-&kp SEMI  &kp EXCLAMATION  &kp AT          &kp HASH          &kp DOLLAR      &kp PERCENT  &none   &trans  &trans         &trans  &trans  &none   &kp CARET  &kp RIGHT_BRACKET  &kp ASTERISK     &kp LEFT_PARENTHESIS  &kp BACKSLASH      &kp SINGLE_QUOTE
-&none     &kp LS(INT_YEN)  &kp AMPERSAND   &kp LEFT_BRACKET  &kp LS(INT_RO)  &kp SLASH                    &kp MINUS      &trans                  &kp MINUS  &kp COLON          &kp COMMA        &kp DOT               &kp DOUBLE_QUOTES  &none
-&trans    &trans           &trans          &trans            &trans                       &trans  &trans  &trans         &trans  &trans  &trans             &trans             &trans           &trans                &trans             &trans
+&none     &none            &none           &none             &none           &none        &none                                      &none  &none      &none              &none            &none                 &none              &none
+&none     &kp QUESTION     &kp LEFT_BRACE  &kp PLUS          &kp EQUAL       &none        &none                                      &none  &none      &kp LT             &kp RIGHT_BRACE  &kp PIPE              &kp GT             &none
+&kp SEMI  &kp EXCLAMATION  &kp AT          &kp HASH          &kp DOLLAR      &kp PERCENT  &none  &none  &none          &none  &none  &none  &kp CARET  &kp RIGHT_BRACKET  &kp ASTERISK     &kp LEFT_PARENTHESIS  &kp BACKSLASH      &kp SINGLE_QUOTE
+&none     &kp LS(INT_YEN)  &kp AMPERSAND   &kp LEFT_BRACKET  &kp LS(INT_RO)  &kp SLASH                  &kp MINUS      &none                &kp MINUS  &kp COLON          &kp COMMA        &kp DOT               &kp DOUBLE_QUOTES  &none
+&none     &none            &none           &none             &none                        &none  &none  &none          &none  &none  &none             &none              &none            &none                 &none              &none
             >;
         };
     };
