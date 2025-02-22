@@ -166,11 +166,11 @@
         keypad {
             display-name = "Kp";
             bindings = <
-&none             &mt LEFT_ALT K_CONTEXT_MENU  &none   &none   &none   &none  &none                                                        &none  &none             &none           &none           &none            &none           &none
-&none             &none                        &none   &m_uxn  &none   &none  &none                                                        &none  &kp INT_MUHENKAN  &kp HOME        &kp UP_ARROW    &kp END          &kp INT_HENKAN  &kp PAGE_UP
-&kp LS(CAPSLOCK)  &m_axn                       &m_ixn  &m_exn  &m_oxn  &none  &none  &kp LCTRL  &none      &none          &kp RIGHT_SHIFT  &none  &kp BACKSPACE     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp DELETE      &kp PAGE_DOWN
-&kp LSHFT         &none                        &none   &m_xn   &m_ltu  &none                    &none      &none                                  &none             &kp ENTER       &none           &none            &kp INSERT      &kp RCTRL
-&none             &none                        &none   &none   &none          &none  &kp TAB    &none      &kp RIGHT_ALT  &none            &none                    &none           &none           &none            &none           &none
+&none             &mt LEFT_ALT K_CONTEXT_MENU  &none    &none    &none    &none  &none                                        &none   &none             &none           &kp PAGE_UP     &none            &none           &none
+&none             &none                        &none    &m_uxn   &none    &none  &none                                        &none   &kp INT_MUHENKAN  &kp HOME        &kp UP_ARROW    &kp END          &kp INT_HENKAN  &none
+&kp LS(CAPSLOCK)  &m_axn                       &m_ixn   &m_exn   &m_oxn   &none  &none   &trans   &trans      &trans  &trans  &none   &kp BACKSPACE     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp DELETE      &none
+&none             &none                        &none    &m_xn    &m_ltu   &none                   &trans      &trans                  &none             &kp ENTER       &kp PAGE_DOWN   &none            &kp INSERT      &none
+&none             &m_yaxn                      &m_yuxn  &m_yexn  &m_yoxn         &trans  &kp TAB  &trans      &trans  &trans  &trans                    &none           &none           &none            &none           &none
             >;
         };
 
@@ -180,8 +180,8 @@
 &none   &kp F11       &kp F12       &kp F13       &kp F14       &kp F15       &none                                       &none   &kp F16       &kp F17       &kp F18       &kp F19       &kp F20            &none
 &none   &kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &none                                       &none   &kp F6        &kp F7        &kp F8        &kp F9        &kp F10            &none
 &none   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &none   &trans  &trans      &trans  &trans  &none   &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0       &none
-&trans  &trans        &trans        &trans        &trans        &trans                        &trans      &trans                  &kp MINUS     &kp COLON     &kp COMMA     &kp DOT       &kp DOUBLE_QUOTES  &trans
-&trans  &trans        &trans        &trans        &trans                      &trans  &trans  &trans      &trans  &trans  &trans                &trans        &trans        &trans        &trans             &trans
+&none   &none         &none         &none         &none         &none                         &trans      &trans                  &kp MINUS     &kp COLON     &kp COMMA     &kp DOT       &kp DOUBLE_QUOTES  &none
+&trans  &kp F21       &kp F22       &kp F23       &kp F24                     &trans  &trans  &trans      &trans  &trans  &trans                &none         &none         &none         &none              &none
             >;
         };
 
@@ -200,11 +200,11 @@
             display-name = "Red";
             label = "Symbols";
             bindings = <
-&none     &none            &none           &none             &none           &none        &none                                      &none  &none      &none              &none            &none                 &none              &none
-&none     &kp QUESTION     &kp LEFT_BRACE  &kp PLUS          &kp EQUAL       &none        &none                                      &none  &none      &kp LT             &kp RIGHT_BRACE  &kp PIPE              &kp GT             &none
-&kp SEMI  &kp EXCLAMATION  &kp AT          &kp HASH          &kp DOLLAR      &kp PERCENT  &none  &none  &none          &none  &none  &none  &kp CARET  &kp RIGHT_BRACKET  &kp ASTERISK     &kp LEFT_PARENTHESIS  &kp BACKSLASH      &kp SINGLE_QUOTE
-&none     &kp LS(INT_YEN)  &kp AMPERSAND   &kp LEFT_BRACKET  &kp LS(INT_RO)  &kp SLASH                  &kp MINUS      &none                &kp MINUS  &kp COLON          &kp COMMA        &kp DOT               &kp DOUBLE_QUOTES  &none
-&none     &none            &none           &none             &none                        &none  &none  &none          &none  &none  &none             &none              &none            &none                 &none              &none
+&none  &none            &none           &none             &none           &none        &none                                       &none   &none      &none              &none            &none                 &none              &none
+&none  &kp QUESTION     &kp LEFT_BRACE  &kp PLUS          &kp EQUAL       &none        &none                                       &none   &none      &kp LT             &kp RIGHT_BRACE  &kp PIPE              &kp GT             &none
+&none  &kp EXCLAMATION  &kp AT          &kp HASH          &kp DOLLAR      &kp PERCENT  &none   &trans  &trans      &trans  &trans  &none   &kp CARET  &kp RIGHT_BRACKET  &kp ASTERISK     &kp LEFT_PARENTHESIS  &kp BACKSLASH      &none
+&none  &kp LS(INT_YEN)  &kp AMPERSAND   &kp LEFT_BRACKET  &kp LS(INT_RO)  &kp SLASH                    &trans      &trans                  &kp MINUS  &kp COLON          &kp COMMA        &kp DOT               &kp DOUBLE_QUOTES  &none
+&none  &none            &none           &none             &none                        &trans  &trans  &trans      &trans  &trans  &trans             &none              &none            &none                 &none              &none
             >;
         };
 
