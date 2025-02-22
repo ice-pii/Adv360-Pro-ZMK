@@ -21,6 +21,127 @@
         };
     };
 
+    macros {
+        m_axn: m_axn {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp A &kp X &kp N>;
+            label = "M_AXN";
+        };
+
+        m_ixn: m_ixn {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp I &kp X &kp N>;
+            label = "M_IXN";
+        };
+
+        m_uxn: m_uxn {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp U &kp X &kp N>;
+            label = "M_UXN";
+        };
+
+        m_exn: m_exn {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp E &kp X &kp N>;
+            label = "M_EXN";
+        };
+
+        m_oxn: m_oxn {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp O &kp X &kp N>;
+            label = "M_OXN";
+        };
+
+        m_ya: m_ya {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Y &kp A>;
+            label = "M_YA";
+        };
+
+        m_yaxn: m_yaxn {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Y &kp A &kp X &kp N>;
+            label = "M_YAXN";
+        };
+
+        m_yu: m_yu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Y &kp U>;
+            label = "M_YU";
+        };
+
+        m_yuxn: m_yuxn {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Y &kp U &kp X &kp N>;
+            label = "M_YUXN";
+        };
+
+        m_ye: m_ye {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Y &kp E>;
+            label = "M_YE";
+        };
+
+        m_yexn: m_yexn {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Y &kp E &kp X &kp N>;
+            label = "M_YEXN";
+        };
+
+        m_yo: m_yo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Y &kp O>;
+            label = "M_YO";
+        };
+
+        m_yoxn: m_yoxn {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Y &kp O &kp X &kp N>;
+            label = "M_YOXN";
+        };
+
+        m_ou: m_ou {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp O &kp U>;
+            label = "M_OU";
+        };
+
+        m_xn: m_xn {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp X &kp N>;
+            label = "M_XN";
+        };
+
+        m_ltu: m_ltu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp L &kp T &kp U>;
+            label = "M_LTU";
+        };
+
+        m_mail: m_mail {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp S &kp A &kp G &kp A &kp R &kp A &kp T &kp LBKT &kp T &kp S &kp S &kp DOT &kp A &kp C &kp C &kp R &kp E &kp T &kp E &kp C &kp H &kp DOT &kp C &kp O &kp M>;
+            label = "M_MAIL";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -31,18 +152,18 @@
 &kp TAB    &kp Q      &kp J  &kp U  &kp COMMA  &kp DOT         &none                                                                               &none      &kp F  &kp G  &kp K  &kp Z  &kp P  &kp BSLH
 &kp ESC    &kp A      &kp S  &kp E  &kp O      &kp LS(INT_RO)  &none         &none        &none                &none                  &none        &none      &kp D  &kp T  &kp N  &kp I  &kp H  &kp SQT
 &kp LSHFT  &kp X      &kp V  &kp C  &kp L      &none                                      &mt LCTRL MINUS      &mt RIGHT_SHIFT SLASH                          &kp W  &kp M  &kp R  &kp Y  &kp B  &kp RSHFT
-&mo 2      &kp GRAVE  &none  &none  &none                      &lt 1 INT_RO  &lt 2 SPACE  &kp F23              &kp F24                &lt 1 COMMA  &lt 3 DOT         &none  &none  &none  &none  &none
+&mo 2      &kp GRAVE  &none  &none  &none                      &lt 1 INT_RO  &lt 2 SPACE  &kp F23              &kp F24                &lt 1 COMMA  &lt 0 DOT         &none  &none  &none  &none  &none
             >;
         };
 
         keypad {
             display-name = "Kp";
             bindings = <
-&none                       &none  &none  &none  &none  &none  &none                                                        &none  &none             &none           &none           &none            &none           &none
-&mt LEFT_ALT K_APPLICATION  &none  &none  &none  &none  &none  &none                                                        &none  &kp INT_MUHENKAN  &kp HOME        &kp UP_ARROW    &kp END          &kp INT_HENKAN  &kp PAGE_UP
-&kp LS(CAPSLOCK)            &none  &none  &none  &none  &none  &none  &kp LCTRL  &none      &none          &kp RIGHT_SHIFT  &none  &kp BACKSPACE     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp DELETE      &kp PAGE_DOWN
-&kp LSHFT                   &none  &none  &none  &none  &none                    &none      &none                                  &none             &kp ENTER       &none           &none            &kp INSERT      &kp RCTRL
-&none                       &none  &none  &none  &none         &none  &kp TAB    &none      &kp RIGHT_ALT  &none            &none                    &none           &none           &none            &none           &none
+&none                       &none   &none   &none   &none   &none  &none                                                        &none  &none             &none           &none           &none            &none           &none
+&mt LEFT_ALT K_APPLICATION  &none   &none   &m_uxn  &none   &none  &none                                                        &none  &kp INT_MUHENKAN  &kp HOME        &kp UP_ARROW    &kp END          &kp INT_HENKAN  &kp PAGE_UP
+&kp LS(CAPSLOCK)            &m_axn  &m_ixn  &m_exn  &m_oxn  &none  &none  &kp LCTRL  &none      &none          &kp RIGHT_SHIFT  &none  &kp BACKSPACE     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp DELETE      &kp PAGE_DOWN
+&kp LSHFT                   &none   &none   &m_xn   &m_ltu  &none                    &none      &none                                  &none             &kp ENTER       &none           &none            &kp INSERT      &kp RCTRL
+&none                       &none   &none   &none   &none          &none  &kp TAB    &none      &kp RIGHT_ALT  &none            &none                    &none           &none           &none            &none           &none
             >;
         };
 
@@ -68,24 +189,14 @@
             >;
         };
 
-        extra1 {
-            display-name = "Red";
-            status = "reserved";
-        };
-
-        extra2 {
-            display-name = "Purple";
-            status = "reserved";
-        };
-
-        extra3 {
-            display-name = "Cyan";
-            status = "reserved";
-        };
-
-        extra4 {
-            display-name = "Yellow";
-            status = "reserved";
+        layer_4 {
+            bindings = <
+&trans    &trans           &trans          &trans            &trans          &trans       &trans                                         &trans  &trans     &trans             &trans           &trans                &trans             &trans
+&none     &kp QUESTION     &kp LEFT_BRACE  &kp PLUS          &kp EQUAL       &none        &none                                          &none   &none      &kp LT             &kp RIGHT_BRACE  &kp PIPE              &kp GT             &none
+&kp SEMI  &kp EXCLAMATION  &kp AT          &kp HASH          &kp DOLLAR      &kp PERCENT  &none   &trans  &trans         &trans  &trans  &none   &kp CARET  &kp RIGHT_BRACKET  &kp ASTERISK     &kp LEFT_PARENTHESIS  &kp BACKSLASH      &kp SINGLE_QUOTE
+&none     &kp LS(INT_YEN)  &kp AMPERSAND   &kp LEFT_BRACKET  &kp LS(INT_RO)  &kp SLASH                    &kp MINUS      &trans                  &none      &kp COLON          &kp COMMA        &kp DOT               &kp DOUBLE_QUOTES  &none
+&trans    &trans           &trans          &trans            &trans                       &trans  &trans  &trans         &trans  &trans  &trans             &trans             &trans           &trans                &trans             &trans
+            >;
         };
     };
 };
