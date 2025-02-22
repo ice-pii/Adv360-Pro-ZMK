@@ -182,7 +182,9 @@
             >;
         };
 
-        layer_4 {
+        extra1 {
+            display-name = "Red";
+            label = "Symbols";
             bindings = <
 &none     &none            &none           &none             &none           &none        &none                                      &none  &none      &none              &none            &none                 &none              &none
 &none     &kp QUESTION     &kp LEFT_BRACE  &kp PLUS          &kp EQUAL       &none        &none                                      &none  &none      &kp LT             &kp RIGHT_BRACE  &kp PIPE              &kp GT             &none
@@ -190,18 +192,21 @@
 &none     &kp LS(INT_YEN)  &kp AMPERSAND   &kp LEFT_BRACKET  &kp LS(INT_RO)  &kp SLASH                  &kp MINUS      &none                &kp MINUS  &kp COLON          &kp COMMA        &kp DOT               &kp DOUBLE_QUOTES  &none
 &none     &none            &none           &none             &none                        &none  &none  &none          &none  &none  &none             &none              &none            &none                 &none              &none
             >;
-
-            label = "Symbols";
         };
 
-        layer_5 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
-            >;
+        extra2 {
+            display-name = "Purple";
+            status = "reserved";
+        };
+
+        extra3 {
+            display-name = "Cyan";
+            status = "reserved";
+        };
+
+        extra4 {
+            display-name = "Yellow";
+            status = "reserved";
         };
     };
 };
