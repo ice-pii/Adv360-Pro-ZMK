@@ -133,6 +133,20 @@
             bindings = <&kp L &kp T &kp U>;
             label = "M_LTU";
         };
+
+        m_UUU: m_Ull {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp F10 &kp F10>;
+            label = "M_ULL";
+        };
+
+        m_Ull: m_Ull {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp F10 &kp F10 &kp F10>;
+            label = "M_ULL";
+        };
     };
 
     keymap {
@@ -143,31 +157,31 @@
             bindings = <
 &none  &mt LEFT_ALT ESCAPE  &none  &none  &none  &none           &none                                                                                                 &mo 3      &none  &none  &none  &none  &kp RIGHT_GUI  &none
 &none  &kp Q                &kp J  &kp U  &none  &none           &none                                                                                                 &none      &kp F  &kp G  &kp K  &kp Z  &kp P          &none
-&none  &kp A                &kp S  &kp E  &kp O  &kp LS(INT_RO)  &none         &kp F23      &none                         &none                           &kp F24      &none      &kp D  &kp T  &kp N  &kp I  &kp H          &none
+&none  &kp A                &kp S  &kp E  &kp O  &kp LS(INT_RO)  &none         &kp F23      &m_UUU                        &m_Ull                          &kp F24      &none      &kp D  &kp T  &kp N  &kp I  &kp H          &none
 &none  &kp X                &kp V  &kp C  &kp L  &none                                      &mt LEFT_CONTROL MINUS        &mt RIGHT_SHIFT SLASH                                   &kp W  &kp M  &kp R  &kp Y  &kp B          &none
-&none  &none                &none  &none  &none                  &lt 5 INT_RO  &lt 2 SPACE  &mt SEMICOLON LEFT_SHIFT      &mt SINGLE_QUOTE RIGHT_CONTROL  &lt 1 COMMA  &lt 4 DOT         &none  &none  &none  &none          &none
+&none  &none                &none  &none  &none                  &lt 5 INT_RO  &lt 2 SPACE  &mt LEFT_SHIFT SEMICOLON      &mt RIGHT_CONTROL SINGLE_QUOTE  &lt 1 COMMA  &lt 4 DOT         &none  &none  &none  &none          &none
             >;
         };
 
         keypad {
             display-name = "Kp";
             bindings = <
-&none                       &none   &none   &none   &none   &none  &none                                                        &none  &none             &none           &none           &none            &none           &none
-&mt LEFT_ALT K_APPLICATION  &none   &none   &m_uxn  &none   &none  &none                                                        &none  &kp INT_MUHENKAN  &kp HOME        &kp UP_ARROW    &kp END          &kp INT_HENKAN  &kp PAGE_UP
-&kp LS(CAPSLOCK)            &m_axn  &m_ixn  &m_exn  &m_oxn  &none  &none  &kp LCTRL  &none      &none          &kp RIGHT_SHIFT  &none  &kp BACKSPACE     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp DELETE      &kp PAGE_DOWN
-&kp LSHFT                   &none   &none   &m_xn   &m_ltu  &none                    &none      &none                                  &none             &kp ENTER       &none           &none            &kp INSERT      &kp RCTRL
-&none                       &none   &none   &none   &none          &none  &kp TAB    &none      &kp RIGHT_ALT  &none            &none                    &none           &none           &none            &none           &none
+&none             &mt LEFT_ALT K_CONTEXT_MENU  &none   &none   &none   &none  &none                                                        &none  &none             &none           &none           &none            &none           &none
+&none             &none                        &none   &m_uxn  &none   &none  &none                                                        &none  &kp INT_MUHENKAN  &kp HOME        &kp UP_ARROW    &kp END          &kp INT_HENKAN  &kp PAGE_UP
+&kp LS(CAPSLOCK)  &m_axn                       &m_ixn  &m_exn  &m_oxn  &none  &none  &kp LCTRL  &none      &none          &kp RIGHT_SHIFT  &none  &kp BACKSPACE     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp DELETE      &kp PAGE_DOWN
+&kp LSHFT         &none                        &none   &m_xn   &m_ltu  &none                    &none      &none                                  &none             &kp ENTER       &none           &none            &kp INSERT      &kp RCTRL
+&none             &none                        &none   &none   &none          &none  &kp TAB    &none      &kp RIGHT_ALT  &none            &none                    &none           &none           &none            &none           &none
             >;
         };
 
         fn {
             display-name = "Fn";
             bindings = <
-&none          &none         &none         &none         &none         &none         &tog 1                                      &mo 3   &none         &none         &none         &none         &none              &none
-&kp F11        &kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &none                                       &none   &kp F6        &kp F7        &kp F8        &kp F9        &kp F10            &kp F12
-&kp SEMICOLON  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &none   &trans  &trans      &trans  &trans  &none   &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0       &kp SINGLE_QUOTE
-&trans         &trans        &trans        &trans        &trans        &trans                        &trans      &trans                  &kp MINUS     &kp COLON     &kp COMMA     &kp DOT       &kp DOUBLE_QUOTES  &trans
-&trans         &trans        &trans        &trans        &trans                      &trans  &trans  &trans      &trans  &trans  &trans                &trans        &trans        &trans        &trans             &trans
+&none   &kp F11       &kp F12       &kp F13       &kp F14       &kp F15       &none                                       &none   &kp F16       &kp F17       &kp F18       &kp F19       &kp F20            &none
+&none   &kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &none                                       &none   &kp F6        &kp F7        &kp F8        &kp F9        &kp F10            &none
+&none   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &none   &trans  &trans      &trans  &trans  &none   &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0       &none
+&trans  &trans        &trans        &trans        &trans        &trans                        &trans      &trans                  &kp MINUS     &kp COLON     &kp COMMA     &kp DOT       &kp DOUBLE_QUOTES  &trans
+&trans  &trans        &trans        &trans        &trans                      &trans  &trans  &trans      &trans  &trans  &trans                &trans        &trans        &trans        &trans             &trans
             >;
         };
 
