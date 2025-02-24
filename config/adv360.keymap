@@ -169,7 +169,7 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&none  &mt LEFT_ALT ESCAPE  &none  &none  &none  &none           &none                                                                                                &mo 3      &none  &none  &none  &none    &kp RIGHT_GUI  &none
+&none  &mt LEFT_ALT ESCAPE  &none  &none  &none  &none           &sl 8                                                                                                &mo 3      &none  &none  &none  &none    &kp RIGHT_GUI  &none
 &none  &kp Q                &kp J  &kp U  &m_ou  &none           &none                                                                                                &none      &kp F  &kp G  &kp K  &kp Z    &kp P          &none
 &none  &kp A                &kp S  &kp E  &kp O  &kp LS(INT_RO)  &none  &kp LANGUAGE_2  &m_UUU                        &m_Ull                          &kp LANGUAGE_1  &none      &kp D  &kp T  &kp N  &kp I    &kp H          &none
 &none  &kp X                &kp V  &kp C  &kp L  &kp INT_RO                             &mt LEFT_CONTROL MINUS        &mt RIGHT_SHIFT SLASH                                      &kp W  &kp M  &kp R  &lt 6 Y  &kp B          &none
@@ -180,29 +180,29 @@
         keypad {
             display-name = "Kp";
             bindings = <
-&none             &mt LEFT_ALT K_CONTEXT_MENU  &none   &none   &none   &none  &none                                        &none   &none             &none           &kp PAGE_UP     &none            &none           &none
-&none             &none                        &none   &m_uxn  &none   &none  &none                                        &none   &kp INT_MUHENKAN  &kp HOME        &kp UP_ARROW    &kp END          &kp INT_HENKAN  &none
-&kp LS(CAPSLOCK)  &m_axn                       &m_ixn  &m_exn  &m_oxn  &none  &none   &trans   &trans      &trans  &trans  &none   &kp BACKSPACE     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp DELETE      &none
-&none             &none                        &none   &m_xn   &m_ltu  &none                   &trans      &trans                  &none             &kp ENTER       &kp PAGE_DOWN   &mo 7            &kp INSERT      &none
-&none             &none                        &none   &none   &none          &trans  &kp TAB  &trans      &trans  &trans  &trans                    &none           &none           &none            &none           &none
+&none             &mt LEFT_ALT K_CONTEXT_MENU  &none   &none   &none   &none  &to 0                                           &none   &none             &none           &kp PAGE_UP     &none            &none           &none
+&none             &none                        &none   &m_uxn  &none   &none  &none                                           &none   &kp INT_MUHENKAN  &kp HOME        &kp UP_ARROW    &kp END          &kp INT_HENKAN  &none
+&kp LS(CAPSLOCK)  &m_axn                       &m_ixn  &m_exn  &m_oxn  &none  &none   &trans   &trans      &trans  &trans     &none   &kp BACKSPACE     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp DELETE      &none
+&none             &none                        &none   &m_xn   &m_ltu  &none                   &trans      &trans                     &none             &kp ENTER       &kp PAGE_DOWN   &mo 7            &kp INSERT      &none
+&none             &none                        &none   &none   &none          &trans  &kp TAB  &trans      &trans  &kp COMMA  &trans                    &none           &none           &none            &none           &none
             >;
         };
 
         fn {
             display-name = "Fn";
             bindings = <
-&none   &kp F11       &kp F12       &kp F13       &kp F14       &kp F15       &none                                       &none   &kp F16       &kp F17       &kp F18       &kp F19       &kp F20            &none
-&none   &kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &none                                       &none   &kp F6        &kp F7        &kp F8        &kp F9        &kp F10            &none
-&none   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &none   &trans  &trans      &trans  &trans  &none   &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0       &none
-&none   &none         &none         &none         &none         &none                         &trans      &trans                  &kp MINUS     &kp COLON     &kp COMMA     &kp DOT       &kp DOUBLE_QUOTES  &none
-&trans  &kp F21       &kp F22       &kp F23       &kp F24                     &trans  &trans  &trans      &trans  &trans  &trans                &none         &none         &none         &none              &none
+&none   &kp F11       &kp F12       &kp F13       &kp F14       &kp F15       &to 0                                          &none   &kp F16       &kp F17       &kp F18       &kp F19       &kp F20            &none
+&none   &kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &none                                          &none   &kp F6        &kp F7        &kp F8        &kp F9        &kp F10            &none
+&none   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &none   &trans     &trans      &trans  &trans  &none   &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0       &none
+&none   &none         &none         &none         &none         &none                            &trans      &trans                  &kp MINUS     &kp COLON     &kp COMMA     &kp DOT       &kp DOUBLE_QUOTES  &none
+&trans  &kp F21       &kp F22       &kp F23       &kp F24                     &trans  &kp SPACE  &trans      &trans  &trans  &trans                &none         &none         &none         &none              &none
             >;
         };
 
         mod {
             display-name = "Mod";
             bindings = <
-&none           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                  &trans           &none  &none       &none       &none  &none  &none
+&none           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &to 0                                                  &trans           &none  &none       &none       &none  &none  &none
 &none           &none         &none         &none         &none         &none         &bootloader                                            &bootloader      &none  &none       &none       &none  &none  &none
 &studio_unlock  &none         &none         &none         &none         &none         &none        &none  &none      &bt BT_CLR  &none       &stp STP_BAT     &none  &none       &none       &none  &none  &none
 &none           &none         &none         &none         &macro_ver    &none                             &none      &none                                    &none  &none       &none       &none  &none  &none
@@ -210,15 +210,15 @@
             >;
         };
 
-        Symbols {
+        symbols {
             display-name = "Red";
             label = "Symbols";
             bindings = <
-&none  &none            &none           &none             &none           &none        &none                                       &none   &none      &none              &none            &none                 &none              &none
-&none  &kp QUESTION     &kp LEFT_BRACE  &kp PLUS          &kp EQUAL       &none        &none                                       &none   &none      &kp LT             &kp RIGHT_BRACE  &kp PIPE              &kp GT             &none
-&none  &kp EXCLAMATION  &kp AT          &kp HASH          &kp DOLLAR      &kp PERCENT  &none   &trans  &trans      &trans  &trans  &none   &kp CARET  &kp RIGHT_BRACKET  &kp ASTERISK     &kp LEFT_PARENTHESIS  &kp BACKSLASH      &none
-&none  &kp LS(INT_YEN)  &kp AMPERSAND   &kp LEFT_BRACKET  &kp LS(INT_RO)  &kp SLASH                    &trans      &trans                  &kp MINUS  &kp COLON          &kp COMMA        &kp DOT               &kp DOUBLE_QUOTES  &none
-&none  &none            &none           &none             &none                        &trans  &trans  &trans      &trans  &trans  &trans             &none              &none            &none                 &none              &none
+&none  &none            &none           &none             &none           &none        &to 0                                       &none    &none      &none              &none            &none                 &none              &none
+&none  &kp QUESTION     &kp LEFT_BRACE  &kp PLUS          &kp EQUAL       &none        &none                                       &none    &none      &kp LT             &kp RIGHT_BRACE  &kp PIPE              &kp GT             &none
+&none  &kp EXCLAMATION  &kp AT          &kp HASH          &kp DOLLAR      &kp PERCENT  &none   &trans  &trans      &trans  &trans  &none    &kp CARET  &kp RIGHT_BRACKET  &kp ASTERISK     &kp LEFT_PARENTHESIS  &kp BACKSLASH      &none
+&none  &kp LS(INT_YEN)  &kp AMPERSAND   &kp LEFT_BRACKET  &kp LS(INT_RO)  &kp SLASH                    &trans      &trans                   &kp MINUS  &kp COLON          &kp COMMA        &kp DOT               &kp DOUBLE_QUOTES  &none
+&none  &none            &none           &none             &none                        &trans  &trans  &trans      &trans  &trans  &kp DOT             &none              &none            &none                 &none              &none
             >;
         };
 
@@ -226,7 +226,7 @@
             display-name = "Purple";
             label = "Test";
             bindings = <
-&trans  &kp INT1   &kp INT2   &kp INT3   &kp INT4   &kp INT5   &trans                                      &trans  &kp INT6   &kp INT7   &kp INT8   &kp INT9   &trans  &trans
+&trans  &kp INT1   &kp INT2   &kp INT3   &kp INT4   &kp INT5   &to 0                                       &trans  &kp INT6   &kp INT7   &kp INT8   &kp INT9   &trans  &trans
 &trans  &kp LANG1  &kp LANG2  &kp LANG3  &kp LANG4  &kp LANG5  &trans                                      &trans  &kp LANG6  &kp LANG7  &kp LANG8  &kp LANG9  &trans  &trans
 &trans  &trans     &trans     &trans     &trans     &trans     &trans  &trans  &trans      &trans  &trans  &trans  &trans     &trans     &trans     &trans     &trans  &trans
 &trans  &trans     &trans     &trans     &trans     &trans                     &trans      &trans                  &trans     &trans     &trans     &trans     &trans  &trans
@@ -237,27 +237,63 @@
         ya {
             display-name = "Cyan";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &to 0                                       &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &m_yu   &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &m_ya   &m_yi   &m_ye   &m_yo   &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &mo 7   &trans          &trans  &trans  &trans  &trans  &trans
             >;
 
-            label = "ya";
+            label = "Ya";
         };
 
         yaxn {
             display-name = "Yellow";
             bindings = <
-&trans  &trans   &trans  &trans   &trans   &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans   &trans  &m_yuxn  &trans   &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &m_yaxn  &m_yixn &m_yexn  &m_yoxn  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans   &trans  &m_xn    &m_ltu   &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans   &trans  &trans   &trans           &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans   &trans   &trans   &trans   &trans  &to 0                                       &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans   &trans   &m_yuxn  &trans   &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &m_yaxn  &m_yixn  &m_yexn  &m_yoxn  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans   &trans   &m_xn    &m_ltu   &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans   &trans   &trans   &trans           &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
 
-            label = "yaxn";
+            label = "YaXn";
+        };
+
+        hub {
+            bindings = <
+&none  &to 9  &none  &none  &none  &none  &to 0                                  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none                                  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none      &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                &none      &none                &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none         &none  &none  &none      &none  &none  &none         &none  &none  &none  &none  &none
+            >;
+
+            label = "Hub";
+        };
+
+        minecraft {
+            bindings = <
+&none  &kp ESCAPE    &kp F1        &kp F2        &kp F5        &kp F11       &to 0                                                     &none  &none  &none  &none  &none  &none  &none
+&none  &kp Q         &none         &kp W         &kp E         &kp TAB       &none                                                     &none  &none  &none  &none  &none  &none  &none
+&none  &none         &kp A         &kp S         &kp D         &kp F         &none      &none      &kp LEFT_ALT          &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                        &kp LEFT_CONTROL      &none                &none  &none  &none  &none  &none  &none
+&none  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9                &lt 10 F3  &kp SPACE  &kp LEFT_SHIFT        &none  &none  &none         &none  &none  &none  &none  &none
+            >;
+
+            label = "MineCraft";
+        };
+
+        minecraft_f3 {
+            bindings = <
+&none  &none  &none  &none      &none  &none  &to 0                                   &none  &none  &none  &none  &none  &none  &none
+&none  &kp Q  &none  &kp F      &none  &kp P  &none                                   &none  &none  &none  &none  &none  &none  &none
+&none  &kp A  &none  &kp LS(F)  &kp H  &kp G  &none   &none  &none      &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &kp T  &none  &kp D      &kp N  &kp B                 &none      &none                &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none      &none         &kp F3  &none  &none      &none  &none  &none         &none  &none  &none  &none  &none
+            >;
+
+            label = "MineCraft_F3";
         };
     };
 };
