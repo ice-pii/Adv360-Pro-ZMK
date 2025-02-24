@@ -169,33 +169,33 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&none  &mt LEFT_ALT ESCAPE  &none  &none  &none  &none           &sl 8                                                                                                &mo 3      &none  &none  &none  &none    &kp RIGHT_GUI  &none
-&none  &kp Q                &kp J  &kp U  &m_ou  &none           &none                                                                                                &none      &kp F  &kp G  &kp K  &kp Z    &kp P          &none
-&none  &kp A                &kp S  &kp E  &kp O  &kp LS(INT_RO)  &none  &kp LANGUAGE_2  &m_UUU                        &m_Ull                          &kp LANGUAGE_1  &none      &kp D  &kp T  &kp N  &kp I    &kp H          &none
-&none  &kp X                &kp V  &kp C  &kp L  &kp INT_RO                             &mt LEFT_CONTROL MINUS        &mt RIGHT_SHIFT SLASH                                      &kp W  &kp M  &kp R  &lt 6 Y  &kp B          &none
-&none  &none                &none  &none  &none                  &mo 5  &lt 2 SPACE     &mt LEFT_SHIFT SEMICOLON      &mt RIGHT_CONTROL SINGLE_QUOTE  &lt 1 COMMA     &lt 4 DOT         &none  &none  &none    &none          &none
+&none  &mt LEFT_ALT ESCAPE  &none  &none  &none  &none           &sl 8                                                                                              &mo 3      &none  &none  &none  &none    &kp RIGHT_GUI  &none
+&none  &kp Q                &kp J  &kp U  &m_ou  &none           &none                                                                                              &none      &kp F  &kp G  &kp K  &kp Z    &kp P          &none
+&none  &kp A                &kp S  &kp E  &kp O  &kp LS(INT_RO)  &none  &kp LANGUAGE_2  &m_UUU                        &m_Ull                        &kp LANGUAGE_1  &none      &kp D  &kp T  &kp N  &kp I    &kp H          &none
+&none  &kp X                &kp V  &kp C  &kp L  &kp INT_RO                             &mt LEFT_CONTROL MINUS        &mt RIGHT_CONTROL SLASH                                  &kp W  &kp M  &kp R  &lt 6 Y  &kp B          &none
+&none  &none                &none  &none  &none                  &mo 5  &lt 2 SPACE     &mt LEFT_SHIFT SEMICOLON      &mt RIGHT_SHIFT SINGLE_QUOTE  &lt 1 COMMA     &lt 4 DOT         &none  &none  &none    &none          &none
             >;
         };
 
         keypad {
             display-name = "Kp";
             bindings = <
-&none             &mt LEFT_ALT K_CONTEXT_MENU  &none   &none   &none   &none  &to 0                                           &none   &none             &none           &kp PAGE_UP     &none            &none           &none
-&none             &none                        &none   &m_uxn  &none   &none  &none                                           &none   &kp INT_MUHENKAN  &kp HOME        &kp UP_ARROW    &kp END          &kp INT_HENKAN  &none
-&kp LS(CAPSLOCK)  &m_axn                       &m_ixn  &m_exn  &m_oxn  &none  &none   &trans   &trans      &trans  &trans     &none   &kp BACKSPACE     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp DELETE      &none
-&none             &none                        &none   &m_xn   &m_ltu  &none                   &trans      &trans                     &none             &kp ENTER       &kp PAGE_DOWN   &mo 7            &kp INSERT      &none
-&none             &none                        &none   &none   &none          &trans  &kp TAB  &trans      &trans  &kp COMMA  &trans                    &none           &none           &none            &none           &none
+&none             &mt LEFT_ALT K_CONTEXT_MENU  &none   &none   &none   &none  &to 0                                        &none   &none             &none           &kp PAGE_UP     &none            &none           &none
+&none             &none                        &none   &m_uxn  &none   &none  &none                                        &none   &kp INT_MUHENKAN  &kp HOME        &kp UP_ARROW    &kp END          &kp INT_HENKAN  &none
+&kp LS(CAPSLOCK)  &m_axn                       &m_ixn  &m_exn  &m_oxn  &none  &none   &trans   &trans      &trans  &trans  &none   &kp BACKSPACE     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp DELETE      &none
+&none             &none                        &none   &m_xn   &m_ltu  &none                   &trans      &trans                  &none             &kp ENTER       &kp PAGE_DOWN   &mo 7            &kp INSERT      &none
+&none             &none                        &none   &none   &none          &trans  &kp TAB  &trans      &trans  &trans  &trans                    &none           &none           &none            &none           &none
             >;
         };
 
         fn {
             display-name = "Fn";
             bindings = <
-&none   &kp F11       &kp F12       &kp F13       &kp F14       &kp F15       &to 0                                          &none   &kp F16       &kp F17       &kp F18       &kp F19       &kp F20            &none
-&none   &kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &none                                          &none   &kp F6        &kp F7        &kp F8        &kp F9        &kp F10            &none
-&none   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &none   &trans     &trans      &trans  &trans  &none   &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0       &none
-&none   &none         &none         &none         &none         &none                            &trans      &trans                  &kp MINUS     &kp COLON     &kp COMMA     &kp DOT       &kp DOUBLE_QUOTES  &none
-&trans  &kp F21       &kp F22       &kp F23       &kp F24                     &trans  &kp SPACE  &trans      &trans  &trans  &trans                &none         &none         &none         &none              &none
+&none   &kp F11       &kp F12       &kp F13       &kp F14       &kp F15       &to 0                                       &none   &kp F16       &kp F17       &kp F18       &kp F19       &kp F20            &none
+&none   &kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &none                                       &none   &kp F6        &kp F7        &kp F8        &kp F9        &kp F10            &none
+&none   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &none   &trans  &trans      &trans  &trans  &none   &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0       &none
+&none   &none         &none         &none         &none         &none                         &trans      &trans                  &kp MINUS     &kp COLON     &kp COMMA     &kp DOT       &kp DOUBLE_QUOTES  &none
+&trans  &kp F21       &kp F22       &kp F23       &kp F24                     &trans  &trans  &trans      &trans  &trans  &trans                &none         &none         &none         &none              &none
             >;
         };
 
@@ -214,11 +214,11 @@
             display-name = "Red";
             label = "Symbols";
             bindings = <
-&none  &none            &none           &none             &none           &none        &to 0                                       &none    &none      &none              &none            &none                 &none              &none
-&none  &kp QUESTION     &kp LEFT_BRACE  &kp PLUS          &kp EQUAL       &none        &none                                       &none    &none      &kp LT             &kp RIGHT_BRACE  &kp PIPE              &kp GT             &none
-&none  &kp EXCLAMATION  &kp AT          &kp HASH          &kp DOLLAR      &kp PERCENT  &none   &trans  &trans      &trans  &trans  &none    &kp CARET  &kp RIGHT_BRACKET  &kp ASTERISK     &kp LEFT_PARENTHESIS  &kp BACKSLASH      &none
-&none  &kp LS(INT_YEN)  &kp AMPERSAND   &kp LEFT_BRACKET  &kp LS(INT_RO)  &kp SLASH                    &trans      &trans                   &kp MINUS  &kp COLON          &kp COMMA        &kp DOT               &kp DOUBLE_QUOTES  &none
-&none  &none            &none           &none             &none                        &trans  &trans  &trans      &trans  &trans  &kp DOT             &none              &none            &none                 &none              &none
+&none  &none            &none           &none             &none           &none        &to 0                                       &none   &none      &none              &none            &none                 &none              &none
+&none  &kp QUESTION     &kp LEFT_BRACE  &kp PLUS          &kp EQUAL       &none        &none                                       &none   &none      &kp LT             &kp RIGHT_BRACE  &kp PIPE              &kp GT             &none
+&none  &kp EXCLAMATION  &kp AT          &kp HASH          &kp DOLLAR      &kp PERCENT  &none   &trans  &trans      &trans  &trans  &none   &kp CARET  &kp RIGHT_BRACKET  &kp ASTERISK     &kp LEFT_PARENTHESIS  &kp BACKSLASH      &none
+&none  &kp LS(INT_YEN)  &kp AMPERSAND   &kp LEFT_BRACKET  &kp LS(INT_RO)  &kp SLASH                    &trans      &trans                  &kp MINUS  &kp COLON          &kp COMMA        &kp DOT               &kp DOUBLE_QUOTES  &none
+&none  &none            &none           &none             &none                        &trans  &trans  &trans      &trans  &trans  &trans             &none              &none            &none                 &none              &none
             >;
         };
 
@@ -274,26 +274,14 @@
 
         minecraft {
             bindings = <
-&none  &kp ESCAPE    &kp F1        &kp F2        &kp F5        &kp F11       &to 0                                                     &none  &none  &none  &none  &none  &none  &none
-&none  &kp Q         &none         &kp W         &kp E         &kp TAB       &none                                                     &none  &none  &none  &none  &none  &none  &none
-&none  &none         &kp A         &kp S         &kp D         &kp F         &none      &none      &kp LEFT_ALT          &none  &none  &none  &none  &none  &none  &none  &none  &none
-&none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                        &kp LEFT_CONTROL      &none                &none  &none  &none  &none  &none  &none
-&none  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9                &lt 10 F3  &kp SPACE  &kp LEFT_SHIFT        &none  &none  &none         &none  &none  &none  &none  &none
+&none  &kp ESCAPE    &kp F1        &kp F2        &kp F5        &kp F11       &to 0                                                  &none  &none  &none  &none  &none  &none  &none
+&none  &kp Q         &none         &kp W         &kp E         &kp TAB       &none                                                  &none  &none  &none  &none  &none  &none  &none
+&none  &none         &kp A         &kp S         &kp D         &kp F         &none   &kp L      &kp LEFT_ALT          &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                     &kp LEFT_CONTROL      &none                &none  &none  &none  &none  &none  &none
+&none  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9                &kp F3  &kp SPACE  &kp LEFT_SHIFT        &none  &none  &none         &none  &none  &none  &none  &none
             >;
 
             label = "MineCraft";
-        };
-
-        minecraft_f3 {
-            bindings = <
-&none  &none  &none  &none      &none  &none  &to 0                                   &none  &none  &none  &none  &none  &none  &none
-&none  &kp Q  &none  &kp F      &none  &kp P  &none                                   &none  &none  &none  &none  &none  &none  &none
-&none  &kp A  &none  &kp LS(F)  &kp H  &kp G  &none   &none  &none      &none  &none  &none  &none  &none  &none  &none  &none  &none
-&none  &kp T  &none  &kp D      &kp N  &kp B                 &none      &none                &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none      &none         &kp F3  &none  &none      &none  &none  &none         &none  &none  &none  &none  &none
-            >;
-
-            label = "MineCraft_F3";
         };
     };
 };
