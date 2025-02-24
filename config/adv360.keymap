@@ -71,6 +71,20 @@
             label = "M_YAXN";
         };
 
+        m_yi: m_yi {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Y &kp I>;
+            label = "M_YI";
+        };
+
+        m_yixn: m_yixn {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Y &kp I &kp X &kp N>;
+            label = "M_YIXN";
+        };
+
         m_yu: m_yu {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -225,7 +239,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &m_yu   &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &m_ya   &trans  &m_ye   &m_yo   &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &m_ya   &m_yi   &m_ye   &m_yo   &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &mo 7   &trans          &trans  &trans  &trans  &trans  &trans
             >;
@@ -238,8 +252,8 @@
             bindings = <
 &trans  &trans   &trans  &trans   &trans   &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans   &trans  &m_yuxn  &trans   &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &m_yaxn  &trans  &m_yexn  &m_yoxn  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans   &trans  &trans   &trans   &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &m_yaxn  &m_yixn &m_yexn  &m_yoxn  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans   &trans  &m_xn    &m_ltu   &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans   &trans  &trans   &trans           &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
 
