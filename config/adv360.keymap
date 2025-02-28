@@ -141,11 +141,11 @@
             label = "M_XN";
         };
 
-        m_ltu: m_ltu {
+        m__xn: m__xn {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp L &kp T &kp U>;
-            label = "M_LTU";
+            bindings = <&kp MINUS &kp X &kp N>;
+            label = "M__XN";
         };
 
         m_UUU: m_UUU {
@@ -169,44 +169,44 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&none  &mt LEFT_ALT ESCAPE  &none  &none  &none  &none           &sl 8                                                                                              &mo 3      &none  &none  &none  &none    &kp RIGHT_GUI  &none
-&none  &kp Q                &kp J  &kp U  &m_ou  &none           &none                                                                                              &none      &kp F  &kp G  &kp K  &kp Z    &kp P          &none
-&none  &kp A                &kp S  &kp E  &kp O  &kp LS(INT_RO)  &none  &kp LANGUAGE_2  &m_UUU                        &m_Ull                        &kp LANGUAGE_1  &none      &kp D  &kp T  &kp N  &kp I    &kp H          &none
-&none  &kp X                &kp V  &kp C  &kp L  &kp INT_RO                             &mt LEFT_CONTROL MINUS        &mt RIGHT_CONTROL SLASH                                  &kp W  &kp M  &kp R  &lt 6 Y  &kp B          &none
-&none  &none                &none  &none  &none                  &mo 5  &lt 2 SPACE     &mt LEFT_SHIFT SEMICOLON      &mt RIGHT_SHIFT SINGLE_QUOTE  &lt 1 COMMA     &lt 4 DOT         &none  &none  &none    &none          &none
+&none             &kp ESCAPE    &none  &none  &none  &none           &sl 8                                                                                                    &mo 3      &none  &none  &none  &none    &kp RIGHT_GUI  &none
+&none             &kp Q         &kp J  &kp U  &m_ou  &none           &none                                                                                                    &none      &kp F  &kp G  &kp K  &kp Z    &kp P          &none
+&kp TAB           &kp A         &kp S  &kp E  &kp O  &kp LS(INT_RO)  &none        &kp LANGUAGE_2  &kp LEFT_ALT                  &kp RIGHT_ALT                 &kp LANGUAGE_1  &none      &kp D  &kp T  &kp N  &kp I    &kp H          &none
+&kp LEFT_CONTROL  &kp X         &kp V  &kp C  &kp L  &kp INT_RO                                   &mt LEFT_CONTROL MINUS        &mt RIGHT_CONTROL SLASH                                  &kp W  &kp M  &kp R  &lt 6 Y  &kp B          &kp RIGHT_CONTROL
+&kp LEFT_SHIFT    &kp LEFT_ALT  &none  &none  &none                  &lt 5 COMMA  &lt 2 SPACE     &mt LEFT_SHIFT SEMICOLON      &mt RIGHT_SHIFT SINGLE_QUOTE  &lt 1 SPACE     &lt 4 DOT         &none  &none  &none    &kp RIGHT_ALT  &kp RIGHT_SHIFT
             >;
         };
 
         keypad {
             display-name = "Kp";
             bindings = <
-&none             &mt LEFT_ALT K_CONTEXT_MENU  &none   &none   &none   &none  &to 0                                        &none   &none             &none           &kp PAGE_UP     &none            &none           &none
-&none             &none                        &none   &m_uxn  &none   &none  &none                                        &none   &kp INT_MUHENKAN  &kp HOME        &kp UP_ARROW    &kp END          &kp INT_HENKAN  &none
-&kp LS(CAPSLOCK)  &m_axn                       &m_ixn  &m_exn  &m_oxn  &none  &none   &trans   &trans      &trans  &trans  &none   &kp BACKSPACE     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp DELETE      &none
-&none             &none                        &none   &m_xn   &m_ltu  &none                   &trans      &trans                  &none             &kp ENTER       &kp PAGE_DOWN   &mo 7            &kp INSERT      &none
-&none             &none                        &none   &none   &none          &trans  &kp TAB  &trans      &trans  &trans  &trans                    &none           &none           &none            &none           &none
+&trans            &trans  &trans  &trans  &trans  &trans  &to 0                                        &trans  &trans            &trans          &kp PAGE_UP     &trans           &trans          &trans
+&trans            &trans  &trans  &m_uxn  &trans  &trans  &trans                                       &trans  &kp INT_MUHENKAN  &kp HOME        &kp UP_ARROW    &kp END          &kp INT_HENKAN  &trans
+&kp LS(CAPSLOCK)  &m_axn  &m_ixn  &m_exn  &m_oxn  &trans  &trans  &trans   &trans      &trans  &trans  &trans  &kp BACKSPACE     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp DELETE      &trans
+&trans            &trans  &trans  &m_xn   &m__xn  &trans                   &trans      &trans                  &trans            &kp ENTER       &kp PAGE_DOWN   &mo 7            &kp INSERT      &trans
+&trans            &trans  &trans  &trans  &trans          &trans  &kp TAB  &trans      &trans  &trans  &trans                    &kp F10         &m_UUU          &m_Ull           &trans          &trans
             >;
         };
 
         fn {
             display-name = "Fn";
             bindings = <
-&none   &kp F11       &kp F12       &kp F13       &kp F14       &kp F15       &to 0                                       &none   &kp F16       &kp F17       &kp F18       &kp F19       &kp F20            &none
-&none   &kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &none                                       &none   &kp F6        &kp F7        &kp F8        &kp F9        &kp F10            &none
-&none   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &none   &trans  &trans      &trans  &trans  &none   &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0       &none
-&none   &none         &none         &none         &none         &none                         &trans      &trans                  &kp MINUS     &kp COLON     &kp COMMA     &kp DOT       &kp DOUBLE_QUOTES  &none
-&trans  &kp F21       &kp F22       &kp F23       &kp F24                     &trans  &trans  &trans      &trans  &trans  &trans                &none         &none         &none         &none              &none
+&trans  &kp F11          &kp F12        &kp F13           &kp F14       &kp F15       &to 0                                       &trans  &kp F16        &kp F17       &kp F18       &kp F19       &kp F20            &trans
+&trans  &kp F1           &kp F2         &kp F3            &kp F4        &kp F5        &trans                                      &trans  &kp F6         &kp F7        &kp F8        &kp F9        &kp F10            &trans
+&trans  &kp NUMBER_1     &kp NUMBER_2   &kp NUMBER_3      &kp NUMBER_4  &kp NUMBER_5  &trans  &trans  &trans      &trans  &trans  &trans  &kp NUMBER_6   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0       &trans
+&trans  &kp LS(INT_YEN)  &kp AMPERSAND  &kp LEFT_BRACKET  &kp PERCENT   &kp SLASH                     &trans      &trans                  &kp LS(MINUS)  &kp COLON     &kp COMMA     &kp DOT       &kp DOUBLE_QUOTES  &trans
+&trans  &kp F21          &kp F22        &kp F23           &kp F24                     &trans  &trans  &trans      &trans  &trans  &trans                 &trans        &trans        &trans        &trans             &trans
             >;
         };
 
         mod {
             display-name = "Mod";
             bindings = <
-&none           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &to 0                                                  &trans           &none  &none       &none       &none  &none  &none
-&none           &none         &none         &none         &none         &none         &bootloader                                            &bootloader      &none  &none       &none       &none  &none  &none
-&studio_unlock  &none         &none         &none         &none         &none         &none        &none  &none      &bt BT_CLR  &none       &stp STP_BAT     &none  &none       &none       &none  &none  &none
-&none           &none         &none         &none         &macro_ver    &none                             &none      &none                                    &none  &none       &none       &none  &none  &none
-&none           &none         &none         &none         &none                       &none        &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG         &bl BL_INC  &bl BL_DEC  &none  &none  &none
+&trans          &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &to 0                                                    &trans           &trans  &trans      &trans      &trans  &trans  &trans
+&trans          &trans        &trans        &trans        &trans        &trans        &bootloader                                              &bootloader      &trans  &trans      &trans      &trans  &trans  &trans
+&studio_unlock  &trans        &trans        &trans        &trans        &trans        &trans       &trans  &trans      &bt BT_CLR  &trans      &stp STP_BAT     &trans  &trans      &trans      &trans  &trans  &trans
+&trans          &trans        &trans        &trans        &macro_ver    &trans                             &trans      &trans                                   &trans  &trans      &trans      &trans  &trans  &trans
+&trans          &trans        &trans        &trans        &trans                      &trans       &trans  &trans      &trans      &bl BL_TOG  &rgb_ug RGB_TOG          &bl BL_INC  &bl BL_DEC  &trans  &trans  &trans
             >;
         };
 
@@ -214,11 +214,11 @@
             display-name = "Red";
             label = "Symbols";
             bindings = <
-&none  &none            &none           &none             &none           &none        &to 0                                       &none   &none      &none              &none            &none                 &none              &none
-&none  &kp QUESTION     &kp LEFT_BRACE  &kp PLUS          &kp EQUAL       &none        &none                                       &none   &none      &kp LT             &kp RIGHT_BRACE  &kp PIPE              &kp GT             &none
-&none  &kp EXCLAMATION  &kp AT          &kp HASH          &kp DOLLAR      &kp PERCENT  &none   &trans  &trans      &trans  &trans  &none   &kp CARET  &kp RIGHT_BRACKET  &kp ASTERISK     &kp LEFT_PARENTHESIS  &kp BACKSLASH      &none
-&none  &kp LS(INT_YEN)  &kp AMPERSAND   &kp LEFT_BRACKET  &kp LS(INT_RO)  &kp SLASH                    &trans      &trans                  &kp MINUS  &kp COLON          &kp COMMA        &kp DOT               &kp DOUBLE_QUOTES  &none
-&none  &none            &none           &none             &none                        &trans  &trans  &trans      &trans  &trans  &trans             &none              &none            &none                 &none              &none
+&trans  &trans           &trans          &trans            &trans       &trans          &to 0                                       &trans  &trans         &trans             &trans           &trans                &trans             &trans
+&trans  &kp QUESTION     &kp LEFT_BRACE  &kp PLUS          &kp EQUAL    &trans          &trans                                      &trans  &trans         &kp LT             &kp RIGHT_BRACE  &kp PIPE              &kp GT             &trans
+&trans  &kp EXCLAMATION  &kp AT          &kp HASH          &kp DOLLAR   &kp LS(INT_RO)  &trans  &trans  &trans      &trans  &trans  &trans  &kp CARET      &kp RIGHT_BRACKET  &kp ASTERISK     &kp LEFT_PARENTHESIS  &kp BACKSLASH      &trans
+&trans  &kp LS(INT_YEN)  &kp AMPERSAND   &kp LEFT_BRACKET  &kp PERCENT  &kp SLASH                       &trans      &trans                  &kp LS(MINUS)  &kp COLON          &kp COMMA        &kp DOT               &kp DOUBLE_QUOTES  &trans
+&trans  &trans           &trans          &trans            &trans                       &trans  &trans  &trans      &trans  &trans  &trans                 &trans             &trans           &trans                &trans             &trans
             >;
         };
 
@@ -253,7 +253,7 @@
 &trans  &trans   &trans   &trans   &trans   &trans  &to 0                                       &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans   &trans   &m_yuxn  &trans   &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &m_yaxn  &m_yixn  &m_yexn  &m_yoxn  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans   &trans   &m_xn    &m_ltu   &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans   &trans   &m_xn    &m__xn   &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans   &trans   &trans   &trans           &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
 
