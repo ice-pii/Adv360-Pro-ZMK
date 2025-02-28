@@ -134,7 +134,21 @@
             label = "M_OU";
         };
 
-        m_xn: m_xn {
+        m_you: m_you {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Y &kp O &kp U>;
+            label = "M_YOU";
+        };
+
+        m_youxn: m_youxn {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Y &kp O &kp U &kp X &kp N>;
+            label = "M_YOUXN";
+        };
+
+         m_xn: m_xn {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp X &kp N>;
@@ -173,7 +187,7 @@
 &none             &kp Q         &kp J  &kp U  &m_ou  &none           &none                                                                                                    &none      &kp F  &kp G  &kp K  &kp Z    &kp P          &none
 &kp TAB           &kp A         &kp S  &kp E  &kp O  &kp LS(INT_RO)  &none        &kp LANGUAGE_2  &kp LEFT_ALT                  &kp RIGHT_ALT                 &kp LANGUAGE_1  &none      &kp D  &kp T  &kp N  &kp I    &kp H          &none
 &kp LEFT_CONTROL  &kp X         &kp V  &kp C  &kp L  &kp INT_RO                                   &mt LEFT_CONTROL MINUS        &mt RIGHT_CONTROL SLASH                                  &kp W  &kp M  &kp R  &lt 6 Y  &kp B          &kp RIGHT_CONTROL
-&kp LEFT_SHIFT    &kp LEFT_ALT  &none  &none  &none                  &lt 5 COMMA  &lt 2 SPACE     &mt LEFT_SHIFT SEMICOLON      &mt RIGHT_SHIFT SINGLE_QUOTE  &lt 1 SPACE     &lt 4 DOT         &none  &none  &none    &kp RIGHT_ALT  &kp RIGHT_SHIFT
+&kp LEFT_SHIFT    &kp LEFT_ALT  &none  &none  &none                  &lt 6 COMMA  &lt 2 SPACE     &mt LEFT_SHIFT SEMICOLON      &mt RIGHT_SHIFT SINGLE_QUOTE  &lt 1 SPACE     &lt 4 DOT         &none  &none  &none    &kp RIGHT_ALT  &kp RIGHT_SHIFT
             >;
         };
 
@@ -238,7 +252,7 @@
             display-name = "Cyan";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &to 0                                       &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &m_yu   &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &m_yu   &m_you  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &m_ya   &m_yi   &m_ye   &m_yo   &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &mo 7   &trans          &trans  &trans  &trans  &trans  &trans
@@ -250,10 +264,10 @@
         yaxn {
             display-name = "Yellow";
             bindings = <
-&trans  &trans   &trans   &trans   &trans   &trans  &to 0                                       &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans   &trans   &m_yuxn  &trans   &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &m_yaxn  &m_yixn  &m_yexn  &m_yoxn  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans   &trans   &m_xn    &m__xn   &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans   &trans   &trans   &trans    &trans  &to 0                                       &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans   &trans   &m_yuxn  &m_youxn  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &m_yaxn  &m_yixn  &m_yexn  &m_yoxn   &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans   &trans   &m_xn    &m__xn    &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans   &trans   &trans   &trans           &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
 
