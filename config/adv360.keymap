@@ -22,6 +22,20 @@
     };
 
     macros {
+        m_ou: m_ou {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp O &kp U>;
+            label = "M_OU";
+        };
+
+        m_uu: m_uu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp U &kp U>;
+            label = "M_UU";
+        };
+        
         m_axn: m_axn {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -127,13 +141,6 @@
             label = "M_YOXN";
         };
 
-        m_ou: m_ou {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp O &kp U>;
-            label = "M_OU";
-        };
-
         m_you: m_you {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -175,13 +182,6 @@
             bindings = <&kp F10 &kp F10 &kp F10>;
             label = "M_ULL";
         };
-
-        m_uu: m_uu {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp U &kp U>;
-            label = "M_UU";
-        };
     };
 
     keymap {
@@ -204,8 +204,8 @@
 &trans            &trans  &trans  &trans  &trans  &trans  &to 0                                                               &trans   &trans            &trans          &kp PAGE_UP     &trans           &trans          &trans
 &trans            &trans  &trans  &m_uxn  &trans  &trans  &trans                                                              &trans   &kp INT_MUHENKAN  &kp HOME        &kp UP_ARROW    &kp END          &kp INT_HENKAN  &trans
 &kp LS(CAPSLOCK)  &m_axn  &m_ixn  &m_exn  &m_oxn  &trans  &trans     &trans   &trans             &trans            &trans     &trans   &kp BACKSPACE     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp DELETE      &trans
-&trans            &trans  &trans  &m_xn   &m__xn  &trans                      &kp MINUS          &kp SLASH                             &trans            &kp ENTER       &kp PAGE_DOWN   &mo 7            &kp INSERT      &trans
-&trans            &trans  &trans  &trans  &trans          &kp COMMA  &kp TAB  &kp SEMICOLON      &kp SINGLE_QUOTE  &kp SPACE  &kp DOT                    &kp F10         &m_UUU          &m_Ull           &trans          &trans
+&trans            &trans  &trans  &m_xn   &m__xn  &trans                      &kp MINUS          &kp SLASH                             &trans            &kp ENTER       &kp PAGE_DOWN   &trans           &kp INSERT      &trans
+&trans            &trans  &trans  &trans  &trans          &kp COMMA  &kp TAB  &kp SEMICOLON      &kp SINGLE_QUOTE  &kp SPACE  &kp DOT                    &m_Ull          &m_UUU          &mo 7            &trans          &trans
             >;
         };
 
