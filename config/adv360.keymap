@@ -191,9 +191,9 @@
             display-name = "Base";
             bindings = <
 &kp ESCAPE        &none  &none  &m_uu  &none  &none           &sl 8                                                                                                    &none      &none  &none  &none  &none  &none  &none
-&kp LEFT_GUI      &kp Q  &kp Y  &kp U  &m_ou  &none           &none                                                                                                    &none      &kp F  &kp G  &kp K  &kp Z  &kp P  &kp RIGHT_GUI
+&kp LEFT_GUI      &kp Q  &kp Y  &kp U  &m_ou  &none           &none                                                                                                    &none      &kp F  &kp G  &kp K  &kp J  &kp P  &kp RIGHT_GUI
 &kp TAB           &kp A  &kp I  &kp E  &kp O  &kp LS(INT_RO)  &none        &kp LANGUAGE_2  &kp LEFT_ALT                  &kp RIGHT_ALT                 &kp LANGUAGE_1  &none      &kp D  &kp T  &kp N  &kp S  &kp H  &none
-&kp LEFT_CONTROL  &kp V  &kp C  &kp W  &kp L  &kp INT_RO                                   &mt LEFT_CONTROL MINUS        &mt RIGHT_CONTROL SLASH                                  &kp X  &kp M  &kp R  &kp J  &kp B  &kp RIGHT_CONTROL
+&kp LEFT_CONTROL  &kp V  &kp C  &kp W  &kp L  &kp INT_RO                                   &mt LEFT_CONTROL MINUS        &mt RIGHT_CONTROL SLASH                                  &kp X  &kp M  &kp R  &kp Z  &kp B  &kp RIGHT_CONTROL
 &kp LEFT_SHIFT    &none  &none  &none  &none                  &lt 6 COMMA  &lt 2 SPACE     &mt LEFT_SHIFT SEMICOLON      &mt RIGHT_SHIFT SINGLE_QUOTE  &lt 1 SPACE     &lt 4 DOT         &mo 6  &none  &none  &none  &kp RIGHT_SHIFT
             >;
         };
