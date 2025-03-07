@@ -182,6 +182,34 @@
             bindings = <&kp F10 &kp F10 &kp F10>;
             label = "M_ULL";
         };
+
+        m_ouxn: m_ouxn {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp O &kp U &kp X &kp N>;
+            label = "M_OUXN";
+        };
+
+        m_uuxn: m_uuxn {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp U &kp U &kp X &kp N>;
+            label = "M_UUXN";
+        };
+
+        m_yuu: m_yuu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Y &kp U &kp U>;
+            label = "M_YUU";
+        };
+
+        m_yuuxn: m_yuuxn {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp Y &kp U &kp U &kp X &kp N>;
+            label = "M_YUUXN";
+        };
     };
 
     keymap {
@@ -190,33 +218,33 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp ESCAPE        &none  &none  &m_uu  &none  &none           &sl 8                                                                                                    &none      &none  &none  &none  &none  &none  &none
-&kp LEFT_GUI      &kp Q  &kp Y  &kp U  &m_ou  &none           &none                                                                                                    &none      &kp F  &kp G  &kp K  &kp J  &kp P  &kp RIGHT_GUI
-&kp TAB           &kp A  &kp I  &kp E  &kp O  &kp LS(INT_RO)  &none        &kp LANGUAGE_2  &kp LEFT_ALT                  &kp RIGHT_ALT                 &kp LANGUAGE_1  &none      &kp D  &kp T  &kp N  &kp S  &kp H  &none
-&kp LEFT_CONTROL  &kp V  &kp C  &kp W  &kp L  &kp INT_RO                                   &mt LEFT_CONTROL MINUS        &mt RIGHT_CONTROL SLASH                                  &kp X  &kp M  &kp R  &kp Z  &kp B  &kp RIGHT_CONTROL
-&kp LEFT_SHIFT    &none  &none  &none  &none                  &lt 6 COMMA  &lt 2 SPACE     &mt LEFT_SHIFT SEMICOLON      &mt RIGHT_SHIFT SINGLE_QUOTE  &lt 1 SPACE     &lt 4 DOT         &mo 6  &none  &none  &none  &kp RIGHT_SHIFT
+&kp ESCAPE        &none  &none  &m_uu             &none  &none           &sl 8                                                                                                    &none      &none  &none  &none  &none  &none  &none
+&kp LEFT_GUI      &kp L  &kp Y  &kp U             &kp E  &kp Q           &none                                                                                                    &none      &kp F  &kp G  &kp K  &kp J  &kp P  &kp RIGHT_GUI
+&kp TAB           &kp W  &kp I  &kp A             &kp O  &kp LS(INT_RO)  &none        &kp LANGUAGE_2  &kp LEFT_ALT                  &kp RIGHT_ALT                 &kp LANGUAGE_1  &none      &kp D  &kp T  &kp N  &kp S  &kp H  &none
+&kp LEFT_CONTROL  &kp V  &kp C  &kp LEFT_BRACKET  &m_ou  &kp INT_RO                                   &mt LEFT_CONTROL MINUS        &mt RIGHT_CONTROL SLASH                                  &kp X  &kp M  &kp R  &kp Z  &kp B  &kp RIGHT_CONTROL
+&kp LEFT_SHIFT    &none  &none  &none             &none                  &lt 6 COMMA  &lt 2 SPACE     &mt LEFT_SHIFT SEMICOLON      &mt RIGHT_SHIFT SINGLE_QUOTE  &lt 1 SPACE     &lt 4 DOT         &mo 6  &none  &none  &none  &kp RIGHT_SHIFT
             >;
         };
 
         keypad {
             display-name = "Kp";
             bindings = <
-&trans            &trans  &trans  &trans  &trans  &trans  &to 0                                                               &trans   &trans            &trans          &kp PAGE_UP     &trans           &trans          &trans
-&trans            &trans  &trans  &m_uxn  &trans  &trans  &trans                                                              &trans   &kp INT_MUHENKAN  &kp HOME        &kp UP_ARROW    &kp END          &kp INT_HENKAN  &trans
-&kp LS(CAPSLOCK)  &m_axn  &m_ixn  &m_exn  &m_oxn  &trans  &trans     &trans   &trans             &trans            &trans     &trans   &kp BACKSPACE     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp DELETE      &trans
-&trans            &trans  &trans  &m_xn   &m__xn  &trans                      &kp MINUS          &kp SLASH                             &trans            &kp ENTER       &kp PAGE_DOWN   &trans           &kp INSERT      &trans
-&trans            &trans  &trans  &trans  &trans          &kp COMMA  &kp TAB  &kp SEMICOLON      &kp SINGLE_QUOTE  &kp SPACE  &kp DOT                    &mo 7           &m_UUU          &m_Ull           &trans          &trans
+&trans            &trans  &trans  &m_uuxn  &trans   &trans  &to 0                                                               &trans   &trans            &trans          &kp PAGE_UP     &trans           &trans          &trans
+&trans            &trans  &trans  &m_uxn   &m_exn   &trans  &trans                                                              &trans   &kp INT_MUHENKAN  &kp HOME        &kp UP_ARROW    &kp END          &kp INT_HENKAN  &trans
+&kp LS(CAPSLOCK)  &trans  &m_ixn  &m_axn   &m_oxn   &trans  &trans     &trans   &trans             &trans            &trans     &trans   &kp BACKSPACE     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp DELETE      &trans
+&trans            &trans  &m__xn  &m_xn    &m_ouxn  &trans                      &kp MINUS          &kp SLASH                             &trans            &kp ENTER       &kp PAGE_DOWN   &trans           &kp INSERT      &trans
+&trans            &trans  &trans  &trans   &trans           &kp COMMA  &kp TAB  &kp SEMICOLON      &kp SINGLE_QUOTE  &kp SPACE  &kp DOT                    &mo 7           &m_UUU          &m_Ull           &trans          &trans
             >;
         };
 
         fn {
             display-name = "Fn";
             bindings = <
-&trans  &kp F11          &kp F12        &kp F13           &kp F14       &kp F15       &to 0                                                                 &trans   &kp F16        &kp F17       &kp F18       &kp F19       &kp F20            &trans
-&trans  &kp F1           &kp F2         &kp F3            &kp F4        &kp F5        &trans                                                                &trans   &kp F6         &kp F7        &kp F8        &kp F9        &kp F10            &trans
-&trans  &kp NUMBER_1     &kp NUMBER_2   &kp NUMBER_3      &kp NUMBER_4  &kp NUMBER_5  &trans     &trans     &trans             &trans            &trans     &trans   &kp NUMBER_6   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0       &trans
-&trans  &kp LS(INT_YEN)  &kp AMPERSAND  &kp LEFT_BRACKET  &kp PERCENT   &kp SLASH                           &kp MINUS          &kp SLASH                             &kp LS(MINUS)  &kp COLON     &kp COMMA     &kp DOT       &kp DOUBLE_QUOTES  &trans
-&trans  &kp F21          &kp F22        &kp F23           &kp F24                     &kp COMMA  &kp SPACE  &kp SEMICOLON      &kp SINGLE_QUOTE  &kp SPACE  &kp DOT                 &trans        &trans        &trans        &trans             &trans
+&trans  &kp F11          &kp F12        &kp F13       &kp F14       &kp F15       &to 0                                                                 &trans   &kp F16        &kp F17       &kp F18       &kp F19       &kp F20            &trans
+&trans  &kp F1           &kp F2         &kp F3        &kp F4        &kp F5        &trans                                                                &trans   &kp F6         &kp F7        &kp F8        &kp F9        &kp F10            &trans
+&trans  &kp NUMBER_1     &kp NUMBER_2   &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &trans     &trans     &trans             &trans            &trans     &trans   &kp NUMBER_6   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0       &trans
+&trans  &kp LS(INT_YEN)  &kp AMPERSAND  &trans        &kp PERCENT   &trans                              &kp MINUS          &kp SLASH                             &kp LS(MINUS)  &kp COLON     &kp COMMA     &kp DOT       &kp DOUBLE_QUOTES  &trans
+&trans  &kp F21          &kp F22        &kp F23       &kp F24                     &kp COMMA  &kp SPACE  &kp SEMICOLON      &kp SINGLE_QUOTE  &kp SPACE  &kp DOT                 &trans        &trans        &trans        &trans             &trans
             >;
         };
 
@@ -235,11 +263,11 @@
             display-name = "Red";
             label = "Symbols";
             bindings = <
-&trans  &trans           &trans          &trans            &trans       &trans          &to 0                                                                 &trans   &trans         &trans             &trans           &trans                &trans             &trans
-&trans  &kp QUESTION     &kp LEFT_BRACE  &kp PLUS          &kp EQUAL    &trans          &trans                                                                &trans   &trans         &kp LT             &kp RIGHT_BRACE  &kp PIPE              &kp GT             &trans
-&trans  &kp EXCLAMATION  &kp AT          &kp HASH          &kp DOLLAR   &kp LS(INT_RO)  &trans     &trans     &trans             &trans            &trans     &trans   &kp CARET      &kp RIGHT_BRACKET  &kp ASTERISK     &kp LEFT_PARENTHESIS  &kp BACKSLASH      &trans
-&trans  &kp LS(INT_YEN)  &kp AMPERSAND   &kp LEFT_BRACKET  &kp PERCENT  &kp SLASH                             &kp MINUS          &kp SLASH                             &kp LS(MINUS)  &kp COLON          &kp COMMA        &kp DOT               &kp DOUBLE_QUOTES  &trans
-&trans  &trans           &trans          &trans            &trans                       &kp COMMA  &kp SPACE  &kp SEMICOLON      &kp SINGLE_QUOTE  &kp SPACE  &kp DOT                 &trans             &trans           &trans                &trans             &trans
+&trans  &trans           &trans          &trans    &trans       &trans          &to 0                                                                 &trans   &trans         &trans             &trans           &trans                &trans             &trans
+&trans  &kp QUESTION     &kp LEFT_BRACE  &kp PLUS  &kp EQUAL    &trans          &trans                                                                &trans   &trans         &kp LT             &kp RIGHT_BRACE  &kp PIPE              &kp GT             &trans
+&trans  &kp EXCLAMATION  &kp AT          &kp HASH  &kp DOLLAR   &kp LS(INT_RO)  &trans     &trans     &trans             &trans            &trans     &trans   &kp CARET      &kp RIGHT_BRACKET  &kp ASTERISK     &kp LEFT_PARENTHESIS  &kp BACKSLASH      &trans
+&trans  &kp LS(INT_YEN)  &kp AMPERSAND   &trans    &kp PERCENT  &trans                                &kp MINUS          &kp SLASH                             &kp LS(MINUS)  &kp COLON          &kp COMMA        &kp DOT               &kp DOUBLE_QUOTES  &trans
+&trans  &trans           &trans          &trans    &trans                       &kp COMMA  &kp SPACE  &kp SEMICOLON      &kp SINGLE_QUOTE  &kp SPACE  &kp DOT                 &trans             &trans           &trans                &trans             &trans
             >;
         };
 
@@ -258,10 +286,10 @@
         ya {
             display-name = "Cyan";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &to 0                                       &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &m_yu   &m_you  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &m_ya   &m_yi   &m_ye   &m_yo   &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &m_yuu  &trans  &trans  &to 0                                       &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &m_yu   &m_ye   &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &m_yi   &m_ya   &m_yo   &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &m_you  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &mo 7   &trans          &trans  &trans  &trans  &trans  &trans
             >;
 
@@ -271,11 +299,11 @@
         yaxn {
             display-name = "Yellow";
             bindings = <
-&trans  &trans   &trans   &trans   &trans    &trans  &to 0                                       &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans   &trans   &m_yuxn  &m_youxn  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &m_yaxn  &m_yixn  &m_yexn  &m_yoxn   &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans   &trans   &trans   &trans    &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans   &trans   &trans   &trans            &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans   &m_yuuxn  &trans    &trans  &to 0                                       &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans   &m_yuxn   &m_yexn   &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &m_yixn  &m_yaxn   &m_yoxn   &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans   &trans    &m_youxn  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans   &trans    &trans            &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
 
             label = "YaXn";
