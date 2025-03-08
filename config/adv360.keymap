@@ -244,11 +244,11 @@
         keypad {
             display-name = "Kp";
             bindings = <
-&trans  &trans          &trans               &trans         &trans               &trans            &to 0                                        &trans  &trans         &trans          &trans          &trans           &trans      &trans
-&trans  &trans          &kp LANGUAGE_2       &kp PAGE_UP    &kp LANGUAGE_1       &trans            &trans                                       &trans  &trans         &kp HOME        &kp UP_ARROW    &kp END          &kp INSERT  &trans
-&trans  &sk LEFT_SHIFT  &kp INTERNATIONAL_5  &kp PAGE_DOWN  &kp INTERNATIONAL_4  &kp LS(CAPSLOCK)  &trans  &trans   &trans      &trans  &trans  &trans  &kp BACKSPACE  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp DELETE  &trans
-&trans  &trans          &kp F10              &m_UUU         &m_Ull               &trans                             &trans      &trans                  &trans         &kp ENTER       &kp COMMA       &kp DOT          &trans      &trans
-&trans  &trans          &trans               &trans         &trans                                 &trans  &kp TAB  &trans      &trans  &trans  &trans                 &trans          &trans          &trans           &trans      &trans
+&trans  &trans          &trans          &trans               &trans          &trans            &to 0                                        &trans  &trans         &trans          &trans          &trans           &trans      &trans
+&trans  &trans          &kp LANGUAGE_2  &kp INTERNATIONAL_5  &kp LANGUAGE_1  &trans            &trans                                       &trans  &kp PAGE_UP    &kp HOME        &kp UP_ARROW    &kp END          &kp INSERT  &trans
+&trans  &sk LEFT_SHIFT  &kp F7          &kp INTERNATIONAL_4  &kp F6          &kp LS(CAPSLOCK)  &trans  &trans   &trans      &trans  &trans  &trans  &kp BACKSPACE  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp DELETE  &trans
+&trans  &trans          &kp F10         &m_UUU               &m_Ull          &trans                             &trans      &trans                  &kp PAGE_DOWN  &kp ENTER       &kp COMMA       &kp DOT          &trans      &trans
+&trans  &trans          &trans          &trans               &trans                            &trans  &kp TAB  &trans      &trans  &trans  &trans                 &trans          &trans          &trans           &trans      &trans
             >;
         };
 
@@ -317,26 +317,14 @@
 
         hub {
             bindings = <
-&none  &to 8  &none  &none  &none  &none  &to 0                                  &to 9  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none                                  &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none      &none  &none  &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                &none      &none                &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none         &none  &none  &none      &none  &none  &none         &none  &none  &none  &none  &none
+&none  &to 10  &none  &none  &none  &none  &to 0                                  &to 8  &none  &none  &none  &none  &none  &none
+&none  &none   &none  &none  &none  &none  &none                                  &none  &none  &none  &none  &none  &none  &none
+&none  &none   &none  &none  &none  &none  &none  &none  &none      &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none   &none  &none  &none  &none                &none      &none                &none  &none  &none  &none  &none  &none
+&none  &none   &none  &none  &none         &none  &none  &none      &none  &none  &none         &none  &none  &none  &none  &none
             >;
 
             label = "Hub";
-        };
-
-        minecraft {
-            bindings = <
-&kp ESCAPE  &kp F2        &kp F1        &none         &kp F5        &kp F11       &to 0                                                  &none  &none  &none  &none  &none  &none  &none
-&none       &kp LC(Q)     &none         &kp W         &none         &kp LA(TAB)   &none                                                  &none  &none  &none  &none  &none  &none  &none
-&none       &kp E         &kp A         &kp S         &kp D         &kp F         &none   &kp L      &none                 &none  &none  &none  &none  &none  &none  &none  &none  &none
-&none       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                     &kp LEFT_CONTROL      &none                &none  &none  &none  &none  &none  &none
-&none       &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9                &kp F3  &kp SPACE  &kp LEFT_SHIFT        &none  &none  &none         &none  &none  &none  &none  &none
-            >;
-
-            label = "MineCraft";
         };
 
         mod {
@@ -360,6 +348,18 @@
 &trans  &trans     &trans     &trans     &trans     &trans                     &trans      &trans                  &trans     &trans     &trans     &trans     &trans  &trans
 &trans  &trans     &trans     &trans     &trans                &trans  &trans  &trans      &trans  &trans  &trans             &trans     &trans     &trans     &trans  &trans
             >;
+        };
+
+        minecraft {
+            bindings = <
+&kp ESCAPE  &none         &kp F1        &none         &kp F5        &kp F11       &to 0                                                     &none  &none  &none  &none  &none  &none  &none
+&none       &none         &none         &kp W         &none         &kp LA(TAB)   &kp LC(Q)                                                 &none  &none  &none  &none  &none  &none  &none
+&none       &kp E         &kp A         &kp S         &kp D         &kp F         &kp F2     &kp L      &none                 &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                        &kp LEFT_CONTROL      &none                &none  &none  &none  &none  &none  &none
+&none       &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9                &kp F3     &kp SPACE  &kp LEFT_SHIFT        &none  &none  &none         &none  &none  &none  &none  &none
+            >;
+
+            label = "MineCraft";
         };
     };
 };
