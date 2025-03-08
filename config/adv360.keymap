@@ -297,7 +297,7 @@
 &trans  &kp F1           &kp F2         &kp F3        &kp F4        &kp F5        &trans                                         &trans  &kp F6         &kp F7        &kp F8        &kp F9        &kp F10            &trans
 &trans  &kp NUMBER_1     &kp NUMBER_2   &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &trans  &trans  &trans      &trans  &trans     &trans  &kp NUMBER_6   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0       &trans
 &trans  &kp LS(INT_YEN)  &kp AMPERSAND  &trans        &kp PERCENT   &trans                        &trans      &trans                     &kp LS(MINUS)  &kp COLON     &kp COMMA     &kp DOT       &kp DOUBLE_QUOTES  &trans
-&trans  &kp F21          &kp F22        &kp F23       &kp F24                     &trans  &trans  &trans      &trans  &kp SPACE  &mo 4                  &trans        &trans        &trans        &trans             &trans
+&trans  &kp F21          &kp F22        &kp F23       &kp F24                     &trans  &trans  &trans      &trans  &kp SPACE  &trans                 &trans        &trans        &trans        &trans             &trans
             >;
 
             label = "Num_Fn";
@@ -311,7 +311,7 @@
 &trans  &kp QUESTION     &kp LEFT_BRACE  &kp PLUS  &kp EQUAL    &trans  &trans                                      &trans  &trans         &kp LT             &kp RIGHT_BRACE  &kp PIPE              &kp GT             &trans
 &trans  &kp EXCLAMATION  &kp AT          &kp HASH  &kp DOLLAR   &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp CARET      &kp RIGHT_BRACKET  &kp ASTERISK     &kp LEFT_PARENTHESIS  &kp BACKSLASH      &trans
 &trans  &kp LS(INT_YEN)  &kp AMPERSAND   &trans    &kp PERCENT  &trans                  &trans      &trans                  &kp LS(MINUS)  &kp COLON          &kp COMMA        &kp DOT               &kp DOUBLE_QUOTES  &trans
-&trans  &trans           &trans          &trans    &trans               &trans  &trans  &trans      &trans  &trans  &mo 3                  &trans             &trans           &trans                &trans             &trans
+&trans  &trans           &trans          &trans    &trans               &trans  &trans  &trans      &trans  &trans  &trans                 &trans             &trans           &trans                &trans             &trans
             >;
         };
 
