@@ -22,20 +22,6 @@
     };
 
     macros {
-        m_ou: m_ou {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp O &kp U>;
-            label = "M_OU";
-        };
-
-        m_uu: m_uu {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp U &kp U>;
-            label = "M_UU";
-        };
-
         m_axn: m_axn {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -50,6 +36,20 @@
             label = "M_IXN";
         };
 
+        m_uu: m_uu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp U &kp U>;
+            label = "M_UU";
+        };
+
+        m_uuxn: m_uuxn {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp U &kp U &kp X &kp N>;
+            label = "M_UUXN";
+        };
+
         m_uxn: m_uxn {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -62,6 +62,20 @@
             #binding-cells = <0>;
             bindings = <&kp E &kp X &kp N>;
             label = "M_EXN";
+        };
+
+        m_ou: m_ou {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp O &kp U>;
+            label = "M_OU";
+        };
+
+        m_ouxn: m_ouxn {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp O &kp U &kp X &kp N>;
+            label = "M_OUXN";
         };
 
         m_oxn: m_oxn {
@@ -106,6 +120,20 @@
             label = "M_YU";
         };
 
+        m_yuu: m_yuu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Y &kp U &kp U>;
+            label = "M_YUU";
+        };
+
+        m_yuuxn: m_yuuxn {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp Y &kp U &kp U &kp X &kp N>;
+            label = "M_YUUXN";
+        };
+
         m_yuxn: m_yuxn {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -134,13 +162,6 @@
             label = "M_YO";
         };
 
-        m_yoxn: m_yoxn {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp Y &kp O &kp X &kp N>;
-            label = "M_YOXN";
-        };
-
         m_you: m_you {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -153,6 +174,13 @@
             #binding-cells = <0>;
             bindings = <&kp Y &kp O &kp U &kp X &kp N>;
             label = "M_YOUXN";
+        };
+
+        m_yoxn: m_yoxn {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Y &kp O &kp X &kp N>;
+            label = "M_YOXN";
         };
 
         m_xn: m_xn {
@@ -169,6 +197,13 @@
             label = "M__XN";
         };
 
+        m_xtu: m_xtu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp X &kp T &kp U>;
+            label = "M_XTU";
+        };
+
         m_UUU: m_UUU {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -181,34 +216,6 @@
             #binding-cells = <0>;
             bindings = <&kp F10 &kp F10 &kp F10>;
             label = "M_ULL";
-        };
-
-        m_ouxn: m_ouxn {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp O &kp U &kp X &kp N>;
-            label = "M_OUXN";
-        };
-
-        m_uuxn: m_uuxn {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp U &kp U &kp X &kp N>;
-            label = "M_UUXN";
-        };
-
-        m_yuu: m_yuu {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp Y &kp U &kp U>;
-            label = "M_YUU";
-        };
-
-        m_yuuxn: m_yuuxn {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&none &kp Y &kp U &kp U &kp X &kp N>;
-            label = "M_YUUXN";
         };
     };
 
