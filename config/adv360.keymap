@@ -130,7 +130,7 @@
         m_yuuxn: m_yuuxn {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp Y &kp U &kp U &kp X &kp N>;
+            bindings = <&kp Y &kp U &kp U &kp X &kp N>;
             label = "M_YUUXN";
         };
 
