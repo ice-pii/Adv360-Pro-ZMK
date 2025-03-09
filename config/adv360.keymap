@@ -237,7 +237,7 @@
 &kp LEFT_GUI      &kp L         &kp Y         &kp U         &kp E         &kp Q           &none                                                                                                    &none      &kp F         &kp G         &kp K         &kp J         &kp P         &kp RIGHT_GUI
 &kp TAB           &kp W         &kp I         &kp A         &kp O         &kp LS(INT_RO)  &none        &kp LANGUAGE_2  &kp LEFT_ALT                  &kp RIGHT_ALT                 &kp LANGUAGE_1  &none      &kp D         &kp T         &kp N         &kp S         &kp H         &none
 &kp LEFT_CONTROL  &kp V         &kp C         &m_uu         &m_ou         &kp INT_RO                                   &mt LEFT_CONTROL MINUS        &mt RIGHT_CONTROL SLASH                                  &kp X         &kp M         &kp R         &kp Z         &kp B         &kp RIGHT_CONTROL
-&kp LEFT_SHIFT    &kp LC(A)     &kp LC(S)     &kp LC(C)     &kp LC(V)                     &lt 6 COMMA  &lt 5 SPACE     &mt LEFT_SHIFT SEMICOLON      &mt RIGHT_SHIFT SINGLE_QUOTE  &lt 1 SPACE     &lt 2 DOT                &none         &none         &none         &none         &kp RIGHT_SHIFT
+&kp LEFT_SHIFT    &kp LC(A)     &kp LC(S)     &kp LC(C)     &kp LC(V)                     &lt 6 COMMA  &lt 5 SPACE     &mt LEFT_SHIFT SEMICOLON      &mt RIGHT_SHIFT SINGLE_QUOTE  &lt 1 SPACE     &lt 2 DOT                &mo 3         &mo 4         &none         &none         &kp RIGHT_SHIFT
             >;
         };
 
@@ -271,7 +271,7 @@
 &trans  &trans  &trans  &m_yu   &m_ye   &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &m_yi   &m_ya   &m_yo   &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &m_yuu  &m_you  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &mo 3           &trans  &trans  &trans  &trans  &trans
             >;
 
             label = "Ya";
@@ -284,7 +284,7 @@
 &trans  &trans  &trans   &m_yuxn   &m_yexn   &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &m_yixn  &m_yaxn   &m_yoxn   &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans   &m_yuuxn  &m_youxn  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans   &trans    &trans            &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans   &trans    &trans            &trans  &trans  &trans      &trans  &trans  &mo 4           &trans  &trans  &trans  &trans  &trans
             >;
 
             label = "YaXn";
@@ -293,11 +293,11 @@
         num_fn {
             display-name = "Fn";
             bindings = <
-&trans  &kp F11          &kp F12        &kp F13       &kp F14       &kp F15       &to 0                                          &trans  &kp F16        &kp F17       &kp F18       &kp F19       &kp F20            &trans
-&trans  &kp F1           &kp F2         &kp F3        &kp F4        &kp F5        &trans                                         &trans  &kp F6         &kp F7        &kp F8        &kp F9        &kp F10            &trans
-&trans  &kp NUMBER_1     &kp NUMBER_2   &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &trans  &trans  &trans      &trans  &trans     &trans  &kp NUMBER_6   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0       &trans
-&trans  &kp LS(INT_YEN)  &kp AMPERSAND  &trans        &kp PERCENT   &trans                        &trans      &trans                     &kp LS(MINUS)  &kp COLON     &kp COMMA     &kp DOT       &kp DOUBLE_QUOTES  &trans
-&trans  &kp F21          &kp F22        &kp F23       &kp F24                     &trans  &trans  &trans      &trans  &kp SPACE  &trans                 &trans        &trans        &trans        &trans             &trans
+&trans  &kp F11          &kp F12        &kp F13           &kp F14       &kp F15       &to 0                                          &trans  &kp F16        &kp F17       &kp F18       &kp F19       &kp F20            &trans
+&trans  &kp F1           &kp F2         &kp F3            &kp F4        &kp F5        &trans                                         &trans  &kp F6         &kp F7        &kp F8        &kp F9        &kp F10            &trans
+&trans  &kp NUMBER_1     &kp NUMBER_2   &kp NUMBER_3      &kp NUMBER_4  &kp NUMBER_5  &trans  &trans  &trans      &trans  &trans     &trans  &kp NUMBER_6   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0       &trans
+&trans  &kp LS(INT_YEN)  &kp AMPERSAND  &kp LEFT_BRACKET  &kp PERCENT   &kp INT_RO                    &trans      &trans                     &kp LS(MINUS)  &kp COLON     &kp COMMA     &kp DOT       &kp DOUBLE_QUOTES  &trans
+&trans  &kp F21          &kp F22        &kp F23           &kp F24                     &trans  &trans  &trans      &trans  &kp SPACE  &mo 5                  &trans        &trans        &trans        &trans             &trans
             >;
 
             label = "Num_Fn";
@@ -307,17 +307,17 @@
             display-name = "Red";
             label = "Symbols";
             bindings = <
-&trans  &trans           &trans          &trans    &trans       &trans  &to 0                                       &trans  &trans         &trans             &trans           &trans                &trans             &trans
-&trans  &kp QUESTION     &kp LEFT_BRACE  &kp PLUS  &kp EQUAL    &trans  &trans                                      &trans  &trans         &kp LT             &kp RIGHT_BRACE  &kp PIPE              &kp GT             &trans
-&trans  &kp EXCLAMATION  &kp AT          &kp HASH  &kp DOLLAR   &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp CARET      &kp RIGHT_BRACKET  &kp ASTERISK     &kp LEFT_PARENTHESIS  &kp BACKSLASH      &trans
-&trans  &kp LS(INT_YEN)  &kp AMPERSAND   &trans    &kp PERCENT  &trans                  &trans      &trans                  &kp LS(MINUS)  &kp COLON          &kp COMMA        &kp DOT               &kp DOUBLE_QUOTES  &trans
-&trans  &trans           &trans          &trans    &trans               &trans  &trans  &trans      &trans  &trans  &trans                 &trans             &trans           &trans                &trans             &trans
+&trans  &trans           &trans          &trans            &trans       &trans          &to 0                                       &trans  &trans         &trans             &trans           &trans                &trans             &trans
+&trans  &kp QUESTION     &kp LEFT_BRACE  &kp PLUS          &kp EQUAL    &trans          &trans                                      &trans  &trans         &kp LT             &kp RIGHT_BRACE  &kp PIPE              &kp GT             &trans
+&trans  &kp EXCLAMATION  &kp AT          &kp HASH          &kp DOLLAR   &kp LS(INT_RO)  &trans  &trans  &trans      &trans  &trans  &trans  &kp CARET      &kp RIGHT_BRACKET  &kp ASTERISK     &kp LEFT_PARENTHESIS  &kp BACKSLASH      &trans
+&trans  &kp LS(INT_YEN)  &kp AMPERSAND   &kp LEFT_BRACKET  &kp PERCENT  &kp INT_RO                      &trans      &trans                  &kp LS(MINUS)  &kp COLON          &kp COMMA        &kp DOT               &kp DOUBLE_QUOTES  &trans
+&trans  &trans           &trans          &trans            &trans                       &trans  &trans  &trans      &trans  &trans  &mo 6                  &trans             &trans           &trans                &trans             &trans
             >;
         };
 
         hub {
             bindings = <
-&none  &to 10  &none  &none  &none  &none  &to 0                                  &to 8  &none  &none  &none  &none  &none  &none
+&none  &to 10  &none  &none  &none  &none  &to 0                                  &to 8  &none  &none  &none  &none  &none  &to 9
 &none  &none   &none  &none  &none  &none  &none                                  &none  &none  &none  &none  &none  &none  &none
 &none  &none   &none  &none  &none  &none  &none  &none  &none      &none  &none  &none  &none  &none  &none  &none  &none  &none
 &none  &none   &none  &none  &none  &none                &none      &none                &none  &none  &none  &none  &none  &none
