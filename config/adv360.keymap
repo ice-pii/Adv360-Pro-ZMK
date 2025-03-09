@@ -256,8 +256,8 @@
             bindings = <
 &trans  &trans  &trans  &trans   &trans   &trans  &to 0                                       &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &m_uxn   &m_exn   &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &m_ixn  &m_axn   &m_oxn   &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &m_xtu  &m_xn   &m_uuxn  &m_ouxn  &trans                  &m__xn      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &m_ixn  &m_axn   &m_oxn   &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &m_xtu  &m_xn   &trans  &trans  &trans
+&trans  &trans  &trans  &m_uuxn  &m_ouxn  &trans                  &m__xn      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans   &trans           &mo 3   &mo 4   &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
 
@@ -269,7 +269,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &to 0                                       &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &m_yu   &m_ye   &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &m_yi   &m_ya   &m_yo   &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &m_yi   &m_ya   &m_yo   &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp T   &kp N   &trans  &trans  &trans
 &trans  &trans  &trans  &m_yuu  &m_you  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
@@ -282,7 +282,7 @@
             bindings = <
 &trans  &trans  &trans   &trans    &trans    &trans  &to 0                                       &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans   &m_yuxn   &m_yexn   &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &m_yixn  &m_yaxn   &m_yoxn   &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &m_yixn  &m_yaxn   &m_yoxn   &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp T   &kp N   &trans  &trans  &trans
 &trans  &trans  &trans   &m_yuuxn  &m_youxn  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans   &trans    &trans            &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
