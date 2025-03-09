@@ -233,11 +233,11 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp ESCAPE        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &sl 7                                                                                              &none      &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &none
-&kp LEFT_GUI      &kp L         &kp Y         &kp U         &kp E         &kp Q           &none                                                                                              &none      &kp F         &kp G         &kp K         &kp J         &kp P         &kp RIGHT_GUI
-&kp TAB           &kp W         &kp I         &kp A         &kp O         &kp LS(INT_RO)  &none        &lt 7 X      &kp LEFT_ALT                  &kp RIGHT_ALT                 &lt 7 L      &none      &kp D         &kp T         &kp N         &kp S         &kp H         &none
-&kp LEFT_CONTROL  &kp V         &kp C         &m_uu         &m_ou         &kp INT_RO                                &mt LEFT_CONTROL MINUS        &mt RIGHT_CONTROL SLASH                               &kp X         &kp M         &kp R         &kp Z         &kp B         &kp RIGHT_CONTROL
-&kp LEFT_SHIFT    &kp LC(A)     &kp LC(S)     &kp LC(C)     &kp LC(V)                     &lt 6 COMMA  &lt 5 SPACE  &mt LEFT_SHIFT SEMICOLON      &mt RIGHT_SHIFT SINGLE_QUOTE  &lt 1 SPACE  &lt 2 DOT                &none         &none         &none         &none         &kp RIGHT_SHIFT
+&kp ESCAPE        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &sl 7                                                                                          &none    &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &none
+&kp LEFT_GUI      &kp L         &kp Y         &kp U         &kp E         &kp Q           &none                                                                                          &none    &kp F         &kp G         &kp K         &kp J         &kp P         &kp RIGHT_GUI
+&kp TAB           &kp W         &kp I         &kp A         &kp O         &kp LS(INT_RO)  &none    &lt 7 COMMA  &kp LEFT_ALT                  &kp RIGHT_ALT                 &lt 7 DOT    &none    &kp D         &kp T         &kp N         &kp S         &kp H         &none
+&kp LEFT_CONTROL  &kp V         &kp C         &m_uu         &m_ou         &kp INT_RO                            &mt LEFT_CONTROL MINUS        &mt RIGHT_CONTROL SLASH                             &kp X         &kp M         &kp R         &kp Z         &kp B         &kp RIGHT_CONTROL
+&kp LEFT_SHIFT    &kp LC(A)     &kp LC(S)     &kp LC(C)     &kp LC(V)                     &lt 6 X  &lt 5 SPACE  &mt LEFT_SHIFT SEMICOLON      &mt RIGHT_SHIFT SINGLE_QUOTE  &lt 1 SPACE  &lt 2 Y                &none         &none         &none         &none         &kp RIGHT_SHIFT
             >;
         };
 
