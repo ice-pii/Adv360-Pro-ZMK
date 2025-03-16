@@ -236,8 +236,8 @@
 &kp ESCAPE        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &sl 5                                                                                                      &none      &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &none
 &kp LEFT_GUI      &kp Q         &kp Y         &kp E         &kp C         &none           &none                                                                                                      &none      &kp V         &kp G         &kp T         &kp D         &kp P         &kp RIGHT_GUI
 &kp TAB           &kp A         &kp S         &kp O         &kp U         &kp LS(INT_RO)  &none        &kp LANGUAGE_2  &kp LEFT_ALT                  &kp RIGHT_ALT                   &kp LANGUAGE_1  &none      &kp F         &kp K         &kp N         &kp I         &kp H         &none
-&kp LEFT_CONTROL  &m_xn         &kp J         &kp L         &kp W         &kp INT_RO                                   &mt LEFT_SHIFT SEMICOLON      &mt RIGHT_CONTROL SINGLE_QUOTE                             &kp X         &kp M         &kp R         &kp Z         &kp B         &kp RIGHT_SHIFT
-&kp LEFT_SHIFT    &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)                     &lt 3 COMMA  &lt 1 SPACE     &mt LEFT_CONTROL MINUS        &mt RIGHT_SHIFT SLASH           &lt 2 SPACE     &lt 4 DOT                &none         &none         &none         &none         &kp RIGHT_CONTROL
+&kp LEFT_CONTROL  &none         &kp J         &kp L         &kp W         &kp INT_RO                                   &mt LEFT_SHIFT SEMICOLON      &mt RIGHT_CONTROL SINGLE_QUOTE                             &kp X         &kp M         &kp R         &kp Z         &kp B         &kp RIGHT_SHIFT
+&kp LEFT_SHIFT    &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)                     &lt 3 COMMA  &lt 1 SPACE     &mt LEFT_CONTROL MINUS        &mt RIGHT_SHIFT SLASH           &lt 2 SPACE     &lt 4 DOT                &m_xn         &none         &none         &none         &kp RIGHT_CONTROL
             >;
         };
 
@@ -256,7 +256,7 @@
             bindings = <
 &trans  &trans   &trans  &trans   &trans   &trans  &to 0                                        &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans   &trans  &m_exn   &trans   &trans  &trans                                       &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &m_axn   &m_ixn  &m_oxn   &m_uxn   &trans  &trans  &trans   &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &m_axn   &trans  &m_oxn   &m_uxn   &trans  &trans  &trans   &trans      &trans  &trans  &trans  &trans  &trans  &trans  &m_ixn  &trans  &trans
 &trans  &m_yaxn  &m__xn  &m_yoxn  &m_yuxn  &trans                   &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans   &trans  &trans   &trans           &trans  &kp TAB  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
