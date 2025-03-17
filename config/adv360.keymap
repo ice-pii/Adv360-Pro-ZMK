@@ -245,8 +245,8 @@
             display-name = "Kp";
             bindings = <
 &trans  &trans            &trans               &trans   &trans               &trans            &to 0                                            &trans  &trans         &trans          &trans          &trans           &trans         &trans
-&trans  &trans            &kp INTERNATIONAL_5  &m_UUU   &kp INTERNATIONAL_4  &trans            &trans                                           &trans  &kp PAGE_UP    &kp HOME        &kp UP_ARROW    &kp END          &kp PAGE_DOWN  &trans
-&trans  &kp LEFT_CONTROL  &kp LANGUAGE_2       &m_Ull   &kp LANGUAGE_1       &kp LS(CAPSLOCK)  &trans  &trans  &trans      &trans  &kp RS(TAB)  &trans  &kp BACKSPACE  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp DELETE     &trans
+&trans  &trans            &kp LANGUAGE_2       &m_UUU   &kp LANGUAGE_1       &trans            &trans                                           &trans  &kp PAGE_UP    &kp HOME        &kp UP_ARROW    &kp END          &kp PAGE_DOWN  &trans
+&trans  &kp LEFT_CONTROL  &kp INTERNATIONAL_5  &m_Ull   &kp INTERNATIONAL_4  &kp LS(CAPSLOCK)  &trans  &trans  &trans      &trans  &kp RS(TAB)  &trans  &kp BACKSPACE  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp DELETE     &trans
 &trans  &kp LEFT_SHIFT    &kp F6               &kp F10  &kp F7               &trans                            &trans      &trans                       &trans         &kp ENTER       &kp COMMA       &kp DOT          &kp INSERT     &trans
 &trans  &kp LEFT_ALT      &trans               &kp F9   &kp F8                                 &trans  &trans  &trans      &trans  &kp TAB      &trans                 &trans          &trans          &trans           &trans         &trans
             >;
