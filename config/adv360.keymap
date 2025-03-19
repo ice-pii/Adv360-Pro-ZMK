@@ -267,11 +267,11 @@
         num_fn {
             display-name = "Fn";
             bindings = <
-&trans  &kp F11          &kp F12        &kp F13           &kp F14       &kp F15       &to 0                                       &trans  &kp F16        &kp F17       &kp F18       &kp F19       &kp F20            &trans
-&trans  &kp F1           &kp F2         &kp F3            &kp F4        &kp F5        &trans                                      &trans  &kp F6         &kp F7        &kp F8        &kp F9        &kp F10            &trans
-&trans  &kp NUMBER_1     &kp NUMBER_2   &kp NUMBER_3      &kp NUMBER_4  &kp NUMBER_5  &trans  &trans  &trans      &trans  &trans  &trans  &kp NUMBER_6   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0       &trans
-&trans  &kp LS(INT_YEN)  &kp AMPERSAND  &kp LEFT_BRACKET  &kp PERCENT   &kp INT_RO                    &trans      &trans                  &kp LS(MINUS)  &kp COLON     &kp COMMA     &kp DOT       &kp DOUBLE_QUOTES  &trans
-&trans  &kp F21          &kp F22        &kp F23           &kp F24                     &trans  &trans  &trans      &trans  &trans  &trans                 &trans        &trans        &trans        &trans             &trans
+&trans  &kp F11          &kp F12        &kp F13           &kp F14       &kp F15       &to 0                                       &trans  &kp F16        &kp F17       &kp F18       &kp F19            &kp F20       &trans
+&trans  &kp F1           &kp F2         &kp F3            &kp F4        &kp F5        &trans                                      &trans  &kp F6         &kp F7        &kp F8        &kp F9             &kp F10       &trans
+&trans  &kp NUMBER_1     &kp NUMBER_2   &kp NUMBER_3      &kp NUMBER_4  &kp NUMBER_5  &trans  &trans  &trans      &trans  &trans  &trans  &kp NUMBER_6   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9       &kp NUMBER_0  &trans
+&trans  &kp LS(INT_YEN)  &kp AMPERSAND  &kp LEFT_BRACKET  &kp PERCENT   &kp INT_RO                    &trans      &trans                  &kp RS(MINUS)  &kp COLON     &kp MINUS     &kp DOUBLE_QUOTES  &kp SLASH     &trans
+&trans  &kp F21          &kp F22        &kp F23           &kp F24                     &trans  &trans  &trans      &trans  &trans  &trans                 &trans        &trans        &trans             &trans        &trans
             >;
 
             label = "Num_Fn";
@@ -281,11 +281,11 @@
             display-name = "Red";
             label = "Symbols";
             bindings = <
-&trans  &trans           &trans          &trans            &trans       &trans          &to 0                                       &trans  &trans         &trans             &trans           &trans                &trans             &trans
-&trans  &kp QUESTION     &kp LEFT_BRACE  &kp PLUS          &kp EQUAL    &trans          &trans                                      &trans  &trans         &kp LT             &kp RIGHT_BRACE  &kp PIPE              &kp GT             &trans
-&trans  &kp EXCLAMATION  &kp AT          &kp HASH          &kp DOLLAR   &kp LS(INT_RO)  &trans  &trans  &trans      &trans  &trans  &trans  &kp CARET      &kp RIGHT_BRACKET  &kp ASTERISK     &kp LEFT_PARENTHESIS  &kp BACKSLASH      &trans
-&trans  &kp LS(INT_YEN)  &kp AMPERSAND   &kp LEFT_BRACKET  &kp PERCENT  &kp INT_RO                      &trans      &trans                  &kp LS(MINUS)  &kp COLON          &kp COMMA        &kp DOT               &kp DOUBLE_QUOTES  &trans
-&trans  &trans           &trans          &trans            &trans                       &trans  &trans  &trans      &trans  &trans  &trans                 &trans             &trans           &trans                &trans             &trans
+&trans  &trans           &trans          &trans            &trans       &trans          &to 0                                       &trans  &trans         &trans             &trans           &trans                &trans         &trans
+&trans  &kp QUESTION     &kp LEFT_BRACE  &kp PLUS          &kp EQUAL    &trans          &trans                                      &trans  &trans         &kp LT             &kp RIGHT_BRACE  &kp PIPE              &kp GT         &trans
+&trans  &kp EXCLAMATION  &kp AT          &kp HASH          &kp DOLLAR   &kp LS(INT_RO)  &trans  &trans  &trans      &trans  &trans  &trans  &kp CARET      &kp RIGHT_BRACKET  &kp ASTERISK     &kp LEFT_PARENTHESIS  &kp BACKSLASH  &trans
+&trans  &kp LS(INT_YEN)  &kp AMPERSAND   &kp LEFT_BRACKET  &kp PERCENT  &kp INT_RO                      &trans      &trans                  &kp RS(MINUS)  &kp COLON          &kp MINUS        &kp DOUBLE_QUOTES     &kp SLASH      &trans
+&trans  &trans           &trans          &trans            &trans                       &trans  &trans  &trans      &trans  &trans  &trans                 &trans             &trans           &trans                &trans         &trans
             >;
         };
 
@@ -334,6 +334,16 @@
             >;
 
             label = "MineCraft";
+        };
+
+        layer_9 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+            >;
         };
     };
 };
