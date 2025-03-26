@@ -282,13 +282,6 @@
             label = "M_YOXTU";
         };
 
-        m_xnxtu: m_xnxtu {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp X &kp N &kp X &kp T &kp U>;
-            label = "M_XNXTU";
-        };
-
         m__xtu: m__xtu {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -322,7 +315,7 @@
             >;
         };
 
-        axn {
+        xn {
             bindings = <
 &trans  &trans   &trans  &trans   &trans   &trans  &to 0                                          &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans   &trans  &m_exn   &trans   &trans  &trans                                         &trans  &trans  &trans  &trans  &trans  &trans  &trans
@@ -331,16 +324,16 @@
 &trans  &trans   &trans  &trans   &trans           &trans  &kp SPACE  &mo 3       &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
 
-            label = "AXn";
+            label = "Xn";
         };
 
         xtu {
             bindings = <
-&trans  &trans    &trans   &trans    &trans    &trans   &to 0                                       &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans    &trans   &m_extu   &trans    &trans   &trans                                      &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &m_axtu   &m_ixtu  &m_oxtu   &m_uxtu   &m__xtu  &trans  &trans  &trans      &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &m_yaxtu  &trans   &m_yoxtu  &m_yuxtu  &trans                   &trans      &trans                  &m_xnxtu  &trans  &trans  &trans  &trans  &trans
-&trans  &trans    &trans   &trans    &trans             &trans  &trans  &trans      &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans
+&trans  &trans    &trans   &trans    &trans    &trans   &to 0                                       &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans    &trans   &m_extu   &trans    &trans   &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &m_axtu   &m_ixtu  &m_oxtu   &m_uxtu   &m__xtu  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &m_yaxtu  &trans   &m_yoxtu  &m_yuxtu  &trans                   &trans      &trans                  &m_xtu  &trans  &trans  &trans  &trans  &trans
+&trans  &trans    &trans   &trans    &trans             &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -414,16 +407,6 @@
             >;
 
             label = "MineCraft";
-        };
-
-        layer_9 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
-            >;
         };
     };
 };
