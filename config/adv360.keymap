@@ -327,7 +327,7 @@
 &trans  &trans   &trans  &trans   &trans   &trans  &to 0                                          &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans   &trans  &m_exn   &trans   &trans  &trans                                         &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &m_axn   &m_ixn  &m_oxn   &m_uxn   &m__xn  &trans  &trans     &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &m_yaxn  &trans  &m_yoxn  &m_yuxn  &trans                     &m__xn      &trans                  &m_xn   &trans  &trans  &trans  &trans  &trans
+&trans  &m_yaxn  &trans  &m_yoxn  &m_yuxn  &trans                     &trans      &trans                  &m_xn   &trans  &trans  &trans  &trans  &trans
 &trans  &trans   &trans  &trans   &trans           &trans  &kp SPACE  &mo 3       &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
 
