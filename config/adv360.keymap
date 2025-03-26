@@ -225,6 +225,76 @@
             bindings = <&kp F10 &kp F10 &kp F10>;
             label = "M_ULL";
         };
+
+        m_axtu: m_axtu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp A &kp X &kp T &kp U>;
+            label = "M_AXTU";
+        };
+
+        m_ixtu: m_ixtu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp I &kp X &kp T &kp U>;
+            label = "M_IXTU";
+        };
+
+        m_uxtu: m_uxtu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp U &kp X &kp T &kp U>;
+            label = "M_UXTU";
+        };
+
+        m_extu: m_extu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp E &kp X &kp T &kp U>;
+            label = "M_EXTU";
+        };
+
+        m_oxtu: m_oxtu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp O &kp X &kp T &kp U>;
+            label = "M_OXTU";
+        };
+
+        m_yaxtu: m_yaxtu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Y &kp A &kp X &kp T &kp U>;
+            label = "M_YAXTU";
+        };
+
+        m_yuxtu: m_yuxtu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Y &kp U &kp X &kp T &kp U>;
+            label = "M_YUXTU";
+        };
+
+        m_yoxtu: m_yoxtu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Y &kp O &kp X &kp T &kp U>;
+            label = "M_YOXTU";
+        };
+
+        m_xnxtu: m_xnxtu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp X &kp N &kp X &kp T &kp U>;
+            label = "M_XNXTU";
+        };
+
+        m__xtu: m__xtu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS &kp X &kp T &kp U>;
+            label = "M__XTU";
+        };
     };
 
     keymap {
@@ -233,11 +303,11 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp ESCAPE        &kp NUMBER_1             &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5          &sl 5                                                                                                                        &none      &kp NUMBER_6  &kp N7  &kp N8  &kp N9  &kp N0         &sk RIGHT_GUI
-&none             &kp Q                    &kp Y         &kp E         &kp C         &sk LEFT_SHIFT  &none                                                                                                                        &none      &kp V         &kp G   &kp K   &kp D   &kp P          &none
-&none             &kp A                    &kp S         &kp O         &kp U         &kp LS(INT_RO)  &none        &mt LEFT_ALT QUESTION  &kp LANGUAGE_2                  &kp LANGUAGE_1                &mt RIGHT_ALT EXCLAMATION  &none      &kp F         &kp T   &kp N   &kp I   &kp H          &none
+&kp ESCAPE        &kp NUMBER_1             &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5          &sl 6                                                                                                                        &none      &kp NUMBER_6  &kp N7  &kp N8  &kp N9  &kp N0         &sk RIGHT_GUI
+&none             &kp Q                    &kp Y         &kp E         &kp C         &sk LEFT_SHIFT  &none                                                                                                                        &none      &kp V         &kp D   &kp K   &kp G   &kp P          &none
+&none             &kp A                    &kp I         &kp O         &kp U         &kp LS(INT_RO)  &none        &mt LEFT_ALT QUESTION  &kp LANGUAGE_2                  &kp LANGUAGE_1                &mt RIGHT_ALT EXCLAMATION  &none      &kp F         &kp T   &kp N   &kp S   &kp H          &none
 &kp LEFT_CONTROL  &kp LS(INTERNATIONAL_3)  &kp J         &kp L         &kp W         &kp INT_RO                                          &mt LEFT_SHIFT MINUS            &mt RIGHT_CONTROL SLASH                                             &kp X         &kp M   &kp R   &kp Z   &kp B          &kp RIGHT_SHIFT
-&kp LEFT_SHIFT    &kp LEFT_ALT             &none         &kp LC(C)     &kp LC(V)                     &lt 3 COMMA  &lt 1 SPACE            &mt LEFT_CONTROL SEMICOLON      &mt RIGHT_SHIFT SINGLE_QUOTE  &lt 2 SPACE                &lt 4 DOT                &none   &none   &none   &kp RIGHT_ALT  &kp RIGHT_CONTROL
+&kp LEFT_SHIFT    &kp LEFT_ALT             &none         &kp LC(C)     &kp LC(V)                     &lt 4 COMMA  &lt 1 SPACE            &mt LEFT_CONTROL SEMICOLON      &mt RIGHT_SHIFT SINGLE_QUOTE  &lt 2 SPACE                &lt 5 DOT                &none   &none   &none   &kp RIGHT_ALT  &kp RIGHT_CONTROL
             >;
         };
 
@@ -256,12 +326,22 @@
             bindings = <
 &trans  &trans   &trans  &trans   &trans   &trans  &to 0                                          &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans   &trans  &m_exn   &trans   &trans  &trans                                         &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &m_axn   &m_ixn  &m_oxn   &m_uxn   &trans  &trans  &trans     &trans      &trans  &trans  &trans  &trans  &trans  &trans  &kp S   &trans  &trans
+&trans  &m_axn   &m_ixn  &m_oxn   &m_uxn   &m__xn  &trans  &trans     &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &m_yaxn  &trans  &m_yoxn  &m_yuxn  &trans                     &m__xn      &trans                  &m_xn   &trans  &trans  &trans  &trans  &trans
-&trans  &trans   &trans  &trans   &trans           &trans  &kp SPACE  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans   &trans  &trans   &trans           &trans  &kp SPACE  &mo 3       &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
 
             label = "AXn";
+        };
+
+        xtu {
+            bindings = <
+&trans  &trans    &trans   &trans    &trans    &trans   &to 0                                       &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans    &trans   &m_extu   &trans    &trans   &trans                                      &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &m_axtu   &m_ixtu  &m_oxtu   &m_uxtu   &m__xtu  &trans  &trans  &trans      &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &m_yaxtu  &trans   &m_yoxtu  &m_yuxtu  &trans                   &trans      &trans                  &m_xnxtu  &trans  &trans  &trans  &trans  &trans
+&trans  &trans    &trans   &trans    &trans             &trans  &trans  &trans      &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans
+            >;
         };
 
         num_fn {
@@ -291,7 +371,7 @@
 
         hub {
             bindings = <
-&trans  &to 8   &trans  &trans  &trans  &trans  &to 0                                       &to 6   &trans  &trans  &trans  &trans  &trans  &to 7
+&trans  &to 9   &trans  &trans  &trans  &trans  &to 0                                       &to 7   &trans  &trans  &trans  &trans  &trans  &to 8
 &trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
