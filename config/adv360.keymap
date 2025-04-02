@@ -297,9 +297,9 @@
             display-name = "Base";
             bindings = <
 &kp ESCAPE        &kp NUMBER_1             &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5          &sl 6                                                                                                                        &none      &kp NUMBER_6  &kp N7  &kp N8  &kp N9  &kp N0         &sk RIGHT_GUI
-&none             &kp Q                    &kp Y         &kp E         &kp C         &sk LEFT_SHIFT  &none                                                                                                                        &none      &kp V         &kp D   &kp K   &kp G   &kp P          &none
-&none             &kp A                    &kp I         &kp O         &kp U         &kp LS(INT_RO)  &none        &mt LEFT_ALT QUESTION  &kp LANGUAGE_2                  &kp LANGUAGE_1                &mt RIGHT_ALT EXCLAMATION  &none      &kp F         &kp T   &kp N   &kp S   &kp H          &none
-&kp LEFT_CONTROL  &kp LS(INTERNATIONAL_3)  &kp J         &kp L         &kp W         &kp INT_RO                                          &mt LEFT_SHIFT MINUS            &mt RIGHT_CONTROL SLASH                                             &kp X         &kp M   &kp R   &kp Z   &kp B          &kp RIGHT_SHIFT
+&none             &kp Q                    &kp Z         &kp E         &kp C         &sk LEFT_SHIFT  &none                                                                                                                        &none      &kp F         &kp G   &kp K   &kp Y   &kp P          &none
+&none             &kp A                    &kp I         &kp O         &kp U         &kp LS(INT_RO)  &none        &mt LEFT_ALT QUESTION  &kp LANGUAGE_2                  &kp LANGUAGE_1                &mt RIGHT_ALT EXCLAMATION  &none      &kp D         &kp T   &kp N   &kp S   &kp H          &none
+&kp LEFT_CONTROL  &kp LS(INTERNATIONAL_3)  &kp V         &kp X         &kp L         &kp INT_RO                                          &mt LEFT_SHIFT MINUS            &mt RIGHT_CONTROL SLASH                                             &kp W         &kp M   &kp R   &kp J   &kp B          &kp RIGHT_SHIFT
 &kp LEFT_SHIFT    &kp LEFT_ALT             &kp LC(X)     &kp LC(C)     &kp LC(V)                     &lt 4 COMMA  &lt 1 SPACE            &mt LEFT_CONTROL SEMICOLON      &mt RIGHT_SHIFT SINGLE_QUOTE  &lt 2 SPACE                &lt 5 DOT                &none   &none   &none   &kp RIGHT_ALT  &kp RIGHT_CONTROL
             >;
         };
@@ -320,7 +320,7 @@
 &trans  &trans   &trans  &trans   &trans   &trans  &to 0                                          &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans   &trans  &m_exn   &trans   &trans  &trans                                         &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &m_axn   &m_ixn  &m_oxn   &m_uxn   &m__xn  &trans  &trans     &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &m_yaxn  &trans  &m_yoxn  &m_yuxn  &trans                     &trans      &trans                  &m_xn   &trans  &trans  &trans  &trans  &trans
+&trans  &m_yaxn  &m_xn   &m_yoxn  &m_yuxn  &trans                     &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans   &trans  &trans   &trans           &trans  &kp SPACE  &mo 3       &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
 
@@ -332,7 +332,7 @@
 &trans  &trans    &trans   &trans    &trans    &trans   &to 0                                       &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans    &trans   &m_extu   &trans    &trans   &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &m_axtu   &m_ixtu  &m_oxtu   &m_uxtu   &m__xtu  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &m_yaxtu  &trans   &m_yoxtu  &m_yuxtu  &trans                   &trans      &trans                  &m_xtu  &trans  &trans  &trans  &trans  &trans
+&trans  &m_yaxtu  &m_xtu   &m_yoxtu  &m_yuxtu  &trans                   &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans    &trans   &trans    &trans             &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
