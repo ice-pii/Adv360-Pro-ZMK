@@ -364,11 +364,11 @@
 
         hub {
             bindings = <
-&trans  &to 9   &trans  &trans  &trans  &trans  &to 0                                       &to 7   &trans  &trans  &trans  &trans  &trans  &to 8
-&trans  &to 10  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &to 9   &trans  &trans  &trans  &trans  &to 0                                                                                                                         &to 7      &trans  &trans  &trans  &trans  &trans  &to 8
+&trans  &to 10  &trans  &trans  &trans  &trans  &trans                                                                                                                        &trans     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans        &mt LEFT_ALT QUESTION  &kp LANGUAGE_2                  &kp LANGUAGE_1                &mt RIGHT_ALT EXCLAMATION  &trans     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                       &mt LEFT_SHIFT MINUS            &mt RIGHT_CONTROL SLASH                                             &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &lt 4 COMMA   &lt 1 SPACE            &mt LEFT_CONTROL SEMICOLON      &mt RIGHT_SHIFT SINGLE_QUOTE  &lt 2 SPACE                &lt 5 DOT         &trans  &trans  &trans  &trans  &trans
             >;
 
             label = "Hub";
