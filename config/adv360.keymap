@@ -298,7 +298,7 @@
             bindings = <
 &kp ESCAPE        &kp NUMBER_1             &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5          &sl 6                                                                                                                        &none      &kp NUMBER_6  &kp N7  &kp N8  &kp N9  &kp N0         &sk RIGHT_GUI
 &none             &kp Q                    &kp Z         &kp E         &kp C         &sk LEFT_SHIFT  &none                                                                                                                        &none      &kp F         &kp G   &kp K   &kp Y   &kp P          &none
-&none             &kp A                    &kp I         &kp O         &kp U         &kp LS(INT_RO)  &none        &mt LEFT_ALT QUESTION  &kp LANGUAGE_2                  &kp LANGUAGE_1                &mt RIGHT_ALT EXCLAMATION  &none      &kp D         &kp T   &kp N   &kp S   &kp H          &none
+&none             &kp A                    &kp S         &kp O         &kp U         &kp LS(INT_RO)  &none        &mt LEFT_ALT QUESTION  &kp LANGUAGE_2                  &kp LANGUAGE_1                &mt RIGHT_ALT EXCLAMATION  &none      &kp D         &kp T   &kp N   &kp I   &kp H          &none
 &kp LEFT_CONTROL  &kp LS(INTERNATIONAL_3)  &kp V         &kp X         &kp L         &kp INT_RO                                          &mt LEFT_SHIFT MINUS            &mt RIGHT_CONTROL SLASH                                             &kp W         &kp M   &kp R   &kp J   &kp B          &kp RIGHT_SHIFT
 &kp LEFT_SHIFT    &kp LEFT_ALT             &kp LC(X)     &kp LC(C)     &kp LC(V)                     &lt 4 COMMA  &lt 1 SPACE            &mt LEFT_CONTROL SEMICOLON      &mt RIGHT_SHIFT SINGLE_QUOTE  &lt 2 SPACE                &lt 5 DOT                &none   &none   &none   &kp RIGHT_ALT  &kp RIGHT_CONTROL
             >;
@@ -319,7 +319,7 @@
             bindings = <
 &trans  &trans   &trans  &trans   &trans   &trans  &to 0                                          &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans   &trans  &m_exn   &trans   &trans  &trans                                         &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &m_axn   &m_ixn  &m_oxn   &m_uxn   &m__xn  &trans  &trans     &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &m_axn   &m_ixn  &m_oxn   &m_uxn   &m__xn  &trans  &trans     &trans      &trans  &trans  &trans  &trans  &trans  &trans  &kp S   &trans  &trans
 &trans  &m_yaxn  &m_xn   &m_yoxn  &m_yuxn  &trans                     &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans   &trans  &trans   &trans           &trans  &kp SPACE  &mo 3       &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
@@ -365,7 +365,7 @@
         hub {
             bindings = <
 &trans  &to 9   &trans  &trans  &trans  &trans  &to 0                                       &to 7   &trans  &trans  &trans  &trans  &trans  &to 8
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &to 10  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
@@ -407,6 +407,16 @@
             >;
 
             label = "MineCraft";
+        };
+
+        qwerty {
+            bindings = <
+&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &trans                                      &trans  &kp N6  &kp N7  &kp N8     &kp N9   &kp N0    &trans
+&trans  &kp Q   &kp W   &kp E   &kp R   &kp T   &trans                                      &trans  &kp Y   &kp U   &kp I      &kp O    &kp P     &trans
+&trans  &kp A   &kp S   &kp D   &kp F   &kp G   &trans  &trans  &trans      &trans  &trans  &trans  &kp H   &kp J   &kp K      &kp L    &kp SEMI  &trans
+&trans  &kp Z   &kp X   &kp C   &kp V   &kp B                   &trans      &trans                  &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans     &trans   &trans    &trans
+            >;
         };
     };
 };
