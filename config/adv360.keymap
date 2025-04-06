@@ -307,8 +307,8 @@
         hub {
             label = "Hub";
             bindings = <
-&trans  &to 10  &trans  &trans  &trans  &trans  &to 0                                       &to 7   &trans  &trans  &trans  &trans  &to 8   &trans
-&trans  &to 9   &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &to 8   &trans  &trans  &trans  &trans  &to 0                                       &to 7   &trans  &trans  &trans  &trans  &none   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
@@ -331,7 +331,7 @@
             bindings = <
 &trans  &trans   &trans  &trans   &trans   &trans  &to 0                                          &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans   &trans  &m_exn   &trans   &trans  &trans                                         &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &m_axn   &m_ixn  &m_oxn   &m_uxn   &m__xn  &trans  &trans     &trans      &trans  &trans  &trans  &trans  &trans  &trans  &kp S   &trans  &trans
+&trans  &m_axn   &trans  &m_oxn   &m_uxn   &m__xn  &trans  &trans     &trans      &trans  &trans  &trans  &trans  &trans  &trans  &m_ixn  &trans  &trans
 &trans  &m_yaxn  &m_xn   &m_yoxn  &m_yuxn  &trans                     &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans   &trans  &trans   &trans           &trans  &kp SPACE  &mo 4       &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
@@ -340,11 +340,11 @@
         xtu {
             label = "Xtu";
             bindings = <
-&trans  &trans    &trans   &trans    &trans    &trans   &to 0                                       &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans    &trans   &m_extu   &trans    &trans   &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &m_axtu   &m_ixtu  &m_oxtu   &m_uxtu   &m__xtu  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &m_yaxtu  &m_xtu   &m_yoxtu  &m_yuxtu  &trans                   &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans    &trans   &trans    &trans             &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans    &trans  &trans    &trans    &trans   &to 0                                       &trans  &trans  &trans  &trans  &trans   &trans  &trans
+&trans  &trans    &trans  &m_extu   &trans    &trans   &trans                                      &trans  &trans  &trans  &trans  &trans   &trans  &trans
+&trans  &m_axtu   &trans  &m_oxtu   &m_uxtu   &m__xtu  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &m_ixtu  &trans  &trans
+&trans  &m_yaxtu  &m_xtu  &m_yoxtu  &m_yuxtu  &trans                   &trans      &trans                  &trans  &trans  &trans  &trans   &trans  &trans
+&trans  &trans    &trans  &trans    &trans             &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans   &trans  &trans
             >;
         };
 
@@ -378,28 +378,6 @@
 &studio_unlock  &trans        &trans        &trans        &trans        &trans        &trans       &trans  &trans      &bt BT_CLR  &trans      &stp STP_BAT     &trans  &trans      &trans      &trans  &trans  &trans
 &trans          &trans        &trans        &trans        &macro_ver    &trans                             &trans      &trans                                   &trans  &trans      &trans      &trans  &trans  &trans
 &trans          &trans        &trans        &trans        &trans                      &trans       &trans  &trans      &trans      &bl BL_TOG  &rgb_ug RGB_TOG          &bl BL_INC  &bl BL_DEC  &trans  &trans  &trans
-            >;
-        };
-
-        test {
-            label = "Test";
-            bindings = <
-&trans  &kp INT1   &kp INT2   &kp INT3   &kp INT4   &kp INT5   &to 0                                       &trans  &kp INT6   &kp INT7   &kp INT8   &kp INT9   &trans   &trans
-&trans  &kp LANG1  &kp LANG2  &kp LANG3  &kp LANG4  &kp LANG5  &trans                                      &trans  &kp LANG6  &kp LANG7  &kp LANG8  &kp LANG9  &trans   &trans
-&trans  &kp F1     &kp F2     &kp F3     &kp F4     &kp F5     &trans  &trans  &trans      &trans  &trans  &trans  &kp F6     &kp F7     &kp F8     &kp F9     &kp F10  &trans
-&trans  &kp F11    &kp F12    &kp F13    &kp F14    &kp F15                    &trans      &trans                  &kp F16    &kp F17    &kp F18    &kp F19    &kp F20  &trans
-&trans  &kp F21    &kp F22    &kp F23    &kp F24               &trans  &trans  &trans      &trans  &trans  &trans             &trans     &trans     &trans     &trans   &trans
-            >;
-        };
-
-        qwerty {
-            label = "QWERTY";
-            bindings = <
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &to 0                                       &trans  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp MINUS
-&trans  &kp Q         &kp W         &kp E         &kp R         &kp T         &trans                                      &trans  &kp Y         &kp U         &kp I         &kp O         &kp P         &kp LEFT_BRACKET
-&trans  &kp A         &kp S         &kp D         &kp F         &kp G         &trans  &trans  &trans      &trans  &trans  &trans  &kp H         &kp J         &kp K         &kp L         &kp SEMI      &kp SINGLE_QUOTE
-&trans  &kp Z         &kp X         &kp C         &kp V         &kp B                         &trans      &trans                  &kp N         &kp M         &kp COMMA     &kp DOT       &kp FSLH      &kp INTERNATIONAL_1
-&trans  &trans        &trans        &trans        &trans                      &trans  &trans  &trans      &trans  &trans  &trans                &trans        &trans        &trans        &trans        &trans
             >;
         };
 
