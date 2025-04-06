@@ -300,7 +300,7 @@
 &none             &kp Q                    &kp Z         &kp E         &kp C         &sk LEFT_SHIFT  &none                                                                                                                        &none      &kp F         &kp G   &kp K   &kp Y   &kp P          &none
 &none             &kp A                    &kp S         &kp O         &kp U         &kp LS(INT_RO)  &none        &mt LEFT_ALT QUESTION  &kp LANGUAGE_2                  &kp LANGUAGE_1                &mt RIGHT_ALT EXCLAMATION  &none      &kp D         &kp T   &kp N   &kp I   &kp H          &none
 &kp LEFT_CONTROL  &kp LS(INTERNATIONAL_3)  &kp V         &kp X         &kp L         &kp INT_RO                                          &mt LEFT_SHIFT MINUS            &mt RIGHT_CONTROL SLASH                                             &kp W         &kp M   &kp R   &kp J   &kp B          &kp RIGHT_SHIFT
-&kp LEFT_SHIFT    &kp LEFT_ALT             &kp LC(X)     &kp LC(C)     &kp LC(V)                     &lt 7 COMMA  &lt 4 SPACE            &mt LEFT_CONTROL SEMICOLON      &mt RIGHT_SHIFT SINGLE_QUOTE  &lt 1 SPACE                &lt 5 DOT                &none   &none   &none   &kp RIGHT_ALT  &kp RIGHT_CONTROL
+&kp LEFT_SHIFT    &kp LEFT_ALT             &kp LC(X)     &kp LC(C)     &kp LC(V)                     &lt 6 COMMA  &lt 4 SPACE            &mt LEFT_CONTROL SEMICOLON      &mt RIGHT_SHIFT SINGLE_QUOTE  &lt 1 SPACE                &lt 5 DOT                &none   &none   &none   &kp RIGHT_ALT  &kp RIGHT_CONTROL
             >;
         };
 
@@ -332,7 +332,7 @@
 &trans  &kp Q   &kp W   &kp E   &kp R   &kp T   &trans                                                                                                                       &trans     &kp Y   &kp U   &kp I      &kp O    &kp P     &kp LBKT
 &trans  &kp A   &kp S   &kp D   &kp F   &kp G   &trans       &mt LEFT_ALT QUESTION  &kp LANGUAGE_2                  &kp LANGUAGE_1                &mt RIGHT_ALT EXCLAMATION  &trans     &kp H   &kp J   &kp K      &kp L    &kp SEMI  &kp APOS
 &trans  &kp Z   &kp X   &kp C   &kp V   &kp B                                       &mt RIGHT_SHIFT MINUS           &mt RIGHT_CONTROL SLASH                                             &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp INTERNATIONAL_1
-&trans  &trans  &trans  &trans  &trans          &lt 7 COMMA  &lt 4 SPACE            &mt LEFT_CONTROL SEMICOLON      &mt RIGHT_SHIFT SINGLE_QUOTE  &lt 1 SPACE                &lt 5 DOT          &trans  &trans     &trans   &trans    &trans
+&trans  &trans  &trans  &trans  &trans          &lt 6 COMMA  &lt 4 SPACE            &mt LEFT_CONTROL SEMICOLON      &mt RIGHT_SHIFT SINGLE_QUOTE  &lt 1 SPACE                &lt 5 DOT          &trans  &trans     &trans   &trans    &trans
             >;
         };
 
@@ -350,11 +350,11 @@
         symbols {
             label = "Symbols";
             bindings = <
-&trans  &trans           &trans          &trans            &trans       &trans          &to 0                                       &trans  &trans         &trans             &trans           &trans                &trans         &trans
-&trans  &kp QUESTION     &kp LEFT_BRACE  &kp PLUS          &kp EQUAL    &trans          &trans                                      &trans  &trans         &kp LT             &kp RIGHT_BRACE  &kp PIPE              &kp GT         &trans
-&trans  &kp EXCLAMATION  &kp AT          &kp HASH          &kp DOLLAR   &kp LS(INT_RO)  &trans  &trans  &trans      &trans  &trans  &trans  &kp CARET      &kp RIGHT_BRACKET  &kp ASTERISK     &kp LEFT_PARENTHESIS  &kp BACKSLASH  &trans
-&trans  &kp LS(INT_YEN)  &kp AMPERSAND   &kp LEFT_BRACKET  &kp PERCENT  &kp INT_RO                      &trans      &trans                  &kp RS(MINUS)  &kp COLON          &kp MINUS        &kp DOUBLE_QUOTES     &kp SLASH      &trans
-&trans  &trans           &trans          &trans            &trans                       &trans  &trans  &trans      &trans  &trans  &trans                 &trans             &trans           &trans                &trans         &trans
+&trans  &trans           &trans          &trans            &trans       &trans          &to 0                                                          &trans  &trans         &trans             &trans           &trans                &trans         &trans
+&trans  &kp QUESTION     &kp LEFT_BRACE  &kp PLUS          &kp EQUAL    &trans          &trans                                                         &trans  &trans         &kp LT             &kp RIGHT_BRACE  &kp PIPE              &kp GT         &trans
+&trans  &kp EXCLAMATION  &kp AT          &kp HASH          &kp DOLLAR   &kp LS(INT_RO)  &trans  &trans  &trans      &trans  &mt RIGHT_ALT EXCLAMATION  &trans  &kp CARET      &kp RIGHT_BRACKET  &kp ASTERISK     &kp LEFT_PARENTHESIS  &kp BACKSLASH  &trans
+&trans  &kp LS(INT_YEN)  &kp AMPERSAND   &kp LEFT_BRACKET  &kp PERCENT  &kp INT_RO                      &trans      &trans                                     &kp RS(MINUS)  &kp COLON          &kp MINUS        &kp DOUBLE_QUOTES     &kp SLASH      &trans
+&trans  &trans           &trans          &trans            &trans                       &trans  &trans  &trans      &trans  &lt 1 SPACE                &trans                 &trans             &trans           &trans                &trans         &trans
             >;
         };
 
