@@ -296,11 +296,11 @@
         default_layer {
             label = "Base";
             bindings = <
-&kp ESCAPE        &kp NUMBER_1             &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4             &kp N5          &sl 8                                                                                                                        &none      &kp NUMBER_6  &kp N7  &kp N8  &kp N9  &kp N0         &sk RIGHT_GUI
-&none             &kp Q                    &kp J         &kp E         &kp C                    &sk LEFT_SHIFT  &none                                                                                                                        &none      &kp F         &kp G   &kp K   &kp Y   &kp P          &none
-&none             &kp A                    &kp S         &kp O         &kp U                    &kp W           &none        &mt LEFT_ALT QUESTION  &kp LANGUAGE_2                  &kp LANGUAGE_1                &mt RIGHT_ALT EXCLAMATION  &none      &kp D         &kp T   &kp N   &kp I   &kp H          &none
-&kp LEFT_CONTROL  &kp LS(INTERNATIONAL_3)  &kp X         &kp V         &kp LS(INTERNATIONAL_1)  &kp INT_RO                                          &mt LEFT_SHIFT MINUS            &mt RIGHT_CONTROL SLASH                                             &kp L         &kp M   &kp R   &kp Z   &kp B          &kp RIGHT_SHIFT
-&kp LEFT_SHIFT    &kp LEFT_ALT             &kp LC(X)     &kp LC(C)     &kp LC(V)                                &lt 6 COMMA  &lt 4 SPACE            &mt LEFT_CONTROL SEMICOLON      &mt RIGHT_SHIFT SINGLE_QUOTE  &lt 1 SPACE                &lt 5 DOT                &none   &none   &none   &kp RIGHT_ALT  &kp RIGHT_CONTROL
+&kp ESCAPE        &kp NUMBER_1         &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4             &kp N5          &sl 8                                                                                                                        &none      &kp NUMBER_6  &kp N7  &kp N8  &kp N9  &kp N0         &sk RIGHT_GUI
+&none             &kp Q                &kp J         &kp E         &kp C                    &sk LEFT_SHIFT  &none                                                                                                                        &none      &kp F         &kp G   &kp K   &kp Y   &kp P          &none
+&none             &kp A                &kp S         &kp O         &kp U                    &kp W           &none        &mt LEFT_ALT QUESTION  &kp LANGUAGE_2                  &kp LANGUAGE_1                &mt RIGHT_ALT EXCLAMATION  &none      &kp D         &kp T   &kp N   &kp I   &kp H          &none
+&kp LEFT_CONTROL  &kp INTERNATIONAL_1  &kp X         &kp V         &kp LS(INTERNATIONAL_1)  &kp LS(MINUS)                                       &mt LEFT_SHIFT MINUS            &mt RIGHT_CONTROL SLASH                                             &kp L         &kp M   &kp R   &kp Z   &kp B          &kp RIGHT_SHIFT
+&kp LEFT_SHIFT    &kp LEFT_ALT         &kp LC(X)     &kp LC(C)     &kp LC(V)                                &lt 6 COMMA  &lt 4 SPACE            &mt LEFT_CONTROL SEMICOLON      &mt RIGHT_SHIFT SINGLE_QUOTE  &lt 1 SPACE                &lt 5 DOT                &none   &none   &none   &kp RIGHT_ALT  &kp RIGHT_CONTROL
             >;
         };
 
@@ -350,22 +350,22 @@
         symbols {
             label = "Symbols";
             bindings = <
-&trans  &trans           &trans          &trans            &trans                   &trans       &to 0                                                          &trans  &trans         &trans             &trans           &trans                &trans         &trans
-&trans  &kp QUESTION     &kp LEFT_BRACE  &kp PLUS          &kp EQUAL                &trans       &trans                                                         &trans  &trans         &kp LT             &kp RIGHT_BRACE  &kp PIPE              &kp GT         &trans
-&trans  &kp EXCLAMATION  &kp AT          &kp HASH          &kp DOLLAR               &kp PERCENT  &trans  &trans  &trans      &trans  &mt RIGHT_ALT EXCLAMATION  &trans  &kp CARET      &kp RIGHT_BRACKET  &kp ASTERISK     &kp LEFT_PARENTHESIS  &kp BACKSLASH  &trans
-&trans  &kp LS(INT_YEN)  &kp AMPERSAND   &kp LEFT_BRACKET  &kp LS(INTERNATIONAL_1)  &kp INT_RO                   &trans      &trans                                     &kp RS(MINUS)  &kp COLON          &kp MINUS        &kp DOUBLE_QUOTES     &kp SLASH      &trans
-&trans  &trans           &trans          &trans            &trans                                &trans  &trans  &trans      &trans  &lt 1 SPACE                &trans                 &trans             &trans           &trans                &trans         &trans
+&trans  &trans               &trans             &trans           &trans                   &trans         &to 0                                                          &trans  &trans                   &trans                &trans            &trans             &trans            &trans
+&trans  &kp LEFT_BRACE       &kp DOLLAR         &kp SEMICOLON    &kp AT_SIGN              &kp EQUAL      &trans                                                         &trans  &kp HASH                 &kp AMPERSAND         &kp SINGLE_QUOTE  &kp PERCENT        &kp LEFT_BRACKET  &trans
+&trans  &kp LESS_THAN        &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp ASTERISK             &kp QUESTION   &trans  &trans  &trans      &trans  &mt RIGHT_ALT EXCLAMATION  &trans  &kp EXCLAMATION          &kp LEFT_PARENTHESIS  &kp PIPE          &kp BACKSLASH      &kp GREATER_THAN  &trans
+&trans  &kp INTERNATIONAL_1  &kp CARET          &kp PLUS         &kp LS(INTERNATIONAL_1)  &kp LS(MINUS)                  &trans      &trans                                     &kp RS(INTERNATIONAL_3)  &kp COLON             &kp MINUS         &kp DOUBLE_QUOTES  &kp SLASH         &trans
+&trans  &trans               &trans             &trans           &trans                                  &trans  &trans  &trans      &trans  &lt 1 SPACE                &trans                           &trans                &trans            &trans             &trans            &trans
             >;
         };
 
         num_fn {
             label = "Num_Fn";
             bindings = <
-&trans  &kp F11          &kp F12        &kp F13           &kp F14                  &kp F15       &to 0                                       &trans  &kp F16        &kp F17       &kp F18       &kp F19            &kp F20       &trans
-&trans  &kp F1           &kp F2         &kp F3            &kp F4                   &kp F5        &trans                                      &trans  &kp F6         &kp F7        &kp F8        &kp F9             &kp F10       &trans
-&trans  &kp NUMBER_1     &kp NUMBER_2   &kp NUMBER_3      &kp NUMBER_4             &kp NUMBER_5  &trans  &trans  &trans      &trans  &trans  &trans  &kp NUMBER_6   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9       &kp NUMBER_0  &trans
-&trans  &kp LS(INT_YEN)  &kp AMPERSAND  &kp LEFT_BRACKET  &kp LS(INTERNATIONAL_1)  &kp INT_RO                    &trans      &trans                  &kp RS(MINUS)  &kp COLON     &kp MINUS     &kp DOUBLE_QUOTES  &kp SLASH     &trans
-&trans  &kp F21          &kp F22        &kp F23           &kp F24                                &trans  &trans  &trans      &trans  &trans  &trans                 &trans        &trans        &trans             &trans        &trans
+&trans  &trans               &trans        &kp F12       &trans                   &trans         &to 0                                       &trans  &trans                   &trans        &kp F11       &trans             &trans        &trans
+&trans  &kp F6               &kp F4        &kp F2        &kp F10                  &kp F8         &trans                                      &trans  &kp F7                   &kp F9        &kp F1        &kp F3             &kp F5        &trans
+&trans  &kp NUMBER_6         &kp NUMBER_4  &kp NUMBER_2  &kp NUMBER_0             &kp NUMBER_8   &trans  &trans  &trans      &trans  &trans  &trans  &kp NUMBER_7             &kp NUMBER_9  &kp NUMBER_1  &kp NUMBER_3       &kp NUMBER_5  &trans
+&trans  &kp INTERNATIONAL_1  &kp CARET     &kp PLUS      &kp LS(INTERNATIONAL_1)  &kp LS(MINUS)                  &trans      &trans                  &kp RS(INTERNATIONAL_3)  &kp COLON     &kp MINUS     &kp DOUBLE_QUOTES  &kp SLASH     &trans
+&trans  &trans               &trans        &trans        &trans                                  &trans  &trans  &trans      &trans  &trans  &trans                           &trans        &trans        &trans             &trans        &trans
             >;
         };
 
