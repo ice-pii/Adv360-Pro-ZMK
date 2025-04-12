@@ -359,11 +359,11 @@
         default_layer {
             label = "Base";
             bindings = <
-&kp ESCAPE        &kp NUMBER_6             &kp NUMBER_4  &kp NUMBER_2             &kp NUMBER_0  &kp NUMBER_8    &sl 9                                                                                                                        &none      &kp NUMBER_7  &kp NUMBER_9  &kp NUMBER_1  &kp NUMBER_3  &kp NUMBER_5   &sk RIGHT_GUI
+&none             &kp NUMBER_6             &kp NUMBER_4  &kp NUMBER_2             &kp NUMBER_0  &kp NUMBER_8    &sl 8                                                                                                                        &none      &kp NUMBER_7  &kp NUMBER_9  &kp NUMBER_1  &kp NUMBER_3  &kp NUMBER_5   &sk RIGHT_GUI
 &none             &kp Q                    &kp J         &kp E                    &kp C         &sk LEFT_SHIFT  &none                                                                                                                        &none      &kp F         &kp G         &kp K         &kp Y         &kp P          &none
 &none             &kp A                    &kp S         &kp O                    &kp U         &kp W           &none        &mt LEFT_ALT QUESTION  &kp LANGUAGE_2                  &kp LANGUAGE_1                &mt RIGHT_ALT EXCLAMATION  &none      &kp D         &kp T         &kp N         &kp I         &kp H          &none
 &kp LEFT_CONTROL  &kp LS(INTERNATIONAL_3)  &kp X         &kp LS(INTERNATIONAL_1)  &kp V         &kp PLUS                                            &mt LEFT_SHIFT MINUS            &mt RIGHT_CONTROL SLASH                                             &kp L         &kp M         &kp R         &kp Z         &kp B          &kp RIGHT_SHIFT
-&kp LEFT_SHIFT    &kp LEFT_ALT             &kp LC(X)     &kp LC(C)                &kp LC(V)                     &lt 7 COMMA  &lt 5 SPACE            &mt LEFT_CONTROL SEMICOLON      &mt RIGHT_SHIFT SINGLE_QUOTE  &lt 1 SPACE                &lt 6 DOT                &none         &none         &none         &kp RIGHT_ALT  &kp RIGHT_CONTROL
+&kp LEFT_SHIFT    &kp LEFT_ALT             &kp LC(X)     &kp LC(C)                &kp LC(V)                     &lt 6 COMMA  &lt 4 SPACE            &mt LEFT_CONTROL SEMICOLON      &mt RIGHT_SHIFT SINGLE_QUOTE  &lt 1 SPACE                &lt 5 DOT                &none         &none         &none         &kp RIGHT_ALT  &kp RIGHT_CONTROL
             >;
         };
 
@@ -400,24 +400,14 @@
             >;
         };
 
-        qwerty {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &to 0                                                                                                                        &trans     &trans  &trans  &trans     &trans   &trans    &kp MINUS
-&trans  &kp Q   &kp W   &kp E   &kp R   &kp T   &trans                                                                                                                       &trans     &kp Y   &kp U   &kp I      &kp O    &kp P     &kp LBKT
-&trans  &kp A   &kp S   &kp D   &kp F   &kp G   &trans       &mt LEFT_ALT QUESTION  &kp LANGUAGE_2                  &kp LANGUAGE_1                &mt RIGHT_ALT EXCLAMATION  &trans     &kp H   &kp J   &kp K      &kp L    &kp SEMI  &kp APOS
-&trans  &kp Z   &kp X   &kp C   &kp V   &kp B                                       &mt RIGHT_SHIFT MINUS           &mt RIGHT_CONTROL SLASH                                             &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp INTERNATIONAL_1
-&trans  &trans  &trans  &trans  &trans          &lt 7 COMMA  &lt 5 SPACE            &mt LEFT_CONTROL SEMICOLON      &mt RIGHT_SHIFT SINGLE_QUOTE  &lt 1 SPACE                &lt 6 DOT          &trans  &trans     &trans   &trans    &trans
-            >;
-        };
-
         keypad {
             label = "Kp";
             bindings = <
-&kp ESCAPE        &trans            &trans               &trans   &trans               &trans            &to 0                                            &trans  &trans         &trans          &trans          &trans           &trans         &sk RIGHT_GUI
-&none             &none             &kp LANGUAGE_2       &m_UUU   &kp LANGUAGE_1       &kp LS(CAPSLOCK)  &trans                                           &trans  &kp PAGE_UP    &kp HOME        &kp UP_ARROW    &kp END          &kp PAGE_DOWN  &none
-&none             &kp LEFT_CONTROL  &kp INTERNATIONAL_5  &m_Ull   &kp INTERNATIONAL_4  &none             &trans  &trans  &trans      &trans  &kp RS(TAB)  &trans  &kp BACKSPACE  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp DELETE     &none
-&kp LEFT_CONTROL  &kp LEFT_SHIFT    &kp F6               &kp F10  &kp F7               &none                             &trans      &trans                       &none          &kp ENTER       &none           &none            &kp INSERT     &kp RIGHT_SHIFT
-&kp LEFT_SHIFT    &kp LEFT_ALT      &trans               &kp F9   &kp F8                                 &trans  &trans  &trans      &trans  &kp TAB      &trans                 &trans          &trans          &trans           &kp RIGHT_ALT  &kp RIGHT_CONTROL
+&trans  &trans            &trans               &trans   &trans               &trans            &to 0                                                                     &trans  &trans         &trans          &trans          &trans           &trans         &trans
+&trans  &none             &kp LANGUAGE_2       &m_UUU   &kp LANGUAGE_1       &kp LS(CAPSLOCK)  &trans                                                                    &trans  &kp PAGE_UP    &kp HOME        &kp UP_ARROW    &kp END          &kp PAGE_DOWN  &trans
+&trans  &kp LEFT_CONTROL  &kp INTERNATIONAL_5  &m_Ull   &kp INTERNATIONAL_4  &none             &trans  &trans       &trans                          &trans  &kp RS(TAB)  &trans  &kp BACKSPACE  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp DELETE     &trans
+&trans  &kp LEFT_SHIFT    &kp F6               &kp F10  &kp F7               &none                                  &mt LEFT_SHIFT MINUS            &trans                       &none          &kp ENTER       &none           &none            &kp INSERT     &trans
+&trans  &trans            &trans               &kp F9   &kp F8                                 &trans  &lt 4 SPACE  &mt LEFT_CONTROL SEMICOLON      &trans  &kp TAB      &trans                 &trans          &trans          &trans           &trans         &trans
             >;
         };
 
@@ -425,7 +415,7 @@
             label = "Symbols";
             bindings = <
 &trans  &trans                   &trans             &trans                   &trans               &trans        &to 0                                                          &trans  &trans           &trans                &trans             &trans         &trans            &trans
-&trans  &kp LEFT_BRACE           &kp DOLLAR         &kp SEMICOLON            &kp AT_SIGN          &kp EQUAL     &trans                                                         &trans  &kp HASH         &kp AMPERSAND         &kp SINGLE_QUOTE   &kp PERCENT    &kp LEFT_BRACKET  &trans
+&trans  &kp LEFT_BRACE           &kp HASH           &kp SINGLE_QUOTE         &kp AT_SIGN          &kp EQUAL     &trans                                                         &trans  &kp DOLLAR       &kp AMPERSAND         &kp SEMICOLON      &kp PERCENT    &kp LEFT_BRACKET  &trans
 &trans  &kp LESS_THAN            &kp RIGHT_BRACKET  &kp RIGHT_BRACE          &kp ASTERISK         &kp QUESTION  &trans  &trans  &trans      &trans  &mt RIGHT_ALT EXCLAMATION  &trans  &kp EXCLAMATION  &kp LEFT_PARENTHESIS  &kp PIPE           &kp BACKSLASH  &kp GREATER_THAN  &trans
 &trans  &kp LS(INTERNATIONAL_3)  &kp MINUS          &kp LS(INTERNATIONAL_1)  &kp INTERNATIONAL_1  &kp PLUS                      &trans      &trans                                     &kp RS(MINUS)    &kp SLASH             &kp DOUBLE_QUOTES  &kp COLON      &kp CARET         &trans
 &trans  &trans                   &trans             &trans                   &trans                             &trans  &trans  &trans      &trans  &lt 1 SPACE                &trans                   &trans                &trans             &trans         &trans            &trans
@@ -435,11 +425,11 @@
         num_fn {
             label = "Num_Fn";
             bindings = <
-&trans  &trans                   &trans        &trans        &trans               &trans        &to 0                                       &trans  &trans         &trans        &trans        &trans        &trans        &trans
-&trans  &kp F6                   &kp F4        &kp F12       &kp F10              &kp F8        &trans                                      &trans  &kp F7         &kp F9        &kp F11       &kp F3        &kp F5        &trans
-&trans  &kp NUMBER_6             &kp NUMBER_4  &kp NUMBER_2  &kp NUMBER_0         &kp NUMBER_8  &trans  &trans  &trans      &trans  &trans  &trans  &kp NUMBER_7   &kp NUMBER_9  &kp NUMBER_1  &kp NUMBER_3  &kp NUMBER_5  &trans
-&trans  &kp LS(INTERNATIONAL_3)  &kp MINUS     &kp F2        &kp INTERNATIONAL_1  &kp PLUS                      &trans      &trans                  &kp RS(MINUS)  &kp SLASH     &kp F1        &kp COLON     &kp CARET     &trans
-&trans  &trans                   &trans        &trans        &trans                             &trans  &trans  &trans      &trans  &trans  &trans                 &trans        &trans        &trans        &trans        &trans
+&trans  &trans        &trans        &trans        &trans        &trans        &to 0                                       &trans  &trans        &trans        &trans        &trans        &trans        &trans
+&trans  &kp F6        &kp F4        &kp F12       &kp F10       &kp F8        &trans                                      &trans  &kp F7        &kp F9        &kp F11       &kp F3        &kp F5        &trans
+&trans  &kp NUMBER_6  &kp NUMBER_4  &kp NUMBER_2  &kp NUMBER_0  &kp NUMBER_8  &trans  &trans  &trans      &trans  &trans  &trans  &kp NUMBER_7  &kp NUMBER_9  &kp NUMBER_1  &kp NUMBER_3  &kp NUMBER_5  &trans
+&trans  &trans        &trans        &kp F2        &trans        &trans                        &trans      &trans                  &trans        &trans        &kp F1        &trans        &trans        &trans
+&trans  &trans        &trans        &trans        &trans                      &trans  &trans  &trans      &trans  &trans  &trans                &trans        &trans        &trans        &trans        &trans
             >;
         };
 
@@ -457,11 +447,11 @@
         hub {
             label = "Hub";
             bindings = <
-&none  &to 10  &none  &none  &none  &none  &to 0                                  &to 8  &none  &none  &none  &none  &none  &none
-&none  &to 4   &none  &none  &none  &none  &none                                  &none  &none  &none  &none  &none  &none  &none
-&none  &none   &none  &none  &none  &none  &none  &none  &none      &none  &none  &none  &none  &none  &none  &none  &none  &none
-&none  &none   &none  &none  &none  &none                &none      &none                &none  &none  &none  &none  &none  &none
-&none  &none   &none  &none  &none         &none  &none  &none      &none  &none  &none         &none  &none  &none  &none  &none
+&none  &to 9  &none  &none  &none  &none  &to 0                                  &to 7  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none                                  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none      &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                &none      &none                &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none         &none  &none  &none      &none  &none  &none         &none  &none  &none  &none  &none
             >;
         };
 
