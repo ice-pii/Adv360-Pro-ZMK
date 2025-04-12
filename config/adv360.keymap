@@ -413,7 +413,7 @@
         keypad {
             label = "Kp";
             bindings = <
-&kp ESCAPE        &trans            &trans               &trans   &trans               &trans            &to 0                                            &trans  &trans         &trans          &trans          &trans           &trans         &kp RIGHT_GUI
+&kp ESCAPE        &trans            &trans               &trans   &trans               &trans            &to 0                                            &trans  &trans         &trans          &trans          &trans           &trans         &sk RIGHT_GUI
 &none             &none             &kp LANGUAGE_2       &m_UUU   &kp LANGUAGE_1       &kp LS(CAPSLOCK)  &trans                                           &trans  &kp PAGE_UP    &kp HOME        &kp UP_ARROW    &kp END          &kp PAGE_DOWN  &none
 &none             &kp LEFT_CONTROL  &kp INTERNATIONAL_5  &m_Ull   &kp INTERNATIONAL_4  &none             &trans  &trans  &trans      &trans  &kp RS(TAB)  &trans  &kp BACKSPACE  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp DELETE     &none
 &kp LEFT_CONTROL  &kp LEFT_SHIFT    &kp F6               &kp F10  &kp F7               &none                             &trans      &trans                       &none          &kp ENTER       &none           &none            &kp INSERT     &kp RIGHT_SHIFT
