@@ -407,7 +407,7 @@
 &trans  &none             &kp LANGUAGE_2       &m_UUU   &kp LANGUAGE_1       &kp LS(CAPSLOCK)  &trans                                                                    &trans  &kp PAGE_UP    &kp HOME        &kp UP_ARROW    &kp END          &kp PAGE_DOWN  &trans
 &trans  &kp LEFT_CONTROL  &kp INTERNATIONAL_5  &m_Ull   &kp INTERNATIONAL_4  &none             &trans  &trans       &trans                          &trans  &kp RS(TAB)  &trans  &kp BACKSPACE  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp DELETE     &trans
 &trans  &kp LEFT_SHIFT    &kp F6               &kp F10  &kp F7               &none                                  &mt LEFT_SHIFT MINUS            &trans                       &none          &kp ENTER       &none           &none            &kp INSERT     &trans
-&trans  &trans            &trans               &kp F9   &kp F8                                 &trans  &lt 4 SPACE  &mt LEFT_CONTROL SEMICOLON      &trans  &kp TAB      &trans                 &trans          &trans          &trans           &trans         &trans
+&trans  &trans            &none                &kp F9   &kp F8                                 &trans  &lt 4 SPACE  &mt LEFT_CONTROL SEMICOLON      &trans  &kp TAB      &trans                 &trans          &trans          &trans           &trans         &trans
             >;
         };
 
