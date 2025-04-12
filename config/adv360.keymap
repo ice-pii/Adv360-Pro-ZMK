@@ -435,10 +435,10 @@
         num_fn {
             label = "Num_Fn";
             bindings = <
-&trans  &trans               &trans        &kp F12       &trans                   &trans         &to 0                                       &trans  &trans                   &trans        &kp F11       &trans             &trans        &trans
-&trans  &kp F6               &kp F4        &kp F2        &kp F10                  &kp F8         &trans                                      &trans  &kp F7                   &kp F9        &kp F1        &kp F3             &kp F5        &trans
+&trans  &trans               &trans        &trans        &trans                   &trans         &to 0                                       &trans  &trans                   &trans        &trans        &trans             &trans        &trans
+&trans  &kp F6               &kp F4        &kp F12       &kp F10                  &kp F8         &trans                                      &trans  &kp F7                   &kp F9        &kp F11       &kp F3             &kp F5        &trans
 &trans  &kp NUMBER_6         &kp NUMBER_4  &kp NUMBER_2  &kp NUMBER_0             &kp NUMBER_8   &trans  &trans  &trans      &trans  &trans  &trans  &kp NUMBER_7             &kp NUMBER_9  &kp NUMBER_1  &kp NUMBER_3       &kp NUMBER_5  &trans
-&trans  &kp INTERNATIONAL_1  &kp CARET     &kp PLUS      &kp LS(INTERNATIONAL_1)  &kp LS(MINUS)                  &trans      &trans                  &kp RS(INTERNATIONAL_3)  &kp COLON     &kp MINUS     &kp DOUBLE_QUOTES  &kp SLASH     &trans
+&trans  &kp INTERNATIONAL_1  &kp CARET     &kp F2        &kp LS(INTERNATIONAL_1)  &kp LS(MINUS)                  &trans      &trans                  &kp RS(INTERNATIONAL_3)  &kp COLON     &kp F1        &kp DOUBLE_QUOTES  &kp SLASH     &trans
 &trans  &trans               &trans        &trans        &trans                                  &trans  &trans  &trans      &trans  &trans  &trans                           &trans        &trans        &trans             &trans        &trans
             >;
         };
