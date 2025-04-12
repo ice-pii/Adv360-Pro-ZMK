@@ -205,11 +205,74 @@
             label = "M__XN";
         };
 
+        m_xa: m_xa {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp X &kp A>;
+            label = "M_XA";
+        };
+
+        m_xi: m_xi {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp X &kp I>;
+            label = "M_XI";
+        };
+
+        m_xu: m_xu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp X &kp U>;
+            label = "M_XU";
+        };
+
+        m_xe: m_xe {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp X &kp E>;
+            label = "M_XE";
+        };
+
+        m_xo: m_xo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp X &kp O>;
+            label = "M_XO";
+        };
+
+        m_xya: m_xya {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp X &kp Y &kp A>;
+            label = "M_XYA";
+        };
+
+        m_xyu: m_xyu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp X &kp Y &kp U>;
+            label = "M_XYU";
+        };
+
+        m_xyo: m_xyo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp X &kp Y &kp O>;
+            label = "M_XYO";
+        };
+
         m_xtu: m_xtu {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp X &kp T &kp U>;
             label = "M_XTU";
+        };
+
+        m_xwa: m_xwa {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp X &kp W &kp A>;
+            label = "M_XWA";
         };
 
         m_UUU: m_UUU {
