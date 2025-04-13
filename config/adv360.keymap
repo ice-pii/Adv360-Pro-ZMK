@@ -359,7 +359,7 @@
         default_layer {
             label = "Base";
             bindings = <
-&none             &kp NUMBER_6             &kp NUMBER_4  &kp NUMBER_2             &kp NUMBER_0  &kp NUMBER_8    &sl 8                                                                                                                        &none      &kp NUMBER_7  &kp NUMBER_9  &kp NUMBER_1  &kp NUMBER_3  &kp NUMBER_5   &sk RIGHT_GUI
+&kp ESCAPE        &kp NUMBER_6             &kp NUMBER_4  &kp NUMBER_2             &kp NUMBER_0  &kp NUMBER_8    &sl 8                                                                                                                        &none      &kp NUMBER_7  &kp NUMBER_9  &kp NUMBER_1  &kp NUMBER_3  &kp NUMBER_5   &sk RIGHT_GUI
 &none             &kp Q                    &kp J         &kp E                    &kp C         &sk LEFT_SHIFT  &none                                                                                                                        &none      &kp F         &kp G         &kp K         &kp Y         &kp P          &none
 &none             &kp A                    &kp S         &kp O                    &kp U         &kp W           &none        &mt LEFT_ALT QUESTION  &kp LANGUAGE_2                  &kp LANGUAGE_1                &mt RIGHT_ALT EXCLAMATION  &none      &kp D         &kp T         &kp N         &kp I         &kp H          &none
 &kp LEFT_CONTROL  &kp LS(INTERNATIONAL_3)  &kp X         &kp LS(INTERNATIONAL_1)  &kp V         &kp PLUS                                            &mt LEFT_SHIFT MINUS            &mt RIGHT_CONTROL SLASH                                             &kp L         &kp M         &kp R         &kp Z         &kp B          &kp RIGHT_SHIFT
