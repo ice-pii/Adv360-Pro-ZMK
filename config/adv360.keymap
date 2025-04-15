@@ -358,6 +358,13 @@
             bindings = <&kp MINUS &kp X &kp T &kp U>;
             label = "M__XTU";
         };
+
+        m_waxtu: m_waxtu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp W &kp A &kp X &kp T &kp U>;
+            label = "M_WAXTU";
+        };
     };
 
     keymap {
@@ -377,22 +384,22 @@
         xn {
             label = "Xn";
             bindings = <
-&trans  &trans   &trans  &trans   &trans   &trans  &to 0                                          &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans   &trans  &m_exn   &trans   &trans  &trans                                         &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &m_axn   &m_ixn  &m_oxn   &m_uxn   &trans  &trans  &trans     &trans      &trans  &trans  &trans  &trans  &trans  &trans  &kp S   &trans  &trans
-&trans  &m_yaxn  &m_xn   &m_yoxn  &m_yuxn  &trans                     &mo 3       &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans   &trans  &trans   &trans           &trans  &kp SPACE  &mo 2       &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans   &trans  &trans   &trans   &trans   &to 0                                          &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans   &trans  &m_exn   &trans   &trans   &trans                                         &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &m_axn   &m_ixn  &m_oxn   &m_uxn   &m_waxn  &trans  &trans     &trans      &trans  &trans  &trans  &trans  &trans  &trans  &kp S   &trans  &trans
+&trans  &m_yaxn  &m_xn   &m_yoxn  &m_yuxn  &trans                      &mo 3       &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans   &trans  &trans   &trans            &trans  &kp SPACE  &mo 2       &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         xtu {
             label = "Xtu";
             bindings = <
-&trans  &trans    &trans   &trans    &trans    &trans  &to 0                                       &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans    &trans   &m_extu   &trans    &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &m_axtu   &m_ixtu  &m_oxtu   &m_uxtu   &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &kp S   &trans  &trans
-&trans  &m_yaxtu  &m_xtu   &m_yoxtu  &m_yuxtu  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans    &trans   &trans    &trans            &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans    &trans   &trans    &trans    &trans    &to 0                                       &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans    &trans   &m_extu   &trans    &trans    &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &m_axtu   &m_ixtu  &m_oxtu   &m_uxtu   &m_waxtu  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &kp S   &trans  &trans
+&trans  &m_yaxtu  &m_xtu   &m_yoxtu  &m_yuxtu  &trans                    &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans    &trans   &trans    &trans              &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -401,8 +408,8 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &to 0                                       &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &m_xe   &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &m_xa   &m_xi   &m_xo   &m_xu   &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &kp S   &trans  &trans
-&trans  &m_xya  &m_xwa  &m_xyo  &m_xyu  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &m_xa   &m_xi   &m_xo   &m_xu   &m_xwa  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &kp S   &trans  &trans
+&trans  &m_xya  &kp X   &m_xyo  &m_xyu  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
