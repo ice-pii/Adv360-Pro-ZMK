@@ -191,6 +191,13 @@
             label = "M_YOXN";
         };
 
+        m_waxn: m_waxn {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp W &kp A &kp X &kp N>;
+            label = "M_WAXN";
+        };
+
         m_xn: m_xn {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
