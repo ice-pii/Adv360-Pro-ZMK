@@ -386,7 +386,7 @@
             bindings = <
 &trans  &trans   &trans  &trans   &trans   &trans   &to 0                                          &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans   &trans  &m_exn   &trans   &trans   &trans                                         &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &m_axn   &m_ixn  &m_oxn   &m_uxn   &m_waxn  &trans  &trans     &trans      &trans  &trans  &trans  &trans  &trans  &trans  &kp S   &trans  &trans
+&trans  &m_axn   &trans  &m_oxn   &m_uxn   &m_waxn  &trans  &trans     &trans      &trans  &trans  &trans  &trans  &trans  &trans  &m_ixn  &trans  &trans
 &trans  &m_yaxn  &m_xn   &m_yoxn  &m_yuxn  &trans                      &mo 3       &trans                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans   &trans  &trans   &trans            &trans  &kp SPACE  &mo 2       &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
@@ -395,11 +395,11 @@
         xtu {
             label = "Xtu";
             bindings = <
-&trans  &trans    &trans   &trans    &trans    &trans    &to 0                                       &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans    &trans   &m_extu   &trans    &trans    &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &m_axtu   &m_ixtu  &m_oxtu   &m_uxtu   &m_waxtu  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &kp S   &trans  &trans
-&trans  &m_yaxtu  &m_xtu   &m_yoxtu  &m_yuxtu  &trans                    &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans    &trans   &trans    &trans              &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans    &trans  &trans    &trans    &trans    &to 0                                       &trans  &trans  &trans  &trans  &trans   &trans  &trans
+&trans  &trans    &trans  &m_extu   &trans    &trans    &trans                                      &trans  &trans  &trans  &trans  &trans   &trans  &trans
+&trans  &m_axtu   &trans  &m_oxtu   &m_uxtu   &m_waxtu  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &m_ixtu  &trans  &trans
+&trans  &m_yaxtu  &m_xtu  &m_yoxtu  &m_yuxtu  &trans                    &trans      &trans                  &trans  &trans  &trans  &trans   &trans  &trans
+&trans  &trans    &trans  &trans    &trans              &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans   &trans  &trans
             >;
         };
 
@@ -408,7 +408,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &to 0                                       &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &m_xe   &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &m_xa   &m_xi   &m_xo   &m_xu   &m_xwa  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &kp S   &trans  &trans
+&trans  &m_xa   &trans  &m_xo   &m_xu   &m_xwa  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &m_xi   &trans  &trans
 &trans  &m_xya  &kp X   &m_xyo  &m_xyu  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
@@ -477,16 +477,6 @@
 &none       &kp E         &kp A         &kp S         &kp D         &kp F         &none      &kp L      &kp LEFT_ALT          &none  &none  &none  &none  &none  &none  &none  &none  &none
 &none       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                        &kp LEFT_CONTROL      &none                &none  &none  &none  &none  &none  &none
 &none       &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9                &kp F3     &kp SPACE  &kp LEFT_SHIFT        &none  &none  &none         &none  &none  &none  &none  &none
-            >;
-        };
-
-        layer_10 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
