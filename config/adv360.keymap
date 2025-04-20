@@ -373,11 +373,11 @@
         default_layer {
             label = "Base";
             bindings = <
-&kp ESCAPE        &kp NUMBER_6             &kp NUMBER_4  &kp NUMBER_2             &kp NUMBER_0  &kp NUMBER_8    &sl 8                                                                                                                        &none      &kp NUMBER_7  &kp NUMBER_9  &kp NUMBER_1  &kp NUMBER_3  &kp NUMBER_5   &sk RIGHT_GUI
-&none             &kp Q                    &kp J         &kp E                    &kp C         &sk LEFT_SHIFT  &none                                                                                                                        &none      &kp F         &kp G         &kp K         &kp Y         &kp P          &none
-&none             &kp A                    &kp S         &kp O                    &kp U         &kp W           &none        &mt LEFT_ALT QUESTION  &kp LANGUAGE_2                  &kp LANGUAGE_1                &mt RIGHT_ALT EXCLAMATION  &none      &kp D         &kp T         &kp N         &kp I         &kp H          &none
-&kp LEFT_CONTROL  &kp LS(INTERNATIONAL_3)  &kp X         &kp LS(INTERNATIONAL_1)  &kp V         &kp PLUS                                            &mt LEFT_SHIFT MINUS            &mt RIGHT_CONTROL SLASH                                             &kp L         &kp M         &kp R         &kp Z         &kp B          &kp RIGHT_SHIFT
-&kp LEFT_SHIFT    &kp LEFT_ALT             &kp LC(X)     &kp LC(C)                &kp LC(V)                     &lt 6 COMMA  &lt 4 SPACE            &mt LEFT_CONTROL SEMICOLON      &mt RIGHT_SHIFT SINGLE_QUOTE  &lt 1 SPACE                &lt 5 DOT                &none         &none         &none         &kp RIGHT_ALT  &kp RIGHT_CONTROL
+&kp ESCAPE        &none                    &none      &none                    &none      &none           &sl 8                                                                                                                        &none      &none  &none  &none  &none  &none          &sk RIGHT_GUI
+&none             &kp Q                    &kp J      &kp E                    &kp C      &sk LEFT_SHIFT  &none                                                                                                                        &none      &kp F  &kp G  &kp K  &kp Y  &kp P          &none
+&none             &kp A                    &kp S      &kp O                    &kp U      &kp W           &none        &mt LEFT_ALT QUESTION  &kp LANGUAGE_2                  &kp LANGUAGE_1                &mt RIGHT_ALT EXCLAMATION  &none      &kp D  &kp T  &kp N  &kp I  &kp H          &none
+&kp LEFT_CONTROL  &kp LS(INTERNATIONAL_3)  &kp X      &kp LS(INTERNATIONAL_1)  &kp V      &kp PLUS                                            &mt LEFT_SHIFT MINUS            &mt RIGHT_CONTROL SLASH                                             &kp L  &kp M  &kp R  &kp Z  &kp B          &kp RIGHT_SHIFT
+&kp LEFT_SHIFT    &kp LEFT_ALT             &kp LC(X)  &kp LC(C)                &kp LC(V)                  &lt 6 COMMA  &lt 4 SPACE            &mt LEFT_CONTROL SEMICOLON      &mt RIGHT_SHIFT SINGLE_QUOTE  &lt 1 SPACE                &lt 5 DOT         &none  &none  &none  &kp RIGHT_ALT  &kp RIGHT_CONTROL
             >;
         };
 
@@ -432,7 +432,7 @@
 &trans  &kp LEFT_BRACE           &kp AT_SIGN    &kp LS(MINUS)            &kp RIGHT_BRACKET    &kp EQUAL     &trans                                                         &trans  &kp DOLLAR       &kp BACKSLASH         &kp HASH           &kp AMPERSAND     &kp LEFT_BRACKET  &trans
 &trans  &kp SEMICOLON            &kp LESS_THAN  &kp RIGHT_BRACE          &kp ASTERISK         &kp QUESTION  &trans  &trans  &trans      &trans  &mt RIGHT_ALT EXCLAMATION  &trans  &kp EXCLAMATION  &kp LEFT_PARENTHESIS  &kp PIPE           &kp GREATER_THAN  &kp SINGLE_QUOTE  &trans
 &trans  &kp LS(INTERNATIONAL_3)  &kp MINUS      &kp LS(INTERNATIONAL_1)  &kp INTERNATIONAL_1  &kp PLUS                      &trans      &trans                                     &kp PERCENT      &kp SLASH             &kp DOUBLE_QUOTES  &kp COLON         &kp CARET         &trans
-&trans  &trans                   &trans         &trans                   &trans                             &trans  &trans  &trans      &trans  &lt 1 SPACE                &trans                   &trans                &trans             &trans            &trans            &trans
+&trans  &trans                   &none          &none                    &none                              &trans  &trans  &trans      &trans  &lt 1 SPACE                &trans                   &trans                &trans             &trans            &trans            &trans
             >;
         };
 
