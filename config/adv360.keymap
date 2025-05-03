@@ -374,8 +374,8 @@
             label = "Base";
             bindings = <
 &kp ESCAPE        &none                    &none      &none                    &none      &none           &sl 8                                                                                                                        &none      &none  &none  &none  &none  &none          &sk RIGHT_GUI
-&none             &kp Q                    &kp J      &kp E                    &kp C      &sk LEFT_SHIFT  &none                                                                                                                        &none      &kp F  &kp G  &kp K  &kp Y  &kp P          &none
-&none             &kp A                    &kp S      &kp O                    &kp U      &kp W           &none        &mt LEFT_ALT QUESTION  &kp LANGUAGE_2                  &kp LANGUAGE_1                &mt RIGHT_ALT EXCLAMATION  &none      &kp D  &kp T  &kp N  &kp I  &kp H          &none
+&none             &kp Q                    &kp J      &kp E                    &kp W      &sk LEFT_SHIFT  &none                                                                                                                        &none      &kp F  &kp G  &kp K  &kp Y  &kp P          &none
+&none             &kp A                    &kp S      &kp O                    &kp U      &kp C           &none        &mt LEFT_ALT QUESTION  &kp LANGUAGE_2                  &kp LANGUAGE_1                &mt RIGHT_ALT EXCLAMATION  &none      &kp D  &kp T  &kp N  &kp I  &kp H          &none
 &kp LEFT_CONTROL  &kp LS(INTERNATIONAL_3)  &kp X      &kp LS(INTERNATIONAL_1)  &kp V      &kp PLUS                                            &mt LEFT_SHIFT MINUS            &mt RIGHT_CONTROL SLASH                                             &kp L  &kp M  &kp R  &kp Z  &kp B          &kp RIGHT_SHIFT
 &kp LEFT_SHIFT    &kp LEFT_ALT             &kp LC(X)  &kp LC(C)                &kp LC(V)                  &lt 6 COMMA  &lt 4 SPACE            &mt LEFT_CONTROL SEMICOLON      &mt RIGHT_SHIFT SINGLE_QUOTE  &lt 1 SPACE                &lt 5 DOT         &none  &none  &none  &kp RIGHT_ALT  &kp RIGHT_CONTROL
             >;
@@ -386,7 +386,7 @@
             bindings = <
 &trans  &trans   &trans  &trans   &trans   &trans   &to 0                                          &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans   &trans  &m_exn   &trans   &trans   &trans                                         &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &m_axn   &m_ixn  &m_oxn   &m_uxn   &m_waxn  &trans  &trans     &trans      &trans  &trans  &trans  &trans  &trans  &trans  &kp S   &trans  &trans
+&trans  &m_axn   &trans  &m_oxn   &m_uxn   &m_waxn  &trans  &trans     &trans      &trans  &trans  &trans  &trans  &trans  &trans  &m_ixn  &trans  &trans
 &trans  &m_yaxn  &m_xn   &m_yoxn  &m_yuxn  &trans                      &mo 3       &trans                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans   &trans  &trans   &trans            &trans  &kp SPACE  &mo 2       &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
@@ -395,11 +395,11 @@
         xtu {
             label = "Xtu";
             bindings = <
-&trans  &trans    &trans   &trans    &trans    &trans    &to 0                                       &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans    &trans   &m_extu   &trans    &trans    &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &m_axtu   &m_ixtu  &m_oxtu   &m_uxtu   &m_waxtu  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &kp S   &trans  &trans
-&trans  &m_yaxtu  &m_xtu   &m_yoxtu  &m_yuxtu  &trans                    &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans    &trans   &trans    &trans              &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans    &trans  &trans    &trans    &trans    &to 0                                       &trans  &trans  &trans  &trans  &trans   &trans  &trans
+&trans  &trans    &trans  &m_extu   &trans    &trans    &trans                                      &trans  &trans  &trans  &trans  &trans   &trans  &trans
+&trans  &m_axtu   &trans  &m_oxtu   &m_uxtu   &m_waxtu  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &m_ixtu  &trans  &trans
+&trans  &m_yaxtu  &m_xtu  &m_yoxtu  &m_yuxtu  &trans                    &trans      &trans                  &trans  &trans  &trans  &trans   &trans  &trans
+&trans  &trans    &trans  &trans    &trans              &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans   &trans  &trans
             >;
         };
 
@@ -408,7 +408,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &to 0                                       &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &m_xe   &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &m_xa   &m_xi   &m_xo   &m_xu   &m_xwa  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &kp S   &trans  &trans
+&trans  &m_xa   &trans  &m_xo   &m_xu   &m_xwa  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &m_xi   &trans  &trans
 &trans  &m_xya  &kp X   &m_xyo  &m_xyu  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
