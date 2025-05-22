@@ -373,11 +373,11 @@
         default_layer {
             label = "Base";
             bindings = <
-&kp ESCAPE        &none                    &none      &none                    &none      &none           &sl 8                                                                                                                        &none      &none  &none  &none  &none  &none          &sk RIGHT_GUI
+&kp ESCAPE        &none                    &none      &none                    &none      &none           &sl 6                                                                                                                        &none      &none  &none  &none  &none  &none          &sk RIGHT_GUI
 &none             &kp Q                    &kp J      &kp E                    &kp W      &sk LEFT_SHIFT  &none                                                                                                                        &none      &kp F  &kp G  &kp K  &kp Y  &kp P          &none
 &none             &kp A                    &kp S      &kp O                    &kp U      &kp C           &none        &mt LEFT_ALT QUESTION  &kp LANGUAGE_2                  &kp LANGUAGE_1                &mt RIGHT_ALT EXCLAMATION  &none      &kp D  &kp T  &kp N  &kp I  &kp H          &none
 &kp LEFT_CONTROL  &kp LS(INTERNATIONAL_3)  &kp X      &kp LS(INTERNATIONAL_1)  &kp V      &kp PLUS                                            &mt LEFT_SHIFT MINUS            &mt RIGHT_CONTROL SLASH                                             &kp L  &kp M  &kp R  &kp Z  &kp B          &kp RIGHT_SHIFT
-&kp LEFT_SHIFT    &kp LEFT_ALT             &kp LC(X)  &kp LC(C)                &kp LC(V)                  &lt 6 COMMA  &lt 4 SPACE            &mt LEFT_CONTROL SEMICOLON      &mt RIGHT_SHIFT SINGLE_QUOTE  &lt 1 SPACE                &lt 5 DOT         &none  &none  &none  &kp RIGHT_ALT  &kp RIGHT_CONTROL
+&kp LEFT_SHIFT    &kp LEFT_ALT             &kp LC(X)  &kp LC(C)                &kp LC(V)                  &lt 4 COMMA  &lt 2 SPACE            &mt LEFT_CONTROL SEMICOLON      &mt RIGHT_SHIFT SINGLE_QUOTE  &lt 1 SPACE                &lt 3 DOT         &none  &none  &none  &kp RIGHT_ALT  &kp RIGHT_CONTROL
             >;
         };
 
@@ -386,31 +386,9 @@
             bindings = <
 &trans  &trans   &trans  &trans   &trans   &trans   &to 0                                          &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans   &trans  &m_exn   &trans   &trans   &trans                                         &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &m_axn   &trans  &m_oxn   &m_uxn   &m_waxn  &trans  &trans     &trans      &trans  &trans  &trans  &trans  &trans  &trans  &m_ixn  &trans  &trans
-&trans  &m_yaxn  &m_xn   &m_yoxn  &m_yuxn  &trans                      &mo 3       &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans   &trans  &trans   &trans            &trans  &kp SPACE  &mo 2       &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        xtu {
-            label = "Xtu";
-            bindings = <
-&trans  &trans    &trans  &trans    &trans    &trans    &to 0                                       &trans  &trans  &trans  &trans  &trans   &trans  &trans
-&trans  &trans    &trans  &m_extu   &trans    &trans    &trans                                      &trans  &trans  &trans  &trans  &trans   &trans  &trans
-&trans  &m_axtu   &trans  &m_oxtu   &m_uxtu   &m_waxtu  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &m_ixtu  &trans  &trans
-&trans  &m_yaxtu  &m_xtu  &m_yoxtu  &m_yuxtu  &trans                    &trans      &trans                  &trans  &trans  &trans  &trans   &trans  &trans
-&trans  &trans    &trans  &trans    &trans              &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans   &trans  &trans
-            >;
-        };
-
-        xa {
-            label = "Xa";
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &to 0                                       &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &m_xe   &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &m_xa   &trans  &m_xo   &m_xu   &m_xwa  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &m_xi   &trans  &trans
-&trans  &m_xya  &kp X   &m_xyo  &m_xyu  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &m_axn   &m_ixn  &m_oxn   &m_uxn   &m_waxn  &trans  &trans     &trans      &trans  &trans  &trans  &trans  &trans  &trans  &kp S   &trans  &trans
+&trans  &m_yaxn  &m_xn   &m_yoxn  &m_yuxn  &trans                      &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans   &trans  &trans   &trans            &trans  &kp SPACE  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -421,7 +399,7 @@
 &trans  &none             &kp LANGUAGE_2       &m_UUU   &kp LANGUAGE_1       &kp LS(CAPSLOCK)  &trans                                                                    &trans  &kp PAGE_UP    &kp HOME        &kp UP_ARROW    &kp END          &kp PAGE_DOWN  &trans
 &trans  &kp LEFT_CONTROL  &kp INTERNATIONAL_5  &m_Ull   &kp INTERNATIONAL_4  &none             &trans  &trans       &trans                          &trans  &kp RS(TAB)  &trans  &kp BACKSPACE  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp DELETE     &trans
 &trans  &kp LEFT_SHIFT    &kp F6               &kp F10  &kp F7               &none                                  &mt LEFT_SHIFT MINUS            &trans                       &none          &kp ENTER       &none           &none            &kp INSERT     &trans
-&trans  &trans            &none                &kp F9   &kp F8                                 &trans  &lt 4 SPACE  &mt LEFT_CONTROL SEMICOLON      &trans  &kp TAB      &trans                 &trans          &trans          &trans           &trans         &trans
+&trans  &trans            &none                &kp F9   &kp F8                                 &trans  &lt 2 SPACE  &mt LEFT_CONTROL SEMICOLON      &trans  &kp TAB      &trans                 &trans          &trans          &trans           &trans         &trans
             >;
         };
 
@@ -461,7 +439,7 @@
         hub {
             label = "Hub";
             bindings = <
-&none  &to 9  &none  &none  &none  &none  &to 0                                  &to 7  &none  &none  &none  &none  &none  &none
+&none  &to 7  &none  &none  &none  &none  &to 0                                  &to 5  &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none  &none                                  &none  &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none  &none  &none  &none      &none  &none  &none  &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none                &none      &none                &none  &none  &none  &none  &none  &none
