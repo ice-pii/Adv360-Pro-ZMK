@@ -30,256 +30,39 @@
     };
 
     macros {
-        m_axn: m_axn {
+        m_an: m_axn {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp A &kp N &kp N>;
+            bindings = <&kp A &kp Z>;
             label = "M_AXN";
         };
 
-        m_ixn: m_ixn {
+        m_in: m_ixn {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp I &kp N &kp N>;
+            bindings = <&kp I &kp X>;
             label = "M_IXN";
         };
 
-        m_uu: m_uu {
+        m_un: m_uxn {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp U &kp U>;
-            label = "M_UU";
-        };
-
-        m_uuxn: m_uuxn {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp U &kp U &kp N &kp N>;
-            label = "M_UUXN";
-        };
-
-        m_uxn: m_uxn {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp U &kp N &kp N>;
+            bindings = <&kp U &kp Z>;
             label = "M_UXN";
         };
 
-        m_exn: m_exn {
+        m_en: m_exn {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp E &kp N &kp N>;
+            bindings = <&kp E &kp Z>;
             label = "M_EXN";
         };
 
-        m_ou: m_ou {
+        m_on: m_oxn {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp O &kp U>;
-            label = "M_OU";
-        };
-
-        m_ouxn: m_ouxn {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp O &kp U &kp N &kp N>;
-            label = "M_OUXN";
-        };
-
-        m_oxn: m_oxn {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp O &kp N &kp N>;
+            bindings = <&kp O &kp Z>;
             label = "M_OXN";
-        };
-
-        m_ya: m_ya {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp Y &kp A>;
-            label = "M_YA";
-        };
-
-        m_yaxn: m_yaxn {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp Y &kp A &kp N &kp N>;
-            label = "M_YAXN";
-        };
-
-        m_yi: m_yi {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp Y &kp I>;
-            label = "M_YI";
-        };
-
-        m_yixn: m_yixn {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp Y &kp I &kp N &kp N>;
-            label = "M_YIXN";
-        };
-
-        m_yu: m_yu {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp Y &kp U>;
-            label = "M_YU";
-        };
-
-        m_yuu: m_yuu {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp Y &kp U &kp U>;
-            label = "M_YUU";
-        };
-
-        m_yuuxn: m_yuuxn {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp Y &kp U &kp U &kp N &kp N>;
-            label = "M_YUUXN";
-        };
-
-        m_yuxn: m_yuxn {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp Y &kp U &kp N &kp N>;
-            label = "M_YUXN";
-        };
-
-        m_ye: m_ye {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp Y &kp E>;
-            label = "M_YE";
-        };
-
-        m_yexn: m_yexn {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp Y &kp E &kp N &kp N>;
-            label = "M_YEXN";
-        };
-
-        m_yo: m_yo {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp Y &kp O>;
-            label = "M_YO";
-        };
-
-        m_you: m_you {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp Y &kp O &kp U>;
-            label = "M_YOU";
-        };
-
-        m_youxn: m_youxn {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp Y &kp O &kp U &kp N &kp N>;
-            label = "M_YOUXN";
-        };
-
-        m_yoxn: m_yoxn {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp Y &kp O &kp N &kp N>;
-            label = "M_YOXN";
-        };
-
-        m_waxn: m_waxn {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp W &kp A &kp N &kp N>;
-            label = "M_WAXN";
-        };
-
-        m_xn: m_xn {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp N &kp N>;
-            label = "M_XN";
-        };
-
-        m__xn: m__xn {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp MINUS &kp N &kp N>;
-            label = "M__XN";
-        };
-
-        m_xa: m_xa {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp L &kp A>;
-            label = "M_XA";
-        };
-
-        m_xi: m_xi {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp L &kp I>;
-            label = "M_XI";
-        };
-
-        m_xu: m_xu {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp L &kp U>;
-            label = "M_XU";
-        };
-
-        m_xe: m_xe {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp L &kp E>;
-            label = "M_XE";
-        };
-
-        m_xo: m_xo {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp L &kp O>;
-            label = "M_XO";
-        };
-
-        m_xya: m_xya {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp L &kp Y &kp A>;
-            label = "M_XYA";
-        };
-
-        m_xyu: m_xyu {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp L &kp Y &kp U>;
-            label = "M_XYU";
-        };
-
-        m_xyo: m_xyo {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp L &kp Y &kp O>;
-            label = "M_XYO";
-        };
-
-        m_xtu: m_xtu {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp L &kp T &kp U>;
-            label = "M_XTU";
-        };
-
-        m_xwa: m_xwa {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp L &kp W &kp A>;
-            label = "M_XWA";
         };
 
         m_UUU: m_UUU {
@@ -294,76 +77,6 @@
             #binding-cells = <0>;
             bindings = <&kp F10 &kp F10 &kp F10>;
             label = "M_ULL";
-        };
-
-        m_axtu: m_axtu {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp A &kp L &kp T &kp U>;
-            label = "M_AXTU";
-        };
-
-        m_ixtu: m_ixtu {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp I &kp L &kp T &kp U>;
-            label = "M_IXTU";
-        };
-
-        m_uxtu: m_uxtu {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp U &kp L &kp T &kp U>;
-            label = "M_UXTU";
-        };
-
-        m_extu: m_extu {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp E &kp L &kp T &kp U>;
-            label = "M_EXTU";
-        };
-
-        m_oxtu: m_oxtu {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp O &kp L &kp T &kp U>;
-            label = "M_OXTU";
-        };
-
-        m_yaxtu: m_yaxtu {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp Y &kp A &kp L &kp T &kp U>;
-            label = "M_YAXTU";
-        };
-
-        m_yuxtu: m_yuxtu {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp Y &kp U &kp L &kp T &kp U>;
-            label = "M_YUXTU";
-        };
-
-        m_yoxtu: m_yoxtu {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp Y &kp O &kp L &kp T &kp U>;
-            label = "M_YOXTU";
-        };
-
-        m__xtu: m__xtu {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp MINUS &kp L &kp T &kp U>;
-            label = "M__XTU";
-        };
-
-        m_waxtu: m_waxtu {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp W &kp A &kp L &kp T &kp U>;
-            label = "M_WAXTU";
         };
     };
 
@@ -384,11 +97,11 @@
         xn {
             label = "Xn";
             bindings = <
-&trans  &trans   &trans   &trans  &trans   &trans  &to 0                                          &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &m_yaxn  &m_yoxn  &m_exn  &m_yuxn  &trans  &trans                                         &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &m_axn   &m_ixn   &m_oxn  &m_uxn   &trans  &trans  &trans     &trans      &trans  &trans  &trans  &trans  &trans  &trans  &kp S   &trans  &trans
-&trans  &trans   &m_xn    &trans  &trans   &trans                     &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans   &trans   &trans  &trans           &trans  &kp SPACE  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &to 0                                          &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &m_en   &trans  &trans  &trans                                         &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &m_an   &trans  &m_on   &m_un   &trans  &trans  &trans     &trans      &trans  &trans  &trans  &trans  &trans  &trans  &m_in   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                     &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &kp SPACE  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -455,6 +168,16 @@
 &none       &kp E         &kp A         &kp S         &kp D         &kp F         &none      &kp L      &kp LEFT_ALT          &none  &none  &none  &none  &none  &none  &none  &none  &none
 &none       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                        &kp LEFT_CONTROL      &none                &none  &none  &none  &none  &none  &none
 &none       &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9                &kp F3     &kp SPACE  &kp LEFT_SHIFT        &none  &none  &none         &none  &none  &none  &none  &none
+            >;
+        };
+
+        layer_8 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
