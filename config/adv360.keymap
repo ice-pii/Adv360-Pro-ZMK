@@ -134,6 +134,20 @@
             bindings = <&kp M &kp Z>;
             label = "M_N";
         };
+
+        m_sin: m_sin {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp S &kp I &kp X>;
+            label = "M_SIN";
+        };
+
+        m_jin: m_jin {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp J &kp I &kp Z>;
+            label = "M_JIN";
+        };
     };
 
     keymap {
@@ -156,7 +170,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &to 0                                          &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &m_qn   &m_jn   &m_en   &m_wn   &trans  &trans                                         &trans  &trans  &m_gn   &trans  &m_yn   &m_pn   &trans
 &trans  &m_an   &m_in   &m_on   &m_un   &trans  &trans  &trans     &trans      &trans  &trans  &trans  &trans  &trans  &trans  &kp S   &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                     &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &m_sin  &trans  &trans  &trans                     &trans      &trans                  &trans  &trans  &trans  &m_jin  &trans  &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &kp SPACE  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
