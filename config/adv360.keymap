@@ -40,7 +40,7 @@
         m_in: m_ixn {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp I &kp Z>;
+            bindings = <&kp I &kp X>;
             label = "M_IXN";
         };
 
@@ -110,28 +110,28 @@
         m_gn: m_gn {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp G &kp Z>;
+            bindings = <&kp G &kp X>;
             label = "M_GN";
         };
 
         m_yn: m_yn {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp Y &kp Z>;
+            bindings = <&kp Y &kp X>;
             label = "M_YN";
         };
 
         m_pn: m_pn {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp P &kp Z>;
+            bindings = <&kp P &kp X>;
             label = "M_PN";
         };
 
         m_mn: m_n {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp M &kp Z>;
+            bindings = <&kp M &kp X>;
             label = "M_N";
         };
 
@@ -145,8 +145,15 @@
         m_jin: m_jin {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp J &kp I &kp Z>;
+            bindings = <&kp J &kp I &kp X>;
             label = "M_JIN";
+        };
+
+        m__n: m__n {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS &kp X>;
+            label = "M__N";
         };
     };
 
@@ -170,7 +177,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &to 0                                          &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &m_qn   &m_jn   &m_en   &m_wn   &trans  &trans                                         &trans  &trans  &m_gn   &trans  &m_yn   &m_pn   &trans
 &trans  &m_an   &m_in   &m_on   &m_un   &trans  &trans  &trans     &trans      &trans  &trans  &trans  &trans  &trans  &trans  &kp S   &trans  &trans
-&trans  &trans  &m_sin  &trans  &trans  &trans                     &trans      &trans                  &trans  &trans  &trans  &m_jin  &trans  &trans
+&trans  &trans  &m_sin  &trans  &trans  &trans                     &m__n       &trans                  &trans  &trans  &trans  &m_jin  &trans  &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &kp SPACE  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
