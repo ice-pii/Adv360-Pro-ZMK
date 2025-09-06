@@ -165,7 +165,7 @@
             bindings = <
 &kp ESCAPE        &kp NUMBER_6             &kp NUMBER_4  &kp NUMBER_2             &kp NUMBER_0  &kp NUMBER_8    &sl 6                                                                                                                        &none      &kp NUMBER_7  &kp NUMBER_9  &kp NUMBER_1  &kp NUMBER_3  &kp NUMBER_5   &sk RIGHT_GUI
 &none             &kp Q                    &kp J         &kp E                    &kp W         &sk LEFT_SHIFT  &none                                                                                                                        &none      &kp F         &kp G         &kp K         &kp Y         &kp P          &none
-&kp SEMICOLON     &kp A                    &kp S         &kp O                    &kp U         &kp C           &none        &mt LEFT_ALT QUESTION  &kp LANGUAGE_2                  &kp LANGUAGE_1                &mt RIGHT_ALT EXCLAMATION  &none      &kp D         &kp T         &kp N         &kp I         &kp H          &kp SINGLE_QUOTE
+&kp EQUAL         &kp A                    &kp S         &kp O                    &kp U         &kp C           &none        &mt LEFT_ALT QUESTION  &kp LANGUAGE_2                  &kp LANGUAGE_1                &mt RIGHT_ALT EXCLAMATION  &none      &kp D         &kp T         &kp N         &kp I         &kp H          &kp DOLLAR
 &kp LEFT_CONTROL  &kp LS(INTERNATIONAL_3)  &kp X         &kp LS(INTERNATIONAL_1)  &kp V         &kp PLUS                                            &mt LEFT_SHIFT MINUS            &mt RIGHT_CONTROL SLASH                                             &kp L         &kp M         &kp R         &kp Z         &kp B          &kp RIGHT_SHIFT
 &kp LEFT_SHIFT    &kp LEFT_ALT             &kp LC(X)     &kp LC(C)                &kp LC(V)                     &lt 4 COMMA  &lt 1 SPACE            &mt LEFT_CONTROL SEMICOLON      &mt RIGHT_SHIFT SINGLE_QUOTE  &lt 2 SPACE                &lt 3 DOT                &none         &none         &none         &kp RIGHT_ALT  &kp RIGHT_CONTROL
             >;
@@ -174,33 +174,33 @@
         xn {
             label = "Xn";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &to 0                                            &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &m_qn   &m_jn   &m_en   &m_wn   &trans  &trans                                           &trans  &trans  &m_gn   &trans  &m_yn   &m_pn   &trans
-&trans  &m_an   &trans  &m_on   &m_un   &trans  &trans  &trans  &trans      &trans  &kp LS(TAB)  &trans  &trans  &trans  &trans  &m_in   &trans  &trans
-&trans  &trans  &m_sin  &trans  &trans  &trans                  &trans      &trans                       &trans  &trans  &trans  &m_jin  &trans  &trans
-&trans  &trans  &m__n   &trans  &trans          &trans  &trans  &trans      &trans  &kp TAB      &trans          &trans  &trans  &m__n   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &to 0                                        &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &m_en   &trans  &trans  &trans                                       &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &m_an   &trans  &m_on   &m_un   &trans  &trans  &trans  &trans      &trans  &trans   &trans  &trans  &trans  &trans  &m_in   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                   &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &kp TAB  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         keypad {
             label = "Kp";
             bindings = <
-&trans  &trans            &trans               &trans   &trans               &trans            &to 0                                                             &trans  &trans         &trans          &trans          &trans           &trans         &trans
-&trans  &none             &kp LANGUAGE_2       &m_UUU   &kp LANGUAGE_1       &kp LS(CAPSLOCK)  &trans                                                            &trans  &kp PAGE_UP    &kp HOME        &kp UP_ARROW    &kp END          &kp PAGE_DOWN  &trans
-&trans  &kp LEFT_CONTROL  &kp INTERNATIONAL_5  &m_Ull   &kp INTERNATIONAL_4  &none             &trans  &trans     &trans      &trans  &mt RIGHT_ALT EXCLAMATION  &trans  &kp BACKSPACE  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp DELETE     &trans
-&trans  &kp LEFT_SHIFT    &kp F6               &kp F10  &kp F7               &none                                &trans      &trans                                     &none          &kp ENTER       &none           &none            &kp INSERT     &trans
-&trans  &trans            &none                &kp F9   &kp F8                                 &trans  &kp SPACE  &trans      &trans  &lt 2 SPACE                &trans                 &none           &none           &none            &trans         &trans
+&trans  &trans        &trans    &trans         &trans          &trans            &to 0                                                             &trans  &trans         &trans          &trans          &trans           &trans      &trans
+&trans  &none         &none     &kp PAGE_UP    &none           &kp LS(CAPSLOCK)  &trans                                                            &trans  &kp INS        &none           &kp UP_ARROW    &none            &none       &trans
+&trans  &kp LEFT_ALT  &kp HOME  &kp PAGE_DOWN  &kp END         &none             &trans  &trans     &trans      &trans  &mt RIGHT_ALT EXCLAMATION  &trans  &kp BACKSPACE  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp DELETE  &trans
+&trans  &none         &none     &none          &kp LEFT_SHIFT  &none                                &trans      &trans                                     &none          &kp ENTER       &none           &kp TAB          &none       &trans
+&trans  &trans        &trans    &trans         &trans                            &trans  &kp SPACE  &trans      &trans  &lt 2 SPACE                &trans                 &none           &none           &none            &trans      &trans
             >;
         };
 
         symbols {
             label = "Symbols";
             bindings = <
-&trans  &trans                   &trans         &trans                   &trans               &trans        &to 0                                                          &trans  &trans           &trans                &trans             &trans            &trans            &trans
-&trans  &kp LEFT_BRACE           &kp AT_SIGN    &kp LS(MINUS)            &kp RIGHT_BRACKET    &kp EQUAL     &trans                                                         &trans  &kp DOLLAR       &kp BACKSLASH         &kp HASH           &kp AMPERSAND     &kp LEFT_BRACKET  &trans
-&trans  &kp SEMICOLON            &kp LESS_THAN  &kp RIGHT_BRACE          &kp ASTERISK         &kp QUESTION  &trans  &trans  &trans      &trans  &mt RIGHT_ALT EXCLAMATION  &trans  &kp EXCLAMATION  &kp LEFT_PARENTHESIS  &kp PIPE           &kp GREATER_THAN  &kp SINGLE_QUOTE  &trans
-&trans  &kp LS(INTERNATIONAL_3)  &kp MINUS      &kp LS(INTERNATIONAL_1)  &kp INTERNATIONAL_1  &kp PLUS                      &trans      &trans                                     &kp PERCENT      &kp SLASH             &kp DOUBLE_QUOTES  &kp COLON         &kp CARET         &trans
-&trans  &trans                   &none          &none                    &none                              &trans  &trans  &trans      &trans  &lt 1 SPACE                &trans                   &trans                &trans             &trans            &trans            &trans
+&trans     &trans                   &trans         &trans                   &trans               &trans        &to 0                                                          &trans  &trans           &trans                &trans             &trans            &trans            &trans
+&trans     &kp LEFT_BRACE           &kp AT_SIGN    &kp LS(MINUS)            &kp RIGHT_BRACKET    &kp EQUAL     &trans                                                         &trans  &kp DOLLAR       &kp BACKSLASH         &kp HASH           &kp AMPERSAND     &kp LEFT_BRACKET  &trans
+&kp EQUAL  &kp SEMICOLON            &kp LESS_THAN  &kp RIGHT_BRACE          &kp ASTERISK         &kp QUESTION  &trans  &trans  &trans      &trans  &mt RIGHT_ALT EXCLAMATION  &trans  &kp EXCLAMATION  &kp LEFT_PARENTHESIS  &kp PIPE           &kp GREATER_THAN  &kp SINGLE_QUOTE  &kp DOLLAR
+&trans     &kp LS(INTERNATIONAL_3)  &kp MINUS      &kp LS(INTERNATIONAL_1)  &kp INTERNATIONAL_1  &kp PLUS                      &trans      &trans                                     &kp PERCENT      &kp SLASH             &kp DOUBLE_QUOTES  &kp COLON         &kp CARET         &trans
+&trans     &trans                   &none          &none                    &none                              &trans  &trans  &trans      &trans  &lt 1 SPACE                &trans                   &trans                &trans             &trans            &trans            &trans
             >;
         };
 
