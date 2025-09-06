@@ -186,10 +186,10 @@
             label = "Kp";
             bindings = <
 &trans  &trans        &trans    &trans         &trans          &trans            &to 0                                                             &trans  &trans         &trans          &trans          &trans           &trans      &trans
-&trans  &none         &none     &kp PAGE_UP    &none           &kp LS(CAPSLOCK)  &trans                                                            &trans  &kp INS        &none           &kp UP_ARROW    &none            &none       &trans
-&trans  &kp LEFT_ALT  &kp HOME  &kp PAGE_DOWN  &kp END         &none             &trans  &trans     &trans      &trans  &mt RIGHT_ALT EXCLAMATION  &trans  &kp BACKSPACE  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp DELETE  &trans
-&trans  &none         &none     &none          &kp LEFT_SHIFT  &none                                &trans      &trans                                     &none          &kp ENTER       &none           &kp TAB          &none       &trans
-&trans  &trans        &trans    &trans         &trans                            &trans  &kp SPACE  &trans      &trans  &lt 2 SPACE                &trans                 &none           &none           &none            &trans      &trans
+&trans  &none         &none     &kp PAGE_UP    &none           &kp LS(CAPSLOCK)  &trans                                                            &trans  &none          &none           &kp UP_ARROW    &none            &none       &trans
+&trans  &none         &kp HOME  &kp PAGE_DOWN  &kp END         &none             &trans  &trans     &trans      &trans  &mt RIGHT_ALT EXCLAMATION  &trans  &kp BACKSPACE  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp DELETE  &trans
+&trans  &kp LEFT_ALT  &none     &none          &kp LEFT_SHIFT  &none                                &trans      &trans                                     &none          &kp ENTER       &none           &kp TAB          &kp INSERT  &trans
+&trans  &trans        &trans    &trans         &trans                            &trans  &kp SPACE  &trans      &trans  &lt 2 SPACE                &trans                 &trans          &trans          &trans           &trans      &trans
             >;
         };
 
