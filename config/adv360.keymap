@@ -163,7 +163,7 @@
         default_layer {
             label = "Base";
             bindings = <
-&kp ESCAPE              &kp NUMBER_6             &kp NUMBER_4  &kp NUMBER_2             &kp NUMBER_0   &kp NUMBER_8    &sl 6                                                                                                                        &none      &kp NUMBER_7  &kp NUMBER_9   &kp NUMBER_1  &kp NUMBER_3  &kp NUMBER_5   &sk RIGHT_GUI
+&kp ESCAPE              &kp NUMBER_6             &kp NUMBER_4  &kp NUMBER_2             &kp NUMBER_0   &kp NUMBER_8    &sl 6                                                                                                                        &none      &kp NUMBER_9  &kp NUMBER_1   &kp NUMBER_3  &kp NUMBER_5  &kp NUMBER_7   &sk RIGHT_GUI
 &none                   &kp Q                    &kp J         &kp E                    &kp W          &sk LEFT_SHIFT  &none                                                                                                                        &none      &kp F         &kp G          &kp K         &kp Y         &kp P          &none
 &kp QUESTION            &kp A                    &kp S         &kp O                    &kp U          &kp C           &none        &mt LEFT_ALT QUESTION  &kp LANGUAGE_2                  &kp LANGUAGE_1                &mt RIGHT_ALT EXCLAMATION  &none      &kp D         &kp T          &kp N         &kp I         &kp H          &kp EXCLAMATION
 &mt LEFT_CONTROL EQUAL  &kp LS(INTERNATIONAL_3)  &kp X         &kp LS(INTERNATIONAL_1)  &kp V          &kp PLUS                                            &mt LEFT_SHIFT MINUS            &mt RIGHT_CONTROL SLASH                                             &kp L         &kp M          &kp R         &kp Z         &kp B          &mt RIGHT_SHIFT DOLLAR
@@ -207,10 +207,10 @@
         num_fn {
             label = "Num_Fn";
             bindings = <
-&trans  &trans        &trans        &trans        &trans        &trans        &to 0                                       &trans  &trans        &trans        &trans        &trans        &trans        &trans
-&trans  &kp F6        &kp F4        &kp F12       &kp F10       &kp F8        &trans                                      &trans  &kp F7        &kp F9        &kp F11       &kp F3        &kp F5        &trans
-&trans  &kp NUMBER_6  &kp NUMBER_4  &kp NUMBER_2  &kp NUMBER_0  &kp NUMBER_8  &trans  &trans  &trans      &trans  &trans  &trans  &kp NUMBER_7  &kp NUMBER_9  &kp NUMBER_1  &kp NUMBER_3  &kp NUMBER_5  &trans
-&trans  &trans        &trans        &kp F2        &trans        &trans                        &trans      &trans                  &trans        &trans        &kp F1        &trans        &trans        &trans
+&trans  &trans        &trans        &kp F12       &trans        &trans        &to 0                                       &trans  &trans        &trans        &kp F11       &trans        &trans        &trans
+&trans  &kp F6        &kp F4        &kp F2        &kp F10       &kp F8        &trans                                      &trans  &kp F9        &kp F1        &kp F3        &kp F5        &kp F7        &trans
+&trans  &kp NUMBER_6  &kp NUMBER_4  &kp NUMBER_2  &kp NUMBER_0  &kp NUMBER_8  &trans  &trans  &trans      &trans  &trans  &trans  &kp NUMBER_9  &kp NUMBER_1  &kp NUMBER_3  &kp NUMBER_5  &kp NUMBER_7  &trans
+&trans  &trans        &trans        &trans        &trans        &trans                        &trans      &trans                  &trans        &trans        &trans        &trans        &trans        &trans
 &trans  &trans        &trans        &trans        &trans                      &trans  &trans  &trans      &trans  &trans  &trans                &trans        &trans        &trans        &trans        &trans
             >;
         };
