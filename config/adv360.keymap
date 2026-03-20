@@ -175,8 +175,8 @@
             label = "Xn";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &to 0                                           &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &m_en   &trans  &trans  &trans                                          &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &m_an   &trans  &m_on   &m_un   &trans  &trans  &trans     &trans      &trans  &trans   &trans  &trans  &trans  &trans  &m_in   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                          &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans      &trans  &trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                     &trans      &trans                   &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &kp SPACE  &trans      &trans  &kp TAB  &trans          &trans  &trans  &trans  &trans  &trans
             >;
