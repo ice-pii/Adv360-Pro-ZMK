@@ -250,21 +250,21 @@
 
         layer_8 {
             bindings = <
-&none       &none      &none      &none  &none    &none  &to 0                                                  &none  &none  &none  &none  &none  &none  &none
-&kp ESCAPE  &none      &kp COMMA  &kp D  &kp DOT  &kp G  &none                                                  &none  &none  &none  &none  &none  &none  &none
-&none       &kp LC(T)  &kp E      &kp P  &kp B    &kp J  &none  &kp LEFT_ALT  &none               &none  &none  &none  &none  &none  &none  &none  &none  &none
-&kp K       &kp M      &kp SLASH  &kp H  &kp R    &none                       &kp LEFT_SHIFT      &none                &none  &none  &none  &none  &none  &none
-&none       &none      &none      &none  &none           &none  &mo 9         &kp LCTRL           &none  &none  &none         &none  &none  &none  &none  &none
+&none       &none      &none              &none  &none          &none  &to 0                                                  &none  &none  &none  &none  &none  &none  &none
+&kp ESCAPE  &none      &kp RIGHT_BRACKET  &kp D  &kp BACKSLASH  &kp G  &none                                                  &none  &none  &none  &none  &none  &none  &none
+&none       &kp LC(T)  &kp E              &kp P  &kp B          &kp J  &none  &kp LEFT_ALT  &none               &none  &none  &none  &none  &none  &none  &none  &none  &none
+&kp K       &kp M      &kp SLASH          &kp H  &kp R          &none                       &kp LEFT_SHIFT      &none                &none  &none  &none  &none  &none  &none
+&none       &none      &none              &none  &none                 &none  &mo 9         &kp LCTRL           &none  &none  &none         &none  &none  &none  &none  &none
             >;
         };
 
         layer_9 {
             bindings = <
-&none       &none          &none              &none      &none          &none  &to 0                                  &none  &none  &none  &none  &none  &none  &none
-&kp DELETE  &none          &kp RIGHT_BRACKET  &none      &kp BACKSLASH  &none  &none                                  &none  &none  &none  &none  &none  &none  &none
-&none       &kp LC(LS(T))  &kp LC(S)          &kp LC(Y)  &kp LC(Z)      &none  &none  &none  &none      &none  &none  &none  &none  &none  &none  &none  &none  &none
-&none       &kp LC(D)      &kp LC(X)          &kp LC(C)  &kp LC(V)      &none                &none      &none                &none  &none  &none  &none  &none  &none
-&none       &none          &none              &none      &none                 &none  &none  &none      &none  &none  &none         &none  &none  &none  &none  &none
+&none       &none          &none      &none      &none      &none  &to 0                                  &none  &none  &none  &none  &none  &none  &none
+&kp DELETE  &none          &kp COMMA  &none      &kp DOT    &none  &none                                  &none  &none  &none  &none  &none  &none  &none
+&none       &kp LC(LS(T))  &kp LC(S)  &kp LC(Y)  &kp LC(Z)  &none  &none  &none  &none      &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none       &kp LC(D)      &kp LC(X)  &kp LC(C)  &kp LC(V)  &none                &none      &none                &none  &none  &none  &none  &none  &none
+&none       &none          &none      &none      &none             &none  &none  &none      &none  &none  &none         &none  &none  &none  &none  &none
             >;
         };
     };
